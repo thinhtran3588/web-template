@@ -12,14 +12,14 @@ Manga View app
 
 **main:**
 ![CI-main](https://github.com/thinhtran3588/web-template/workflows/CI-main/badge.svg)
-[![codecov](https://codecov.io/gh/thinhtran3588/web-template/branch/main/graph/badge.svg)](https://codecov.io/gh/thinhtran3588/web-template)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_web-template&metric=coverage)](https://sonarcloud.io/summary/new_code?id=thinhtran3588_web-template)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_web-template&metric=alert_status)](https://sonarcloud.io/dashboard?id=thinhtran3588_web-template)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_web-template&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=thinhtran3588_web-template)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_web-template&metric=security_rating)](https://sonarcloud.io/dashboard?id=thinhtran3588_web-template)
 
 **develop:**
 ![CI-develop](https://github.com/thinhtran3588/web-template/workflows/CI-develop/badge.svg?branch=develop)
-[![codecov](https://codecov.io/gh/thinhtran3588/web-template/branch/develop/graph/badge.svg)](https://codecov.io/gh/thinhtran3588/web-template/branch/develop)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_web-template&metric=coverage&branch=develop)](https://sonarcloud.io/summary/new_code?id=thinhtran3588_web-template)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_web-template&branch=develop&metric=alert_status)](https://sonarcloud.io/dashboard?id=thinhtran3588_web-template&branch=develop)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_web-template&branch=develop&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=thinhtran3588_web-template&branch=develop)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_web-template&branch=develop&metric=security_rating)](https://sonarcloud.io/dashboard?id=thinhtran3588_web-template&branch=develop)
