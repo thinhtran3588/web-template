@@ -14,17 +14,35 @@
     "validate": "yarn lint && yarn test:ci"
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.1",
+    "@next/bundle-analyzer": "^12.0.1",
+    "@rematch/core": "^2.1.1",
+    "@rematch/immer": "^2.1.2",
+    "@rematch/persist": "^2.1.1",
+    "clsx": "^1.1.1",
+    "immer": "^9.0.6",
+    "lodash": "^4.17.21",
     "next": "12.0.1",
+    "next-pwa": "^5.4.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.6",
+    "react-scroll": "^1.8.4",
+    "redux-persist": "^6.0.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.0.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/lodash": "^4.14.176",
     "@types/node": "16.11.6",
     "@types/react": "17.0.33",
+    "@types/react-scroll": "^1.8.3",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
     "autoprefixer": "^10.4.0",
+    "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-next": "12.0.1",
@@ -37,8 +55,10 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^1.7.0",
     "eslint-plugin-testing-library": "^5.0.0",
+    "jest": "^27.3.1",
     "postcss": "^8.3.11",
     "prettier": "2.4.1",
+    "sass": "^1.43.4",
     "tailwindcss": "^2.2.19",
     "typescript": "4.4.4"
   }

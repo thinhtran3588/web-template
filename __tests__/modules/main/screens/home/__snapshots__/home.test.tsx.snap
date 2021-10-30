@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders successfully 1`] = `
+<div>
+  <div
+    class="flex flex-col w-full"
+  >
+    <div>
+      Home
+    </div>
+  </div>
+</div>
+`;

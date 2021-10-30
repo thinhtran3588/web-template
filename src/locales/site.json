@@ -1,0 +1,24 @@
+{
+  "EN": {
+    "CLOSE": "Close",
+    "CREATED_BY": "Created by",
+    "MENU": "Menu",
+    "SCROLL_TO_TOP": "Scroll to top",
+    "SITE_DESCRIPTION": "Site description",
+    "SITE_NAME": "Web Template",
+    "TAB_HOME": "Home",
+    "TAB_SETTINGS": "Settings",
+    "VERSION": "Version"
+  },
+  "VI": {
+    "CLOSE": "Đóng",
+    "CREATED_BY": "Tạo bởi",
+    "MENU": "Danh mục",
+    "SCROLL_TO_TOP": "Lên đầu trang",
+    "SITE_DESCRIPTION": "Site description",
+    "SITE_NAME": "Web Template",
+    "TAB_HOME": "Trang chủ",
+    "TAB_SETTINGS": "Cài đặt",
+    "VERSION": "Phiên bản"
+  }
+}
