@@ -53,7 +53,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
-      - name: Slack Notification Finish
+      - name: Slack Notifica_tion Finish
         uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}
