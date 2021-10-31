@@ -13,8 +13,8 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Environment with secrets
-    environment: production
+    # Environment with secrets, use develop environment due to security restriction
+    environment: develop
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -45,7 +45,7 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Slack Notifica_tion Finish
+      - name: Slack Notification Finish
         uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}
