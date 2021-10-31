@@ -1,10 +1,10 @@
-name: CI-develop
+name: CI-main-pr
 
 # Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the develop branch
+# events but only for the main branch
 on:
-  push:
-    branches: [develop]
+  pull_request:
+    branches: [main]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     # Environment with secrets
-    environment: develop
+    environment: production
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -45,13 +45,7 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
-      - name: Slack Notification Finish
+      - name: Slack Notifica_tion Finish
         uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}
