@@ -1,6 +1,6 @@
+/* eslint-disable max-len */
 import clsx from 'clsx';
 
-/* eslint-disable max-len */
 export interface LogoProps {
   className?: string;
 }
