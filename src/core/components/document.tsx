@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-document-import-in-page */
-import {SITE_NAME} from '@core/constants';
+import CONSTANTS from '@core/constants.json';
 import NextDocument, {Html, Head, Main, NextScript, DocumentInitialProps, DocumentContext} from 'next/document';
+
+const {SITE_NAME} = CONSTANTS;
 
 export class Document extends NextDocument {
   static getInitialProps = async (ctx: DocumentContext): Promise<DocumentInitialProps> => {
