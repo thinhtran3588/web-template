@@ -11,7 +11,7 @@ export class Document extends NextDocument {
   };
 
   render = (): JSX.Element => (
-    <Html>
+    <Html className='dark'>
       <Head>
         <meta name='application-name' content={SITE_NAME} />
         <meta name='apple-mobile-web-app-capable' content='yes' />
