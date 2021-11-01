@@ -80,7 +80,7 @@ export const Nav = (props: NavProps): JSX.Element => {
                 <span
                   className={clsx(
                     'text-xs md:text-base transition-all duration-700 whitespace-nowrap overflow-ellipsis',
-                    expandMenu ? 'md:ml-2 md:w-40 opacity-100' : 'md:ml-0 md:w-0 opacity-0',
+                    expandMenu ? 'md:ml-2 md:w-40 md:opacity-100' : 'md:ml-0 md:w-0 md:opacity-0',
                   )}
                 >
                   {getI18nText(SITE_I18N_TEXT, item.key, router)}
