@@ -1,3 +1,3 @@
-import {Home} from '@main/screens/home/home';
+import {Wallet} from '@main/screens/wallet/wallet';
 
-export default Home;
+export default Wallet;

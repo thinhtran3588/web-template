@@ -8,6 +8,7 @@
     "SITE_NAME": "Web Template",
     "TAB_HOME": "Home",
     "TAB_SETTINGS": "Settings",
+    "TAB_WALLET": "Wallet",
     "VERSION": "Version"
   },
   "VI": {
@@ -19,6 +20,7 @@
     "SITE_NAME": "Web Template",
     "TAB_HOME": "Trang chủ",
     "TAB_SETTINGS": "Cài đặt",
+    "TAB_WALLET": "Ví",
     "VERSION": "Phiên bản"
   }
 }

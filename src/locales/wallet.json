@@ -1,0 +1,24 @@
+{
+  "EN": {
+    "ACCOUNT_ADDRESS": "Account address",
+    "BALANCE": "Balance",
+    "CHAIN_ID": "Chain Id",
+    "CONNECT_TO_METAMASK": "Connect to MetaMask",
+    "GAS_PRICE": "Gas price",
+    "INSTALLED_AND_RELOAD": "I have installed MetaMask. Reload the page.",
+    "INSTALL_METAMASK": "Install MetaMask",
+    "LOADING": "Loading",
+    "NETWORK": "Network"
+  },
+  "VI": {
+    "ACCOUNT_ADDRESS": "Địa chỉ tài khoản",
+    "BALANCE": "Số dư",
+    "CHAIN_ID": "Chain Id",
+    "CONNECT_TO_METAMASK": "Kết nối tới MetaMask",
+    "GAS_PRICE": "Phí gas",
+    "INSTALLED_AND_RELOAD": "Tôi đã cài MetaMask. Tải lại trang",
+    "INSTALL_METAMASK": "Cài MetaMask",
+    "LOADING": "Đang tải",
+    "NETWORK": "Mạng"
+  }
+}

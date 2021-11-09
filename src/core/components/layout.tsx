@@ -8,7 +8,7 @@ import {Nav} from './nav';
 
 const MENU_ITEMS: MenuItem[] = [
   {
-    key: 'TAB_HOME',
+    key: 'TAB_WALLET',
     href: '/',
     current: false,
     icon: <TemplateIcon className='w-6 h-6' />,

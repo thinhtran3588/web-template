@@ -9,6 +9,7 @@ import {getI18nText} from '@core/helpers/get-i18n-text';
 import SITE_I18N_TEXT from '@locales/site.json';
 import {Layout} from '@core/components/layout';
 import {RootState, store} from '@store';
+import {MetaMask} from '@main/components/meta-mask';
 import type {NextComponentType, NextPageContext} from 'next';
 
 interface BaseAppProps {
@@ -66,6 +67,7 @@ const BaseApp = ({Component, pageProps}: BaseAppProps): JSX.Element => {
 
 export const App = ({Component, pageProps}: AppProps): JSX.Element => (
   <Provider store={store}>
+    <MetaMask />
     <BaseApp Component={Component} pageProps={pageProps} />
   </Provider>
 );

@@ -1,0 +1,72 @@
+name: CI-blockchain
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the blockchain branch
+on:
+  push:
+    branches: [blockchain]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Environment with secrets
+    environment: blockchain
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Telegram Notification Start
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            Repository: https://github.com/${{ github.repository }}
+            Author: ${{ github.actor }}
+            Message: ${{ github.event.commits[0].message }}
+            Branch: ${{ github.ref }}
+            Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            Status: start
+        if: always()
+
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Cache yarn
+        uses: actions/cache@v2
+        id: yarn-cache-node_modules # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Restore package
+        run: yarn --frozen-lockfile
+
+      - name: Validate source code
+        run: yarn validate
+
+      - name: Build
+        run: yarn build
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+      - name: Telegram Notification End
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            Repository: https://github.com/${{ github.repository }}
+            Author: ${{ github.actor }}
+            Message: ${{ github.event.commits[0].message }}
+            Branch: ${{ github.ref }}
+            Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            Status: ${{ job.status }}
+        if: always()

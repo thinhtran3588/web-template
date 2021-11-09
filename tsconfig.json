@@ -16,6 +16,7 @@
       "@locales/*": ["src/locales/*"],
       "@main/*": ["src/modules/main/*"],
       "@store": ["src/store"],
+      "@store/*": ["src/store/*"],
       "@test/*": ["__tests__/*"]
     },
     "resolveJsonModule": true,
