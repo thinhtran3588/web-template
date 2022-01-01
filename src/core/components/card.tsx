@@ -24,9 +24,9 @@ export const Card = (props: CardProps): JSX.Element => {
           className={clsx(
             headerClassName,
             `font-semibold -mx-2 -mt-2 rounded-t-md p-2 bg-gradient-to-r 
-              from-${primaryColor}-600 to-${secondaryColor}-600 
+              from-${primaryColor}-500 to-${secondaryColor}-500 
               dark:from-${primaryColor}-400 dark:to-${secondaryColor}-400
-            text-white dark:text-gray-300`,
+            text-white dark:text-gray-100`,
           )}
         >
           {title}

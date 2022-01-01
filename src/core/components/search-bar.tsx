@@ -11,7 +11,7 @@ export const SearchBar = forwardRef<HTMLInputElement>((props: SearchBarProps, re
   const {inputClassName, className, onClearInput, ...other} = props;
 
   return (
-    <div className={clsx('flex rounded-full bg-white dark:bg-gray-600 p-2 shadow-xl', className)}>
+    <div className={clsx('flex rounded-full bg-white dark:bg-gray-500 p-2 shadow-xl', className)}>
       <svg xmlns='http://www.w3.org/2000/svg' className='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
         <path
           strokeLinecap='round'

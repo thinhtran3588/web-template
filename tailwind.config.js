@@ -1,27 +1,11 @@
-const CONSTANTS = require('./src/core/constants.json');
-
 module.exports = {
   mode: 'jit',
-  content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
+  content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}', './src/tailwind-color-classes.txt'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
         roboto: ['Roboto'],
-      },
-      colors: {
-        primary: CONSTANTS.COLOR.PRIMARY,
-        secondary: CONSTANTS.COLOR.SECONDARY,
-        success: CONSTANTS.COLOR.SUCCESS,
-        warning: CONSTANTS.COLOR.WARNING,
-        error: CONSTANTS.COLOR.ERROR,
-        info: CONSTANTS.COLOR.INFO,
-        'primary-light': CONSTANTS.COLOR.PRIMARY_LIGHT,
-        'secondary-light': CONSTANTS.COLOR.SECONDARY_LIGHT,
-        'success-light': CONSTANTS.COLOR.SUCCESS_LIGHT,
-        'warning-light': CONSTANTS.COLOR.WARNING_LIGHT,
-        'error-light': CONSTANTS.COLOR.ERROR_LIGHT,
-        'info-light': CONSTANTS.COLOR.INFO_LIGHT,
       },
       minHeight: {
         2: '2rem',
@@ -45,5 +29,6 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  // eslint-disable-next-line global-require
+  plugins: [require('@tailwindcss/forms')],
 };

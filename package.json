@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "analyze": "ANALYZE=true next build",
-    "build": "PWA=true next build",
-    "dev": "NODE_ENV=development PORT=3001 next dev",
+    "build": "yarn generate-color-classes && PWA=false next build",
+    "dev": "yarn generate-color-classes && NODE_ENV=development PORT=3001 next dev",
     "lint": "prettier --check . && eslint . --ext .js,.jsx,.ts,.tsx && tsc --noEmit",
     "lint-fix": "prettier --write . && eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "start": "next start",
     "test": "jest --watch",
     "test:ci": "jest --ci --coverage",
-    "validate": "yarn lint && yarn test:ci"
+    "validate": "yarn lint && yarn test:ci",
+    "generate-color-classes": "node scripts/generate-color-classes.js"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
@@ -33,6 +34,7 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.0.1",
+    "@tailwindcss/forms": "^0.4.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",

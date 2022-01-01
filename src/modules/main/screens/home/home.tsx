@@ -1,14 +1,17 @@
-import {useRouter} from 'next/router';
 import type {NextPage} from 'next';
-import {getI18nText} from '@core/helpers/get-i18n-text';
-import SITE_I18N_TEXT from '@locales/site.json';
+import {CardSample} from './components/card-sample';
+import {ButtonSample} from './components/button-sample';
+import {CheckboxSample} from './components/checkbox-sample';
+import {RadioSample} from './components/radio-sample';
+import {InputSample} from './components/input-sample';
 
-export const Home: NextPage = (): JSX.Element => {
-  const router = useRouter();
-
-  return (
-    <div className='flex flex-col w-full'>
-      <div>{getI18nText(SITE_I18N_TEXT, 'TAB_HOME', router)}</div>
-    </div>
-  );
-};
+export const Home: NextPage = (): JSX.Element => (
+  <div className='container overflow-auto'>
+    <h1 className='text-2xl font-bold'>Components</h1>
+    <CardSample />
+    <ButtonSample />
+    <CheckboxSample />
+    <RadioSample />
+    <InputSample />
+  </div>
+);

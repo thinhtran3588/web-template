@@ -64,13 +64,6 @@ export const ColorsSettingsContainer = (): JSX.Element => {
         options={OPTIONS}
         setValue={setColorForType('info')}
       />
-      <ColorPicker
-        key='default'
-        title={getI18nText(SETTINGS_I18N_TEXT, 'COLORS_DEFAULT', router)}
-        currentValue={colors?.default}
-        options={OPTIONS}
-        setValue={setColorForType('default')}
-      />
     </Card>
   );
 };

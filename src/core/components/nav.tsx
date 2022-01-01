@@ -30,7 +30,7 @@ export const Nav = (props: NavProps): JSX.Element => {
   return (
     <nav
       className={clsx(
-        `fixed bottom-0 inset-x-0 flex shadow-xl transition-all duration-700 
+        `fixed bottom-0 inset-x-0 flex shadow-xl transition-width duration-700 
         bg-white dark:bg-gray-800 border-t-2 border-gray-200 dark:border-gray-900
         md:static md:flex-col md:border-t-0 `,
         expandMenu ? 'md:w-56' : 'md:w-12',
@@ -40,7 +40,7 @@ export const Nav = (props: NavProps): JSX.Element => {
         <Link href='/'>
           <a
             className={clsx(
-              'flex items-center overflow-hidden transition-all duration-700',
+              'flex items-center overflow-hidden transition-opacity duration-700',
               expandMenu ? 'px-2 w-40 opacity-100' : 'px-0 w-0 opacity-0',
             )}
             role='link'
@@ -49,8 +49,7 @@ export const Nav = (props: NavProps): JSX.Element => {
             <span>
               <Logo className='h-6' />
             </span>
-            <span className='ml-2 text-red-600 dark:text-red-400'>C</span>
-            <span className='ml-0 text-green-600 dark:text-green-400'>Flow</span>
+            <span className='ml-2'>Template</span>
           </a>
         </Link>
         <button
@@ -68,8 +67,8 @@ export const Nav = (props: NavProps): JSX.Element => {
             <a
               className={clsx(
                 `flex flex-col font-semibold flex-1
-                  hover:bg-gray-100 dark:hover:bg-gray-600 md:flex-initial`,
-                item.current ? `text-${colors?.primary}-600 dark:text-${colors?.primary}-400` : ``,
+                  hover:bg-gray-100 dark:hover:bg-gray-500 md:flex-initial`,
+                item.current ? `text-${colors?.primary}-500 dark:text-${colors?.primary}-400` : ``,
               )}
               role='link'
               tabIndex={index}

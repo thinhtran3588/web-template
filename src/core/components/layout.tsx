@@ -9,7 +9,7 @@ import {Seo} from './seo';
 
 const MENU_ITEMS: MenuItem[] = [
   {
-    key: 'TAB_HOME',
+    key: 'TAB_COMPONENTS',
     href: '/',
     current: false,
     icon: <TemplateIcon className='w-6 h-6' />,

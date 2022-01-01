@@ -63,6 +63,13 @@ module.exports = {
     'no-inline-styles/no-inline-styles': 'error',
     'react/function-component-definition': ['error', {namedComponents: 'arrow-function'}],
     'react/prop-types': 'off',
+    'jsx-a11y/label-has-associated-control': [
+      2,
+      {
+        controlComponents: ['TextInput', 'Radio', 'Checkbox'],
+        depth: 3,
+      },
+    ],
   },
   settings: {
     'import/resolver': {

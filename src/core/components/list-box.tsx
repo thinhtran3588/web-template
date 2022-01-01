@@ -68,7 +68,7 @@ export const ListBox = (props: HeadlessuiListboxProps): JSX.Element => {
               value={option.value}
               disabled={option.disable}
               className={clsx(
-                'disabled:opacity-50 cursor-pointer p-3 hover:bg-gray-200 dark:hover:bg-gray-600',
+                'disabled:opacity-50 cursor-pointer p-3 hover:bg-gray-200 dark:hover:bg-gray-500',
                 option.value === selectedValue ? 'text-primary dark:text-primary-light' : '',
                 optionClassName,
               )}

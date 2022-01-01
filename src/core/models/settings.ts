@@ -11,7 +11,6 @@ export interface SettingsState {
     warning: string;
     error: string;
     info: string;
-    default: string;
   };
 }
 
@@ -25,7 +24,6 @@ const state: SettingsState = {
     error: 'red',
     warning: 'orange',
     info: 'cyan',
-    default: 'cyan',
   },
 };
 
@@ -47,7 +45,6 @@ const setColor = (draftState: SettingsState, payload: {value: string; type: Colo
       error: 'red',
       warning: 'orange',
       info: 'cyan',
-      default: 'cyan',
     };
   }
   draftState.colors[type] = value;
