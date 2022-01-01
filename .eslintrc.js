@@ -61,6 +61,8 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
     'no-inline-styles/no-inline-styles': 'error',
+    'react/function-component-definition': ['error', {namedComponents: 'arrow-function'}],
+    'react/prop-types': 'off',
   },
   settings: {
     'import/resolver': {

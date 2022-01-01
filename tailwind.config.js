@@ -1,7 +1,8 @@
 const CONSTANTS = require('./src/core/constants.json');
 
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
+  mode: 'jit',
+  content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
@@ -43,11 +44,6 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {
-      display: ['dark'],
-      opacity: ['disabled'],
-    },
-  },
+  variants: {},
   plugins: [],
 };

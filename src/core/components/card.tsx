@@ -25,9 +25,9 @@ export const Card = (props: CardProps): JSX.Element => {
           {title}
         </div>
       )}
-      {Boolean(CustomHeader) && <>{CustomHeader}</>}
+      {Boolean(CustomHeader) && CustomHeader}
       <div className={clsx('', contentClassName)}>{children}</div>
-      {Boolean(CustomFooter) && <>{CustomFooter}</>}
+      {Boolean(CustomFooter) && CustomFooter}
     </div>
   );
 };
