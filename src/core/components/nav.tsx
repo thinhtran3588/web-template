@@ -4,15 +4,14 @@ import {useRouter} from 'next/router';
 import {Fragment, useState} from 'react';
 import ChevronLeftIcon from '@heroicons/react/solid/ChevronLeftIcon';
 import ChevronRightIcon from '@heroicons/react/solid/ChevronRightIcon';
+import {useSelector} from 'react-redux';
+import type {RootState} from '@store';
 import type {MenuItem} from '@core/interfaces';
 import {getI18nText} from '@core/helpers/get-i18n-text';
 import SITE_I18N_TEXT from '@locales/site.json';
-import CONSTANTS from '@core/constants.json';
 import {Logo} from './logo';
 import {Footer} from './footer';
 import {TqtIcon} from './tqt-icon';
-
-const {SITE_NAME} = CONSTANTS;
 
 export interface NavProps {
   menuItems: MenuItem[];
@@ -22,6 +21,7 @@ export const Nav = (props: NavProps): JSX.Element => {
   const {menuItems} = props;
   const router = useRouter();
   const [expandMenu, setExpandVisible] = useState(true);
+  const colors = useSelector((state: RootState) => state.settings.colors);
 
   const toggleExpandMenu = (): void => {
     setExpandVisible(!expandMenu);
@@ -30,9 +30,9 @@ export const Nav = (props: NavProps): JSX.Element => {
   return (
     <nav
       className={clsx(
-        `fixed bottom-0 inset-x-0 flex shadow-2xl transition-all duration-700
-        bg-white dark:bg-gray-800 border-t-2 border-gray-200 dark:border-gray-700
-        md:static md:flex-col md:border-t-0`,
+        `fixed bottom-0 inset-x-0 flex shadow-xl transition-all duration-700 
+        bg-white dark:bg-gray-800 border-t-2 border-gray-200 dark:border-gray-900
+        md:static md:flex-col md:border-t-0 `,
         expandMenu ? 'md:w-56' : 'md:w-12',
       )}
     >
@@ -40,8 +40,8 @@ export const Nav = (props: NavProps): JSX.Element => {
         <Link href='/'>
           <a
             className={clsx(
-              'flex items-center transition-all duration-700 truncate',
-              expandMenu ? 'px-2 w-50 opacity-100' : 'px-0 w-0 opacity-0',
+              'flex items-center overflow-hidden transition-all duration-700',
+              expandMenu ? 'px-2 w-40 opacity-100' : 'px-0 w-0 opacity-0',
             )}
             role='link'
             aria-hidden='true'
@@ -49,7 +49,8 @@ export const Nav = (props: NavProps): JSX.Element => {
             <span>
               <Logo className='h-6' />
             </span>
-            <span className='ml-2'>{SITE_NAME}</span>
+            <span className='ml-2 text-red-600 dark:text-red-400'>C</span>
+            <span className='ml-0 text-green-600 dark:text-green-400'>Flow</span>
           </a>
         </Link>
         <button
@@ -68,7 +69,7 @@ export const Nav = (props: NavProps): JSX.Element => {
               className={clsx(
                 `flex flex-col font-semibold flex-1
                   hover:bg-gray-100 dark:hover:bg-gray-600 md:flex-initial`,
-                item.current ? `text-primary dark:text-primary-light` : ``,
+                item.current ? `text-${colors?.primary}-600 dark:text-${colors?.primary}-400` : ``,
               )}
               role='link'
               tabIndex={index}
@@ -79,8 +80,8 @@ export const Nav = (props: NavProps): JSX.Element => {
                 <span>{item.current ? item.focusedIcon : item.icon}</span>
                 <span
                   className={clsx(
-                    'text-xs md:text-base transition-all duration-700 whitespace-nowrap overflow-ellipsis',
-                    expandMenu ? 'md:ml-2 md:w-40 md:opacity-100' : 'md:ml-0 md:w-0 md:opacity-0',
+                    'text-xs md:text-base whitespace-nowrap overflow-ellipsis transition-opacity duration-700',
+                    expandMenu ? 'md:ml-2 md:w-40 opacity-100' : 'md:ml-0 md:w-0 opacity-0',
                   )}
                 >
                   {getI18nText(SITE_I18N_TEXT, item.key, router)}
@@ -93,7 +94,7 @@ export const Nav = (props: NavProps): JSX.Element => {
       <div className='hidden md:flex flex-1 items-end'>
         <div
           className={clsx(
-            'hidden md:block font-semibold text-xl h-12 transition-all duration-700',
+            'hidden md:block font-semibold text-xl h-12',
             expandMenu ? 'w-0 opacity-100' : 'w-full opacity-100 p-2',
           )}
         >
@@ -103,12 +104,7 @@ export const Nav = (props: NavProps): JSX.Element => {
             </a>
           </Link>
         </div>
-        <div
-          className={clsx(
-            'hidden md:block transition-all duration-700 overflow-hidden',
-            expandMenu ? 'w-full opacity-100' : 'w-0 opacity-0',
-          )}
-        >
+        <div className={clsx('hidden md:block overflow-hidden', expandMenu ? 'w-full opacity-100' : 'w-0 opacity-0')}>
           <Footer />
         </div>
       </div>

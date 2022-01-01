@@ -26,7 +26,7 @@ export const BaseSettings = (props: BaseSettingsProps): JSX.Element => {
     <Card title={title} className='mb-2'>
       {options.map((option) => (
         <label
-          className='inline-flex items-center mt-2 h-10 w-full sm:w-1/4 md:w-1/5 lg:w-1/6 cursor-pointer'
+          className='inline-flex py-2 pl-2 items-center h-10 w-full cursor-pointer'
           key={option.value}
           htmlFor={`rd-${name}-${option.value}`}
         >

@@ -1,4 +1,6 @@
 import clsx from 'clsx';
+import {useSelector} from 'react-redux';
+import type {RootState} from '@store';
 
 export interface CardProps {
   className?: string;
@@ -13,21 +15,26 @@ export interface CardProps {
 
 export const Card = (props: CardProps): JSX.Element => {
   const {title, className, headerClassName, contentClassName, CustomHeader, CustomFooter, children} = props;
+  const primaryColor = useSelector((state: RootState) => state.settings.colors?.primary);
+  const secondaryColor = useSelector((state: RootState) => state.settings.colors?.secondary);
   return (
-    <div className={clsx('transition-all duration-700 bg-white dark:bg-gray-600 shadow-xl p-2 rounded-md', className)}>
+    <div className={clsx('bg-white dark:bg-gray-800 shadow-xl p-2 rounded-md', className)}>
       {Boolean(title) && !CustomHeader && (
         <div
           className={clsx(
             headerClassName,
-            'font-semibold bg-primary dark:bg-primary-light text-white -m-2 rounded-t-md p-2',
+            `font-semibold -mx-2 -mt-2 rounded-t-md p-2 bg-gradient-to-r 
+              from-${primaryColor}-600 to-${secondaryColor}-600 
+              dark:from-${primaryColor}-400 dark:to-${secondaryColor}-400
+            text-white dark:text-gray-300`,
           )}
         >
           {title}
         </div>
       )}
-      {Boolean(CustomHeader) && CustomHeader}
+      {CustomHeader}
       <div className={clsx('', contentClassName)}>{children}</div>
-      {Boolean(CustomFooter) && CustomFooter}
+      {CustomFooter}
     </div>
   );
 };

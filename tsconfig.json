@@ -15,6 +15,7 @@
       "@core/*": ["src/core/*"],
       "@locales/*": ["src/locales/*"],
       "@main/*": ["src/modules/main/*"],
+      "@settings/*": ["src/modules/settings/*"],
       "@store": ["src/store"],
       "@test/*": ["__tests__/*"]
     },

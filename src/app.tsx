@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import Head from 'next/head';
 import {Provider, useSelector} from 'react-redux';
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
 import {useRouter} from 'next/router';
 import type {AppProps} from 'next/app';
 import {getI18nText} from '@core/helpers/get-i18n-text';
@@ -22,6 +22,20 @@ const BaseApp = ({Component, pageProps}: BaseAppProps): JSX.Element => {
   const locale = useSelector((state: RootState) => state.settings.locale);
   const theme = useSelector((state: RootState) => state.settings.theme);
   const router = useRouter();
+  const [isClientSide, setIsClientSite] = useState(false);
+
+  const renderComponent = (): JSX.Element =>
+    Component.hideLayout ? (
+      <Component {...pageProps} />
+    ) : (
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    );
+
+  useEffect(() => {
+    setIsClientSite(true);
+  }, []);
 
   useEffect(() => {
     if (locale !== router.locale) {
@@ -57,9 +71,8 @@ const BaseApp = ({Component, pageProps}: BaseAppProps): JSX.Element => {
         <title>{getI18nText(SITE_I18N_TEXT, 'SITE_NAME', router)}</title>
         <meta name='description' content={getI18nText(SITE_I18N_TEXT, 'SITE_DESCRIPTION', router)} />
       </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      {!isClientSide && <div className='hidden'>renderComponent()</div>}
+      {isClientSide && renderComponent()}
     </>
   );
 };

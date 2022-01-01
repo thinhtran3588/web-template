@@ -1,3 +1,3 @@
-import {Settings} from '@main/screens/settings/settings';
+import {Settings} from '@settings/screens/settings/settings';
 
 export default Settings;

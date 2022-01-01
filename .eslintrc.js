@@ -33,7 +33,7 @@ module.exports = {
     'import/no-unresolved': [
       'error',
       {
-        ignore: ['@test', '@core', '@store', '@locales', '@main', '@api'],
+        ignore: ['@test', '@core', '@store', '@locales', '@main', '@settings', '@api'],
       },
     ], // ignore module import
     'max-len': ['error', 120], // change max length for a line to 120

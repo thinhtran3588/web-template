@@ -1,5 +1,13 @@
 {
   "EN": {
+    "COLORS": "Colors",
+    "COLORS_DEFAULT": "Default color",
+    "COLORS_ERROR": "Error color",
+    "COLORS_INFO": "Info color",
+    "COLORS_PRIMARY": "Primary color",
+    "COLORS_SECONDARY": "Secondary color",
+    "COLORS_SUCCESS": "Success color",
+    "COLORS_WARNING": "Warning color",
     "LANGUAGE": "Language",
     "THEME": "Theme",
     "THEME_DARK": "Dark",
@@ -7,6 +15,14 @@
     "THEME_SYSTEM": "System"
   },
   "VI": {
+    "COLORS": "Màu",
+    "COLORS_DEFAULT": "Màu mặc định",
+    "COLORS_ERROR": "Màu lỗi",
+    "COLORS_INFO": "Màu thông báo",
+    "COLORS_PRIMARY": "Màu chính",
+    "COLORS_SECONDARY": "Màu phụ",
+    "COLORS_SUCCESS": "Màu thành công",
+    "COLORS_WARNING": "Màu cảnh bảo",
     "LANGUAGE": "Ngôn ngữ",
     "THEME": "Chủ đề",
     "THEME_DARK": "Tối",
