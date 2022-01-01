@@ -25,7 +25,8 @@ export const ColorPicker = (props: ColorPickerProps): JSX.Element => {
             className={clsx(
               `mr-4 mb-4 w-8 h-8 bg-${option.value}-600 dark:bg-${option.value}-400 rounded-full`,
               currentValue === option.value
-                ? `ring-offset-4 ring-2 ring-${option.value}-600 dark:ring-${option.value}-400`
+                ? `ring-offset-4 ring-2 ring-${option.value}-600 
+                  dark:ring-${option.value}-400 dark:ring-offset-gray-800`
                 : '',
             )}
             type='button'
