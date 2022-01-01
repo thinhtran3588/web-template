@@ -10,6 +10,7 @@ import SITE_I18N_TEXT from '@locales/site.json';
 import {Layout} from '@core/components/layout';
 import {RootState, store} from '@store';
 import type {NextComponentType, NextPageContext} from 'next';
+import {ErrorBoundary} from '@core/components/error-boundary';
 
 interface BaseAppProps {
   Component: NextComponentType<NextPageContext, any, {}> & {
@@ -51,19 +52,6 @@ const BaseApp = ({Component, pageProps}: BaseAppProps): JSX.Element => {
     }
   }, [theme]);
 
-  if (Component.hideLayout) {
-    return (
-      <>
-        <Head>
-          <meta name='viewport' content='width=device-width, initial-scale=1' />
-          <title>{getI18nText(SITE_I18N_TEXT, 'SITE_NAME', router)}</title>
-          <meta name='description' content={getI18nText(SITE_I18N_TEXT, 'SITE_DESCRIPTION', router)} />
-        </Head>
-        <Component {...pageProps} />
-      </>
-    );
-  }
-
   return (
     <>
       <Head>
@@ -71,8 +59,10 @@ const BaseApp = ({Component, pageProps}: BaseAppProps): JSX.Element => {
         <title>{getI18nText(SITE_I18N_TEXT, 'SITE_NAME', router)}</title>
         <meta name='description' content={getI18nText(SITE_I18N_TEXT, 'SITE_DESCRIPTION', router)} />
       </Head>
-      {!isClientSide && <div className='hidden'>renderComponent()</div>}
-      {isClientSide && renderComponent()}
+      <ErrorBoundary>
+        {!isClientSide && <div className='hidden'>{renderComponent()}</div>}
+        {isClientSide && renderComponent()}
+      </ErrorBoundary>
     </>
   );
 };
