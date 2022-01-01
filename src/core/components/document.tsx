@@ -10,7 +10,8 @@ export class Document extends NextDocument {
     return {...initialProps};
   };
 
-  static render = (): JSX.Element => (
+  // eslint-disable-next-line class-methods-use-this
+  render = (): JSX.Element => (
     <Html className='dark'>
       <Head>
         <meta name='application-name' content={SITE_NAME} />
