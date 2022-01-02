@@ -35,7 +35,7 @@ export const Layout = (props: LayoutProps): JSX.Element => {
   return (
     <div className='font-roboto min-h-screen max-h-screen bg-gray-200 dark:bg-gray-900 dark:text-gray-300 flex'>
       <Nav menuItems={menuItems} />
-      <main className='p-2 pb-14 md:pb-2 flex-1 flex'>{children}</main>
+      <main className='p-2 pb-16 md:pb-2 flex-1 flex'>{children}</main>
     </div>
   );
 };
