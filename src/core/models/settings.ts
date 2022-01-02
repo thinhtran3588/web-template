@@ -1,30 +1,17 @@
-import type {Color, Theme} from '@core/interfaces';
+import type {Theme} from '@core/interfaces';
 import {createModel} from '@rematch/core';
+import themes from '@core/themes.json';
 
 export interface SettingsState {
   locale: string;
   theme: Theme;
-  colors: {
-    primary: string;
-    secondary: string;
-    success: string;
-    warning: string;
-    error: string;
-    info: string;
-  };
+  themeColorPack: string;
 }
 
 const state: SettingsState = {
   locale: 'en',
   theme: '',
-  colors: {
-    primary: 'cyan',
-    secondary: 'violet',
-    success: 'green',
-    error: 'red',
-    warning: 'orange',
-    info: 'cyan',
-  },
+  themeColorPack: themes[0].name,
 };
 
 const setLocale = (draftState: SettingsState, locale: string): void => {
@@ -35,19 +22,8 @@ const setTheme = (draftState: SettingsState, theme: Theme): void => {
   draftState.theme = theme;
 };
 
-const setColor = (draftState: SettingsState, payload: {value: string; type: Color}): void => {
-  const {value, type} = payload;
-  if (!draftState.colors) {
-    draftState.colors = {
-      primary: 'cyan',
-      secondary: 'violet',
-      success: 'green',
-      error: 'red',
-      warning: 'orange',
-      info: 'cyan',
-    };
-  }
-  draftState.colors[type] = value;
+const setThemeColorPack = (draftState: SettingsState, themeColorPack: string): void => {
+  draftState.themeColorPack = themeColorPack;
 };
 
 export const settings = createModel()({
@@ -55,7 +31,7 @@ export const settings = createModel()({
   reducers: {
     setLocale,
     setTheme,
-    setColor,
+    setThemeColorPack,
   },
   effects: (_dispatch) => ({}),
 });

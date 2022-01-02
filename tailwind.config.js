@@ -1,6 +1,8 @@
+const themes = require('./tailwind.daisy-ui-themes.json');
+
 module.exports = {
   mode: 'jit',
-  content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}', './src/tailwind-color-classes.txt'],
+  content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
@@ -23,12 +25,17 @@ module.exports = {
         10: '10rem',
         12: '12rem',
       },
-      transitionProperty: {
-        width: 'width',
-      },
     },
   },
   variants: {},
   // eslint-disable-next-line global-require
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [require('daisyui')],
+  daisyui: {
+    styled: true,
+    themes: [themes],
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+  },
 };

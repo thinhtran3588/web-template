@@ -4,9 +4,9 @@ import clsx from 'clsx';
 import {forwardRef} from 'react';
 import type {ButtonHTMLAttributes, DetailedHTMLProps} from 'react';
 
-export type ButtonProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
+export type ButtonGradientProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
 
-export const Button = forwardRef<HTMLButtonElement>((props: ButtonProps, ref): JSX.Element => {
+export const ButtonGradient = forwardRef<HTMLButtonElement>((props: ButtonGradientProps, ref): JSX.Element => {
   const {className = '', type = 'button', children, ...other} = props;
 
   return (
@@ -16,7 +16,9 @@ export const Button = forwardRef<HTMLButtonElement>((props: ButtonProps, ref): J
       className={clsx(
         `btn rounded-full`,
         className.includes('btn-ghost') ? 'dark:hover:bg-gray-600' : '',
-        other.disabled ? 'dark:text-gray-500' : '',
+        other.disabled
+          ? 'dark:text-gray-500'
+          : `bg-gradient-to-r from-primary to-secondary border-0 hover:from-primary-focus hover:to-secondary-focus`,
         className,
       )}
       {...other}
@@ -24,4 +26,4 @@ export const Button = forwardRef<HTMLButtonElement>((props: ButtonProps, ref): J
       {children}
     </button>
   );
-}) as (props: ButtonProps) => JSX.Element;
+}) as (props: ButtonGradientProps) => JSX.Element;

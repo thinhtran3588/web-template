@@ -12,7 +12,7 @@ export class Document extends NextDocument {
 
   // eslint-disable-next-line class-methods-use-this
   render = (): JSX.Element => (
-    <Html className='dark'>
+    <Html className='dark' data-theme=''>
       <Head>
         <meta name='application-name' content={SITE_NAME} />
         <meta name='apple-mobile-web-app-capable' content='yes' />

@@ -5,24 +5,423 @@ exports[`Home renders successfully 1`] = `
   <div
     class="container overflow-auto"
   >
-    <h1
-      class="text-2xl font-bold"
-    >
-      Components
-    </h1>
     <div
-      class="bg-white dark:bg-gray-800 shadow-xl p-2 rounded-md"
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mb-2"
     >
       <div
-        class="font-semibold -mx-2 -mt-2 rounded-t-md p-2 bg-gradient-to-r 
-              from-cyan-500 to-violet-500 
-              dark:from-cyan-400 dark:to-violet-400
-            text-white dark:text-gray-100"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
       >
-        Card
+        Theme
       </div>
       <div
-        class=""
+        class="p-2"
+      >
+        <label
+          class="inline-flex py-2 pl-2 items-center h-10 w-full cursor-pointer 
+            hover:bg-gray-100 dark:hover:bg-gray-700"
+          for="rd-theme-light"
+        >
+          <input
+            class="radio radio-primary radio-sm"
+            id="rd-theme-light"
+            name="theme"
+            type="radio"
+            value="light"
+          />
+          <span
+            class="ml-2"
+          >
+            Light
+          </span>
+        </label>
+        <label
+          class="inline-flex py-2 pl-2 items-center h-10 w-full cursor-pointer 
+            hover:bg-gray-100 dark:hover:bg-gray-700"
+          for="rd-theme-dark"
+        >
+          <input
+            class="radio radio-primary radio-sm"
+            id="rd-theme-dark"
+            name="theme"
+            type="radio"
+            value="dark"
+          />
+          <span
+            class="ml-2"
+          >
+            Dark
+          </span>
+        </label>
+        <label
+          class="inline-flex py-2 pl-2 items-center h-10 w-full cursor-pointer 
+            hover:bg-gray-100 dark:hover:bg-gray-700"
+          for="rd-theme-"
+        >
+          <input
+            checked=""
+            class="radio radio-primary radio-sm"
+            id="rd-theme-"
+            name="theme"
+            type="radio"
+            value=""
+          />
+          <span
+            class="ml-2"
+          >
+            System
+          </span>
+        </label>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mb-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+      >
+        Colors
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="flex flex-wrap "
+        >
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex ring-2 ring-primary ring-offset-2 ring-offset-gray-800"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(99, 102, 241);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(217, 70, 239);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(132, 204, 22);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(139, 92, 246);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(236, 72, 153);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(34, 197, 94);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(168, 85, 247);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(244, 63, 94);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(16, 185, 129);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(217, 70, 239);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(239, 68, 68);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(20, 184, 166);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(236, 72, 153);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(249, 115, 22);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(6, 182, 212);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(244, 63, 94);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(245, 158, 11);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(14, 165, 233);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(239, 68, 68);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(234, 179, 8);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(59, 130, 246);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(249, 115, 22);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(132, 204, 22);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(99, 102, 241);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(245, 158, 11);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(34, 197, 94);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(139, 92, 246);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(234, 179, 8);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(16, 185, 129);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(168, 85, 247);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(132, 204, 22);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(20, 184, 166);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(217, 70, 239);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(34, 197, 94);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(6, 182, 212);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(236, 72, 153);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(16, 185, 129);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(14, 165, 233);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(244, 63, 94);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(20, 184, 166);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(59, 130, 246);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(239, 68, 68);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(6, 182, 212);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(99, 102, 241);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(249, 115, 22);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(14, 165, 233);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(139, 92, 246);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(245, 158, 11);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(59, 130, 246);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(168, 85, 247);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(234, 179, 8);"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mb-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+      >
+        Components
+      </div>
+      <div
+        class="p-2"
+      >
+        <p>
+          Since we're using
+           
+          <a
+            class="link link-primary"
+            href="https://tailwindcss.com/"
+          >
+            Tailwindcss
+          </a>
+           
+          and
+           
+          <a
+            class="link link-primary"
+            href="https://daisyui.com/"
+          >
+            DaisyUI
+          </a>
+          , most components can be written directly with html tags and css classes except some customized ones. You can check them for full documentation and samples. Below are samples of customized components.
+        </p>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+      >
+        Card sample
+      </div>
+      <div
+        class="p-2"
       >
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat ex metus, eu fringilla mi feugiat vitae. Proin porta metus risus, at rhoncus mi finibus vehicula. Donec accumsan ex eu sagittis malesuada. Curabitur vitae mi tempor, gravida leo non, luctus nulla. Sed tristique, massa at ultrices porta, urna metus malesuada lacus, sit amet mattis arcu magna non lacus. Phasellus rutrum, tortor at hendrerit vestibulum, ipsum justo pretium ipsum, quis tristique sem metus at tellus. Proin id tortor magna. Vivamus orci sem, vulputate et tincidunt in, placerat at ligula. Sed ultricies elit eu ipsum posuere aliquet. Curabitur turpis dolor, auctor condimentum semper ac, dignissim eget nunc. Morbi consequat ornare odio, a mattis velit scelerisque nec. Maecenas pharetra finibus fermentum. Proin quis aliquet nisl. Vestibulum id molestie elit. Etiam interdum turpis at odio commodo, vitae luctus ante luctus. Nulla bibendum lacus vel nisl venenatis accumsan.
@@ -30,2651 +429,312 @@ exports[`Home renders successfully 1`] = `
       </div>
     </div>
     <div
-      class="bg-white dark:bg-gray-800 shadow-xl p-2 rounded-md mt-2"
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
     >
       <div
-        class="font-semibold -mx-2 -mt-2 rounded-t-md p-2 bg-gradient-to-r 
-              from-cyan-500 to-violet-500 
-              dark:from-cyan-400 dark:to-violet-400
-            text-white dark:text-gray-100"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
       >
-        Button
+        Button sample
       </div>
       <div
-        class=""
+        class="p-2"
       >
-        <div
-          class="pt-2 flex"
+        <button
+          class="btn rounded-full bg-gradient-to-r from-primary to-secondary border-0 hover:from-primary-focus hover:to-secondary-focus m-1"
+          type="button"
         >
-          <button
-            class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-cyan-500 dark:border-cyan-400
-          hover:border-cyan-600 dark:hover:border-cyan-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-cyan-500 dark:bg-cyan-400
-              hover:bg-cyan-600 dark:hover:bg-cyan-500 mr-2"
-          >
-            <span>
-              primary
-            </span>
-          </button>
-          <button
-            class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-violet-500 dark:border-violet-400
-          hover:border-violet-600 dark:hover:border-violet-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-violet-500 dark:bg-violet-400
-              hover:bg-violet-600 dark:hover:bg-violet-500 mr-2"
-          >
-            <span>
-              secondary
-            </span>
-          </button>
-          <button
-            class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-green-500 dark:border-green-400
-          hover:border-green-600 dark:hover:border-green-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-green-500 dark:bg-green-400
-              hover:bg-green-600 dark:hover:bg-green-500 mr-2"
-          >
-            <span>
-              success
-            </span>
-          </button>
-          <button
-            class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-orange-500 dark:border-orange-400
-          hover:border-orange-600 dark:hover:border-orange-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-orange-500 dark:bg-orange-400
-              hover:bg-orange-600 dark:hover:bg-orange-500 mr-2"
-          >
-            <span>
-              warning
-            </span>
-          </button>
-          <button
-            class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-red-500 dark:border-red-400
-          hover:border-red-600 dark:hover:border-red-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-red-500 dark:bg-red-400
-              hover:bg-red-600 dark:hover:bg-red-500 mr-2"
-          >
-            <span>
-              error
-            </span>
-          </button>
-          <button
-            class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-cyan-500 dark:border-cyan-400
-          hover:border-cyan-600 dark:hover:border-cyan-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-cyan-500 dark:bg-cyan-400
-              hover:bg-cyan-600 dark:hover:bg-cyan-500 mr-2"
-          >
-            <span>
-              info
-            </span>
-          </button>
-          <button
-            class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-gray-500 dark:border-gray-400
-          hover:border-gray-600 dark:hover:border-gray-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-gray-500 dark:bg-gray-400
-              hover:bg-gray-600 dark:hover:bg-gray-500 mr-2"
-          >
-            <span>
-              default
-            </span>
-          </button>
-        </div>
-        <div
-          class="pt-2 flex"
+          gradient
+        </button>
+        <button
+          class="btn rounded-full btn-primary m-1"
+          type="button"
         >
-          <button
-            class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-cyan-500 dark:border-cyan-400
-          hover:border-cyan-600 dark:hover:border-cyan-500
-          shadow-md hover:shadow-xl
-           text-cyan-500 dark:text-cyan-400
-              hover:text-cyan-600 dark:text:border-cyan-500 mr-2"
-          >
-            <span>
-              primary
-            </span>
-          </button>
-          <button
-            class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-violet-500 dark:border-violet-400
-          hover:border-violet-600 dark:hover:border-violet-500
-          shadow-md hover:shadow-xl
-           text-violet-500 dark:text-violet-400
-              hover:text-violet-600 dark:text:border-violet-500 mr-2"
-          >
-            <span>
-              secondary
-            </span>
-          </button>
-          <button
-            class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-green-500 dark:border-green-400
-          hover:border-green-600 dark:hover:border-green-500
-          shadow-md hover:shadow-xl
-           text-green-500 dark:text-green-400
-              hover:text-green-600 dark:text:border-green-500 mr-2"
-          >
-            <span>
-              success
-            </span>
-          </button>
-          <button
-            class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-orange-500 dark:border-orange-400
-          hover:border-orange-600 dark:hover:border-orange-500
-          shadow-md hover:shadow-xl
-           text-orange-500 dark:text-orange-400
-              hover:text-orange-600 dark:text:border-orange-500 mr-2"
-          >
-            <span>
-              warning
-            </span>
-          </button>
-          <button
-            class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-red-500 dark:border-red-400
-          hover:border-red-600 dark:hover:border-red-500
-          shadow-md hover:shadow-xl
-           text-red-500 dark:text-red-400
-              hover:text-red-600 dark:text:border-red-500 mr-2"
-          >
-            <span>
-              error
-            </span>
-          </button>
-          <button
-            class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-cyan-500 dark:border-cyan-400
-          hover:border-cyan-600 dark:hover:border-cyan-500
-          shadow-md hover:shadow-xl
-           text-cyan-500 dark:text-cyan-400
-              hover:text-cyan-600 dark:text:border-cyan-500 mr-2"
-          >
-            <span>
-              info
-            </span>
-          </button>
-          <button
-            class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-gray-500 dark:border-gray-400
-          hover:border-gray-600 dark:hover:border-gray-500
-          shadow-md hover:shadow-xl
-           text-gray-500 dark:text-gray-400
-              hover:text-gray-600 dark:text:border-gray-500 mr-2"
-          >
-            <span>
-              default
-            </span>
-          </button>
-        </div>
-        <div>
-          <div
-            class="pt-2 flex"
-          >
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-cyan-500 dark:border-cyan-400
-          hover:border-cyan-600 dark:hover:border-cyan-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-cyan-500 dark:bg-cyan-400
-              hover:bg-cyan-600 dark:hover:bg-cyan-500 mr-2"
-              disabled=""
-            >
-              <span>
-                primary
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-violet-500 dark:border-violet-400
-          hover:border-violet-600 dark:hover:border-violet-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-violet-500 dark:bg-violet-400
-              hover:bg-violet-600 dark:hover:bg-violet-500 mr-2"
-              disabled=""
-            >
-              <span>
-                secondary
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-green-500 dark:border-green-400
-          hover:border-green-600 dark:hover:border-green-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-green-500 dark:bg-green-400
-              hover:bg-green-600 dark:hover:bg-green-500 mr-2"
-              disabled=""
-            >
-              <span>
-                success
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-orange-500 dark:border-orange-400
-          hover:border-orange-600 dark:hover:border-orange-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-orange-500 dark:bg-orange-400
-              hover:bg-orange-600 dark:hover:bg-orange-500 mr-2"
-              disabled=""
-            >
-              <span>
-                warning
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-red-500 dark:border-red-400
-          hover:border-red-600 dark:hover:border-red-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-red-500 dark:bg-red-400
-              hover:bg-red-600 dark:hover:bg-red-500 mr-2"
-              disabled=""
-            >
-              <span>
-                error
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-cyan-500 dark:border-cyan-400
-          hover:border-cyan-600 dark:hover:border-cyan-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-cyan-500 dark:bg-cyan-400
-              hover:bg-cyan-600 dark:hover:bg-cyan-500 mr-2"
-              disabled=""
-            >
-              <span>
-                info
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-gray-500 dark:border-gray-400
-          hover:border-gray-600 dark:hover:border-gray-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-gray-500 dark:bg-gray-400
-              hover:bg-gray-600 dark:hover:bg-gray-500 mr-2"
-              disabled=""
-            >
-              <span>
-                default
-              </span>
-            </button>
-          </div>
-          <div
-            class="pt-2 flex"
-          >
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-cyan-500 dark:border-cyan-400
-          hover:border-cyan-600 dark:hover:border-cyan-500
-          shadow-md hover:shadow-xl
-           text-cyan-500 dark:text-cyan-400
-              hover:text-cyan-600 dark:text:border-cyan-500 mr-2"
-              disabled=""
-            >
-              <span>
-                primary
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-violet-500 dark:border-violet-400
-          hover:border-violet-600 dark:hover:border-violet-500
-          shadow-md hover:shadow-xl
-           text-violet-500 dark:text-violet-400
-              hover:text-violet-600 dark:text:border-violet-500 mr-2"
-              disabled=""
-            >
-              <span>
-                secondary
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-green-500 dark:border-green-400
-          hover:border-green-600 dark:hover:border-green-500
-          shadow-md hover:shadow-xl
-           text-green-500 dark:text-green-400
-              hover:text-green-600 dark:text:border-green-500 mr-2"
-              disabled=""
-            >
-              <span>
-                success
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-orange-500 dark:border-orange-400
-          hover:border-orange-600 dark:hover:border-orange-500
-          shadow-md hover:shadow-xl
-           text-orange-500 dark:text-orange-400
-              hover:text-orange-600 dark:text:border-orange-500 mr-2"
-              disabled=""
-            >
-              <span>
-                warning
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-red-500 dark:border-red-400
-          hover:border-red-600 dark:hover:border-red-500
-          shadow-md hover:shadow-xl
-           text-red-500 dark:text-red-400
-              hover:text-red-600 dark:text:border-red-500 mr-2"
-              disabled=""
-            >
-              <span>
-                error
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-cyan-500 dark:border-cyan-400
-          hover:border-cyan-600 dark:hover:border-cyan-500
-          shadow-md hover:shadow-xl
-           text-cyan-500 dark:text-cyan-400
-              hover:text-cyan-600 dark:text:border-cyan-500 mr-2"
-              disabled=""
-            >
-              <span>
-                info
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-gray-500 dark:border-gray-400
-          hover:border-gray-600 dark:hover:border-gray-500
-          shadow-md hover:shadow-xl
-           text-gray-500 dark:text-gray-400
-              hover:text-gray-600 dark:text:border-gray-500 mr-2"
-              disabled=""
-            >
-              <span>
-                default
-              </span>
-            </button>
-          </div>
-        </div>
-        <div>
-          <div
-            class="flex flex-wrap"
-          >
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-cyan-500 dark:border-cyan-400
-          hover:border-cyan-600 dark:hover:border-cyan-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-cyan-500 dark:bg-cyan-400
-              hover:bg-cyan-600 dark:hover:bg-cyan-500 mr-2 mt-2"
-              disabled=""
-            >
-              <svg
-                class="fill-current mr-2 h-6 w-6 text-white dark:text-white"
-                enable-background="new 0 0 100 100"
-                id="L7"
-                version="1.1"
-                viewBox="0 0 100 100"
-                x="0px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                y="0px"
-              >
-                <path
-                  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="1s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="-360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-              </svg>
-              <span>
-                primary
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-violet-500 dark:border-violet-400
-          hover:border-violet-600 dark:hover:border-violet-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-violet-500 dark:bg-violet-400
-              hover:bg-violet-600 dark:hover:bg-violet-500 mr-2 mt-2"
-              disabled=""
-            >
-              <svg
-                class="fill-current mr-2 h-6 w-6 text-white dark:text-white"
-                enable-background="new 0 0 100 100"
-                id="L7"
-                version="1.1"
-                viewBox="0 0 100 100"
-                x="0px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                y="0px"
-              >
-                <path
-                  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="1s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="-360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-              </svg>
-              <span>
-                secondary
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-green-500 dark:border-green-400
-          hover:border-green-600 dark:hover:border-green-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-green-500 dark:bg-green-400
-              hover:bg-green-600 dark:hover:bg-green-500 mr-2 mt-2"
-              disabled=""
-            >
-              <svg
-                class="fill-current mr-2 h-6 w-6 text-white dark:text-white"
-                enable-background="new 0 0 100 100"
-                id="L7"
-                version="1.1"
-                viewBox="0 0 100 100"
-                x="0px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                y="0px"
-              >
-                <path
-                  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="1s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="-360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-              </svg>
-              <span>
-                success
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-orange-500 dark:border-orange-400
-          hover:border-orange-600 dark:hover:border-orange-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-orange-500 dark:bg-orange-400
-              hover:bg-orange-600 dark:hover:bg-orange-500 mr-2 mt-2"
-              disabled=""
-            >
-              <svg
-                class="fill-current mr-2 h-6 w-6 text-white dark:text-white"
-                enable-background="new 0 0 100 100"
-                id="L7"
-                version="1.1"
-                viewBox="0 0 100 100"
-                x="0px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                y="0px"
-              >
-                <path
-                  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="1s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="-360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-              </svg>
-              <span>
-                warning
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-red-500 dark:border-red-400
-          hover:border-red-600 dark:hover:border-red-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-red-500 dark:bg-red-400
-              hover:bg-red-600 dark:hover:bg-red-500 mr-2 mt-2"
-              disabled=""
-            >
-              <svg
-                class="fill-current mr-2 h-6 w-6 text-white dark:text-white"
-                enable-background="new 0 0 100 100"
-                id="L7"
-                version="1.1"
-                viewBox="0 0 100 100"
-                x="0px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                y="0px"
-              >
-                <path
-                  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="1s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="-360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-              </svg>
-              <span>
-                error
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-cyan-500 dark:border-cyan-400
-          hover:border-cyan-600 dark:hover:border-cyan-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-cyan-500 dark:bg-cyan-400
-              hover:bg-cyan-600 dark:hover:bg-cyan-500 mr-2 mt-2"
-              disabled=""
-            >
-              <svg
-                class="fill-current mr-2 h-6 w-6 text-white dark:text-white"
-                enable-background="new 0 0 100 100"
-                id="L7"
-                version="1.1"
-                viewBox="0 0 100 100"
-                x="0px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                y="0px"
-              >
-                <path
-                  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="1s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="-360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-              </svg>
-              <span>
-                info
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-gray-500 dark:border-gray-400
-          hover:border-gray-600 dark:hover:border-gray-500
-          shadow-md hover:shadow-xl
-           text-white dark:text-gray-100 bg-gray-500 dark:bg-gray-400
-              hover:bg-gray-600 dark:hover:bg-gray-500 mr-2 mt-2"
-              disabled=""
-            >
-              <svg
-                class="fill-current mr-2 h-6 w-6 text-white dark:text-white"
-                enable-background="new 0 0 100 100"
-                id="L7"
-                version="1.1"
-                viewBox="0 0 100 100"
-                x="0px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                y="0px"
-              >
-                <path
-                  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="1s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="-360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-              </svg>
-              <span>
-                default
-              </span>
-            </button>
-          </div>
-          <div
-            class="flex flex-wrap"
-          >
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-cyan-500 dark:border-cyan-400
-          hover:border-cyan-600 dark:hover:border-cyan-500
-          shadow-md hover:shadow-xl
-           text-cyan-500 dark:text-cyan-400
-              hover:text-cyan-600 dark:text:border-cyan-500 mr-2 mt-2"
-              disabled=""
-            >
-              <svg
-                class="fill-current mr-2 h-6 w-6 text-cyan-500 dark:text-cyan-400"
-                enable-background="new 0 0 100 100"
-                id="L7"
-                version="1.1"
-                viewBox="0 0 100 100"
-                x="0px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                y="0px"
-              >
-                <path
-                  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="1s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="-360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-              </svg>
-              <span>
-                primary
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-violet-500 dark:border-violet-400
-          hover:border-violet-600 dark:hover:border-violet-500
-          shadow-md hover:shadow-xl
-           text-violet-500 dark:text-violet-400
-              hover:text-violet-600 dark:text:border-violet-500 mr-2 mt-2"
-              disabled=""
-            >
-              <svg
-                class="fill-current mr-2 h-6 w-6 text-violet-500 dark:text-violet-400"
-                enable-background="new 0 0 100 100"
-                id="L7"
-                version="1.1"
-                viewBox="0 0 100 100"
-                x="0px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                y="0px"
-              >
-                <path
-                  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="1s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="-360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-              </svg>
-              <span>
-                secondary
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-green-500 dark:border-green-400
-          hover:border-green-600 dark:hover:border-green-500
-          shadow-md hover:shadow-xl
-           text-green-500 dark:text-green-400
-              hover:text-green-600 dark:text:border-green-500 mr-2 mt-2"
-              disabled=""
-            >
-              <svg
-                class="fill-current mr-2 h-6 w-6 text-green-500 dark:text-green-400"
-                enable-background="new 0 0 100 100"
-                id="L7"
-                version="1.1"
-                viewBox="0 0 100 100"
-                x="0px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                y="0px"
-              >
-                <path
-                  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="1s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="-360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-              </svg>
-              <span>
-                success
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-orange-500 dark:border-orange-400
-          hover:border-orange-600 dark:hover:border-orange-500
-          shadow-md hover:shadow-xl
-           text-orange-500 dark:text-orange-400
-              hover:text-orange-600 dark:text:border-orange-500 mr-2 mt-2"
-              disabled=""
-            >
-              <svg
-                class="fill-current mr-2 h-6 w-6 text-orange-500 dark:text-orange-400"
-                enable-background="new 0 0 100 100"
-                id="L7"
-                version="1.1"
-                viewBox="0 0 100 100"
-                x="0px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                y="0px"
-              >
-                <path
-                  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="1s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="-360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-              </svg>
-              <span>
-                warning
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-red-500 dark:border-red-400
-          hover:border-red-600 dark:hover:border-red-500
-          shadow-md hover:shadow-xl
-           text-red-500 dark:text-red-400
-              hover:text-red-600 dark:text:border-red-500 mr-2 mt-2"
-              disabled=""
-            >
-              <svg
-                class="fill-current mr-2 h-6 w-6 text-red-500 dark:text-red-400"
-                enable-background="new 0 0 100 100"
-                id="L7"
-                version="1.1"
-                viewBox="0 0 100 100"
-                x="0px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                y="0px"
-              >
-                <path
-                  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="1s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="-360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-              </svg>
-              <span>
-                error
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-cyan-500 dark:border-cyan-400
-          hover:border-cyan-600 dark:hover:border-cyan-500
-          shadow-md hover:shadow-xl
-           text-cyan-500 dark:text-cyan-400
-              hover:text-cyan-600 dark:text:border-cyan-500 mr-2 mt-2"
-              disabled=""
-            >
-              <svg
-                class="fill-current mr-2 h-6 w-6 text-cyan-500 dark:text-cyan-400"
-                enable-background="new 0 0 100 100"
-                id="L7"
-                version="1.1"
-                viewBox="0 0 100 100"
-                x="0px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                y="0px"
-              >
-                <path
-                  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="1s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="-360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-              </svg>
-              <span>
-                info
-              </span>
-            </button>
-            <button
-              class="disabled:opacity-50 disabled:cursor-not-allowed rounded-full font-bold 
-          flex items-center justify-center px-4 py-1 marker:py-2
-          border-2 border-gray-500 dark:border-gray-400
-          hover:border-gray-600 dark:hover:border-gray-500
-          shadow-md hover:shadow-xl
-           text-gray-500 dark:text-gray-400
-              hover:text-gray-600 dark:text:border-gray-500 mr-2 mt-2"
-              disabled=""
-            >
-              <svg
-                class="fill-current mr-2 h-6 w-6 text-gray-500 dark:text-gray-400"
-                enable-background="new 0 0 100 100"
-                id="L7"
-                version="1.1"
-                viewBox="0 0 100 100"
-                x="0px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                y="0px"
-              >
-                <path
-                  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="1s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="-360 50 50"
-                    type="rotate"
-                  />
-                </path>
-                <path
-                  d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"
-                >
-                  <animatetransform
-                    attributeName="transform"
-                    attributeType="XML"
-                    dur="2s"
-                    from="0 50 50"
-                    repeatCount="indefinite"
-                    to="360 50 50"
-                    type="rotate"
-                  />
-                </path>
-              </svg>
-              <span>
-                default
-              </span>
-            </button>
-          </div>
-        </div>
+          primary
+        </button>
+        <button
+          class="btn rounded-full btn-secondary m-1"
+          type="button"
+        >
+          secondary
+        </button>
+        <button
+          class="btn rounded-full btn-accent m-1"
+          type="button"
+        >
+          accent
+        </button>
+        <button
+          class="btn rounded-full m-1"
+          type="button"
+        >
+          neutral
+        </button>
+        <button
+          class="btn rounded-full dark:hover:bg-gray-600 btn-ghost m-1"
+          type="button"
+        >
+          ghost
+        </button>
+        <button
+          class="btn rounded-full btn-link m-1"
+          type="button"
+        >
+          link
+        </button>
+        <br />
+        <button
+          class="btn rounded-full dark:text-gray-500 btn-primary m-1"
+          disabled=""
+          type="button"
+        >
+          disabled
+        </button>
+        <button
+          class="btn rounded-full dark:text-gray-500 btn-primary m-1"
+          disabled=""
+          type="button"
+        >
+          disabled
+        </button>
+        <br />
+        <button
+          class="btn rounded-full bg-gradient-to-r from-primary to-secondary border-0 hover:from-primary-focus hover:to-secondary-focus btn-primary loading m-1"
+          type="button"
+        >
+          loading
+        </button>
+        <button
+          class="btn rounded-full btn-primary loading m-1"
+          type="button"
+        >
+          loading
+        </button>
+        <button
+          class="btn rounded-full dark:text-gray-500 btn-primary loading m-1"
+          disabled=""
+          type="button"
+        >
+          loading disabled
+        </button>
+        <button
+          class="btn rounded-full dark:text-gray-500 btn-primary loading m-1"
+          disabled=""
+          type="button"
+        >
+          loading disabled
+        </button>
       </div>
     </div>
     <div
-      class="bg-white dark:bg-gray-800 shadow-xl p-2 rounded-md mt-2"
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
     >
       <div
-        class="font-semibold -mx-2 -mt-2 rounded-t-md p-2 bg-gradient-to-r 
-              from-cyan-500 to-violet-500 
-              dark:from-cyan-400 dark:to-violet-400
-            text-white dark:text-gray-100"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
       >
         Checkbox
       </div>
       <div
-        class=""
+        class="p-2"
       >
         <div
-          class="pt-2 flex"
+          class="form-control"
         >
           <label
-            class="flex items-center mr-2"
-            for="checkbox-primary"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-cyan-500 dark:checked:bg-cyan-400
-          hover:checked:bg-cyan-600 dark:hover:check:bg-cyan-500
-          checked:focus:bg-cyan-500 dark:checked:focus:bg-cyan-400
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          checked:focus:ring-cyan-500 dark:checked:focus:ring-cyan-400
-           mr-2"
-              id="checkbox-primary"
-              name="checkbox"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              primary
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-secondary"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-violet-500 dark:checked:bg-violet-400
-          hover:checked:bg-violet-600 dark:hover:check:bg-violet-500
-          checked:focus:bg-violet-500 dark:checked:focus:bg-violet-400
-          focus:ring-violet-500 dark:focus:ring-violet-400
-          checked:focus:ring-violet-500 dark:checked:focus:ring-violet-400
-           mr-2"
-              id="checkbox-secondary"
-              name="checkbox"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              secondary
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-success"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-green-500 dark:checked:bg-green-400
-          hover:checked:bg-green-600 dark:hover:check:bg-green-500
-          checked:focus:bg-green-500 dark:checked:focus:bg-green-400
-          focus:ring-green-500 dark:focus:ring-green-400
-          checked:focus:ring-green-500 dark:checked:focus:ring-green-400
-           mr-2"
-              id="checkbox-success"
-              name="checkbox"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              success
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-warning"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-orange-500 dark:checked:bg-orange-400
-          hover:checked:bg-orange-600 dark:hover:check:bg-orange-500
-          checked:focus:bg-orange-500 dark:checked:focus:bg-orange-400
-          focus:ring-orange-500 dark:focus:ring-orange-400
-          checked:focus:ring-orange-500 dark:checked:focus:ring-orange-400
-           mr-2"
-              id="checkbox-warning"
-              name="checkbox"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              warning
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-error"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-red-500 dark:checked:bg-red-400
-          hover:checked:bg-red-600 dark:hover:check:bg-red-500
-          checked:focus:bg-red-500 dark:checked:focus:bg-red-400
-          focus:ring-red-500 dark:focus:ring-red-400
-          checked:focus:ring-red-500 dark:checked:focus:ring-red-400
-           mr-2"
-              id="checkbox-error"
-              name="checkbox"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              error
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-info"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-cyan-500 dark:checked:bg-cyan-400
-          hover:checked:bg-cyan-600 dark:hover:check:bg-cyan-500
-          checked:focus:bg-cyan-500 dark:checked:focus:bg-cyan-400
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          checked:focus:ring-cyan-500 dark:checked:focus:ring-cyan-400
-           mr-2"
-              id="checkbox-info"
-              name="checkbox"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              info
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
             for="checkbox-default"
           >
             <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-gray-500 dark:checked:bg-gray-400
-          hover:checked:bg-gray-600 dark:hover:check:bg-gray-500
-          checked:focus:bg-gray-500 dark:checked:focus:bg-gray-400
-          focus:ring-gray-500 dark:focus:ring-gray-400
-          checked:focus:ring-gray-500 dark:checked:focus:ring-gray-400
-           mr-2"
+              checked=""
+              class="checkbox dark:border-gray-600"
               id="checkbox-default"
-              name="checkbox"
               type="checkbox"
             />
             <span
-              class="text-gray-700 dark:text-white font-normal"
+              class="label-text ml-2 dark:text-gray-300"
             >
               default
             </span>
           </label>
-        </div>
-        <div
-          class="pt-2 flex"
-        >
           <label
-            class="flex items-center mr-2"
-            for="checkbox-primary-checked"
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="checkbox-primary"
           >
             <input
               checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-cyan-500 dark:checked:bg-cyan-400
-          hover:checked:bg-cyan-600 dark:hover:check:bg-cyan-500
-          checked:focus:bg-cyan-500 dark:checked:focus:bg-cyan-400
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          checked:focus:ring-cyan-500 dark:checked:focus:ring-cyan-400
-           mr-2"
-              id="checkbox-primary-checked"
-              name="checkbox-checked"
+              class="checkbox dark:border-gray-600 checkbox-primary"
+              id="checkbox-primary"
               type="checkbox"
             />
             <span
-              class="text-gray-700 dark:text-white font-normal"
+              class="label-text ml-2 dark:text-gray-300"
             >
               primary
             </span>
           </label>
           <label
-            class="flex items-center mr-2"
-            for="checkbox-secondary-checked"
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="checkbox-secondary"
           >
             <input
               checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-violet-500 dark:checked:bg-violet-400
-          hover:checked:bg-violet-600 dark:hover:check:bg-violet-500
-          checked:focus:bg-violet-500 dark:checked:focus:bg-violet-400
-          focus:ring-violet-500 dark:focus:ring-violet-400
-          checked:focus:ring-violet-500 dark:checked:focus:ring-violet-400
-           mr-2"
-              id="checkbox-secondary-checked"
-              name="checkbox-checked"
+              class="checkbox dark:border-gray-600 checkbox-secondary"
+              id="checkbox-secondary"
               type="checkbox"
             />
             <span
-              class="text-gray-700 dark:text-white font-normal"
+              class="label-text ml-2 dark:text-gray-300"
             >
               secondary
             </span>
           </label>
           <label
-            class="flex items-center mr-2"
-            for="checkbox-success-checked"
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="checkbox-accent"
           >
             <input
               checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-green-500 dark:checked:bg-green-400
-          hover:checked:bg-green-600 dark:hover:check:bg-green-500
-          checked:focus:bg-green-500 dark:checked:focus:bg-green-400
-          focus:ring-green-500 dark:focus:ring-green-400
-          checked:focus:ring-green-500 dark:checked:focus:ring-green-400
-           mr-2"
-              id="checkbox-success-checked"
-              name="checkbox-checked"
+              class="checkbox dark:border-gray-600 checkbox-accent"
+              id="checkbox-accent"
               type="checkbox"
             />
             <span
-              class="text-gray-700 dark:text-white font-normal"
+              class="label-text ml-2 dark:text-gray-300"
             >
-              success
+              accent
             </span>
           </label>
           <label
-            class="flex items-center mr-2"
-            for="checkbox-warning-checked"
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="checkbox-disabled"
           >
             <input
-              checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-orange-500 dark:checked:bg-orange-400
-          hover:checked:bg-orange-600 dark:hover:check:bg-orange-500
-          checked:focus:bg-orange-500 dark:checked:focus:bg-orange-400
-          focus:ring-orange-500 dark:focus:ring-orange-400
-          checked:focus:ring-orange-500 dark:checked:focus:ring-orange-400
-           mr-2"
-              id="checkbox-warning-checked"
-              name="checkbox-checked"
+              class="checkbox dark:border-gray-600 checkbox-primary"
+              disabled=""
+              id="checkbox-disabled"
               type="checkbox"
             />
             <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              warning
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-error-checked"
-          >
-            <input
-              checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-red-500 dark:checked:bg-red-400
-          hover:checked:bg-red-600 dark:hover:check:bg-red-500
-          checked:focus:bg-red-500 dark:checked:focus:bg-red-400
-          focus:ring-red-500 dark:focus:ring-red-400
-          checked:focus:ring-red-500 dark:checked:focus:ring-red-400
-           mr-2"
-              id="checkbox-error-checked"
-              name="checkbox-checked"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              error
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-info-checked"
-          >
-            <input
-              checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-cyan-500 dark:checked:bg-cyan-400
-          hover:checked:bg-cyan-600 dark:hover:check:bg-cyan-500
-          checked:focus:bg-cyan-500 dark:checked:focus:bg-cyan-400
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          checked:focus:ring-cyan-500 dark:checked:focus:ring-cyan-400
-           mr-2"
-              id="checkbox-info-checked"
-              name="checkbox-checked"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              info
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-default-checked"
-          >
-            <input
-              checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-gray-500 dark:checked:bg-gray-400
-          hover:checked:bg-gray-600 dark:hover:check:bg-gray-500
-          checked:focus:bg-gray-500 dark:checked:focus:bg-gray-400
-          focus:ring-gray-500 dark:focus:ring-gray-400
-          checked:focus:ring-gray-500 dark:checked:focus:ring-gray-400
-           mr-2"
-              id="checkbox-default-checked"
-              name="checkbox-checked"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              default
-            </span>
-          </label>
-        </div>
-        <div
-          class="pt-2 flex"
-        >
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-primary-disabled"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-cyan-500 dark:checked:bg-cyan-400
-          hover:checked:bg-cyan-600 dark:hover:check:bg-cyan-500
-          checked:focus:bg-cyan-500 dark:checked:focus:bg-cyan-400
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          checked:focus:ring-cyan-500 dark:checked:focus:ring-cyan-400
-           mr-2"
-              disabled=""
-              id="checkbox-primary-disabled"
-              name="checkbox-disabled"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              primary
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-secondary-disabled"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-violet-500 dark:checked:bg-violet-400
-          hover:checked:bg-violet-600 dark:hover:check:bg-violet-500
-          checked:focus:bg-violet-500 dark:checked:focus:bg-violet-400
-          focus:ring-violet-500 dark:focus:ring-violet-400
-          checked:focus:ring-violet-500 dark:checked:focus:ring-violet-400
-           mr-2"
-              disabled=""
-              id="checkbox-secondary-disabled"
-              name="checkbox-disabled"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              secondary
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-success-disabled"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-green-500 dark:checked:bg-green-400
-          hover:checked:bg-green-600 dark:hover:check:bg-green-500
-          checked:focus:bg-green-500 dark:checked:focus:bg-green-400
-          focus:ring-green-500 dark:focus:ring-green-400
-          checked:focus:ring-green-500 dark:checked:focus:ring-green-400
-           mr-2"
-              disabled=""
-              id="checkbox-success-disabled"
-              name="checkbox-disabled"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              success
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-warning-disabled"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-orange-500 dark:checked:bg-orange-400
-          hover:checked:bg-orange-600 dark:hover:check:bg-orange-500
-          checked:focus:bg-orange-500 dark:checked:focus:bg-orange-400
-          focus:ring-orange-500 dark:focus:ring-orange-400
-          checked:focus:ring-orange-500 dark:checked:focus:ring-orange-400
-           mr-2"
-              disabled=""
-              id="checkbox-warning-disabled"
-              name="checkbox-disabled"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              warning
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-error-disabled"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-red-500 dark:checked:bg-red-400
-          hover:checked:bg-red-600 dark:hover:check:bg-red-500
-          checked:focus:bg-red-500 dark:checked:focus:bg-red-400
-          focus:ring-red-500 dark:focus:ring-red-400
-          checked:focus:ring-red-500 dark:checked:focus:ring-red-400
-           mr-2"
-              disabled=""
-              id="checkbox-error-disabled"
-              name="checkbox-disabled"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              error
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-info-disabled"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-cyan-500 dark:checked:bg-cyan-400
-          hover:checked:bg-cyan-600 dark:hover:check:bg-cyan-500
-          checked:focus:bg-cyan-500 dark:checked:focus:bg-cyan-400
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          checked:focus:ring-cyan-500 dark:checked:focus:ring-cyan-400
-           mr-2"
-              disabled=""
-              id="checkbox-info-disabled"
-              name="checkbox-disabled"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              info
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-default-disabled"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-gray-500 dark:checked:bg-gray-400
-          hover:checked:bg-gray-600 dark:hover:check:bg-gray-500
-          checked:focus:bg-gray-500 dark:checked:focus:bg-gray-400
-          focus:ring-gray-500 dark:focus:ring-gray-400
-          checked:focus:ring-gray-500 dark:checked:focus:ring-gray-400
-           mr-2"
-              disabled=""
-              id="checkbox-default-disabled"
-              name="checkbox-disabled"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              default
-            </span>
-          </label>
-        </div>
-        <div
-          class="pt-2 flex"
-        >
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-primary-disabled-checked"
-          >
-            <input
-              checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-cyan-500 dark:checked:bg-cyan-400
-          hover:checked:bg-cyan-600 dark:hover:check:bg-cyan-500
-          checked:focus:bg-cyan-500 dark:checked:focus:bg-cyan-400
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          checked:focus:ring-cyan-500 dark:checked:focus:ring-cyan-400
-           mr-2"
-              disabled=""
-              id="checkbox-primary-disabled-checked"
-              name="checkbox-disabled-checked"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              primary
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-secondary-disabled-checked"
-          >
-            <input
-              checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-violet-500 dark:checked:bg-violet-400
-          hover:checked:bg-violet-600 dark:hover:check:bg-violet-500
-          checked:focus:bg-violet-500 dark:checked:focus:bg-violet-400
-          focus:ring-violet-500 dark:focus:ring-violet-400
-          checked:focus:ring-violet-500 dark:checked:focus:ring-violet-400
-           mr-2"
-              disabled=""
-              id="checkbox-secondary-disabled-checked"
-              name="checkbox-disabled-checked"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              secondary
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-success-disabled-checked"
-          >
-            <input
-              checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-green-500 dark:checked:bg-green-400
-          hover:checked:bg-green-600 dark:hover:check:bg-green-500
-          checked:focus:bg-green-500 dark:checked:focus:bg-green-400
-          focus:ring-green-500 dark:focus:ring-green-400
-          checked:focus:ring-green-500 dark:checked:focus:ring-green-400
-           mr-2"
-              disabled=""
-              id="checkbox-success-disabled-checked"
-              name="checkbox-disabled-checked"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              success
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-warning-disabled-checked"
-          >
-            <input
-              checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-orange-500 dark:checked:bg-orange-400
-          hover:checked:bg-orange-600 dark:hover:check:bg-orange-500
-          checked:focus:bg-orange-500 dark:checked:focus:bg-orange-400
-          focus:ring-orange-500 dark:focus:ring-orange-400
-          checked:focus:ring-orange-500 dark:checked:focus:ring-orange-400
-           mr-2"
-              disabled=""
-              id="checkbox-warning-disabled-checked"
-              name="checkbox-disabled-checked"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              warning
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-error-disabled-checked"
-          >
-            <input
-              checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-red-500 dark:checked:bg-red-400
-          hover:checked:bg-red-600 dark:hover:check:bg-red-500
-          checked:focus:bg-red-500 dark:checked:focus:bg-red-400
-          focus:ring-red-500 dark:focus:ring-red-400
-          checked:focus:ring-red-500 dark:checked:focus:ring-red-400
-           mr-2"
-              disabled=""
-              id="checkbox-error-disabled-checked"
-              name="checkbox-disabled-checked"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              error
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-info-disabled-checked"
-          >
-            <input
-              checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-cyan-500 dark:checked:bg-cyan-400
-          hover:checked:bg-cyan-600 dark:hover:check:bg-cyan-500
-          checked:focus:bg-cyan-500 dark:checked:focus:bg-cyan-400
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          checked:focus:ring-cyan-500 dark:checked:focus:ring-cyan-400
-           mr-2"
-              disabled=""
-              id="checkbox-info-disabled-checked"
-              name="checkbox-disabled-checked"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              info
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="checkbox-default-disabled-checked"
-          >
-            <input
-              checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none
-          checked:bg-gray-500 dark:checked:bg-gray-400
-          hover:checked:bg-gray-600 dark:hover:check:bg-gray-500
-          checked:focus:bg-gray-500 dark:checked:focus:bg-gray-400
-          focus:ring-gray-500 dark:focus:ring-gray-400
-          checked:focus:ring-gray-500 dark:checked:focus:ring-gray-400
-           mr-2"
-              disabled=""
-              id="checkbox-default-disabled-checked"
-              name="checkbox-disabled-checked"
-              type="checkbox"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              default
-            </span>
-          </label>
-        </div>
-      </div>
-    </div>
-    <div
-      class="bg-white dark:bg-gray-800 shadow-xl p-2 rounded-md mt-2"
-    >
-      <div
-        class="font-semibold -mx-2 -mt-2 rounded-t-md p-2 bg-gradient-to-r 
-              from-cyan-500 to-violet-500 
-              dark:from-cyan-400 dark:to-violet-400
-            text-white dark:text-gray-100"
-      >
-        Radio
-      </div>
-      <div
-        class=""
-      >
-        <div
-          class="pt-2 flex"
-        >
-          <label
-            class="flex items-center mr-2"
-            for="radio-primary"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-cyan-500 dark:checked:bg-cyan-400
-          hover:checked:bg-cyan-600 dark:hover:check:bg-cyan-500
-          checked:focus:bg-cyan-500 dark:checked:focus:bg-cyan-400
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          checked:focus:ring-cyan-500 dark:checked:focus:ring-cyan-400
-           mr-2"
-              id="radio-primary"
-              name="radio"
-              radiogroup="radio"
-              type="radio"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              primary
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="radio-secondary"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-violet-500 dark:checked:bg-violet-400
-          hover:checked:bg-violet-600 dark:hover:check:bg-violet-500
-          checked:focus:bg-violet-500 dark:checked:focus:bg-violet-400
-          focus:ring-violet-500 dark:focus:ring-violet-400
-          checked:focus:ring-violet-500 dark:checked:focus:ring-violet-400
-           mr-2"
-              id="radio-secondary"
-              name="radio"
-              radiogroup="radio"
-              type="radio"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              secondary
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="radio-success"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-green-500 dark:checked:bg-green-400
-          hover:checked:bg-green-600 dark:hover:check:bg-green-500
-          checked:focus:bg-green-500 dark:checked:focus:bg-green-400
-          focus:ring-green-500 dark:focus:ring-green-400
-          checked:focus:ring-green-500 dark:checked:focus:ring-green-400
-           mr-2"
-              id="radio-success"
-              name="radio"
-              radiogroup="radio"
-              type="radio"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              success
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="radio-warning"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-orange-500 dark:checked:bg-orange-400
-          hover:checked:bg-orange-600 dark:hover:check:bg-orange-500
-          checked:focus:bg-orange-500 dark:checked:focus:bg-orange-400
-          focus:ring-orange-500 dark:focus:ring-orange-400
-          checked:focus:ring-orange-500 dark:checked:focus:ring-orange-400
-           mr-2"
-              id="radio-warning"
-              name="radio"
-              radiogroup="radio"
-              type="radio"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              warning
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="radio-error"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-red-500 dark:checked:bg-red-400
-          hover:checked:bg-red-600 dark:hover:check:bg-red-500
-          checked:focus:bg-red-500 dark:checked:focus:bg-red-400
-          focus:ring-red-500 dark:focus:ring-red-400
-          checked:focus:ring-red-500 dark:checked:focus:ring-red-400
-           mr-2"
-              id="radio-error"
-              name="radio"
-              radiogroup="radio"
-              type="radio"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              error
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="radio-info"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-cyan-500 dark:checked:bg-cyan-400
-          hover:checked:bg-cyan-600 dark:hover:check:bg-cyan-500
-          checked:focus:bg-cyan-500 dark:checked:focus:bg-cyan-400
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          checked:focus:ring-cyan-500 dark:checked:focus:ring-cyan-400
-           mr-2"
-              id="radio-info"
-              name="radio"
-              radiogroup="radio"
-              type="radio"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              info
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="radio-default"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-gray-500 dark:checked:bg-gray-400
-          hover:checked:bg-gray-600 dark:hover:check:bg-gray-500
-          checked:focus:bg-gray-500 dark:checked:focus:bg-gray-400
-          focus:ring-gray-500 dark:focus:ring-gray-400
-          checked:focus:ring-gray-500 dark:checked:focus:ring-gray-400
-           mr-2"
-              id="radio-default"
-              name="radio"
-              radiogroup="radio"
-              type="radio"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              default
-            </span>
-          </label>
-        </div>
-        <div
-          class="pt-2 flex"
-        >
-          <label
-            class="flex items-center mr-2"
-            for="radio-primary-disabled"
-          >
-            <input
-              checked=""
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-cyan-500 dark:checked:bg-cyan-400
-          hover:checked:bg-cyan-600 dark:hover:check:bg-cyan-500
-          checked:focus:bg-cyan-500 dark:checked:focus:bg-cyan-400
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          checked:focus:ring-cyan-500 dark:checked:focus:ring-cyan-400
-           mr-2"
-              disabled=""
-              id="radio-primary-disabled"
-              name="radio-disabled"
-              radiogroup="radio-disabled"
-              type="radio"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              primary
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="radio-secondary-disabled"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-violet-500 dark:checked:bg-violet-400
-          hover:checked:bg-violet-600 dark:hover:check:bg-violet-500
-          checked:focus:bg-violet-500 dark:checked:focus:bg-violet-400
-          focus:ring-violet-500 dark:focus:ring-violet-400
-          checked:focus:ring-violet-500 dark:checked:focus:ring-violet-400
-           mr-2"
-              disabled=""
-              id="radio-secondary-disabled"
-              name="radio-disabled"
-              radiogroup="radio-disabled"
-              type="radio"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              secondary
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="radio-success-disabled"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-green-500 dark:checked:bg-green-400
-          hover:checked:bg-green-600 dark:hover:check:bg-green-500
-          checked:focus:bg-green-500 dark:checked:focus:bg-green-400
-          focus:ring-green-500 dark:focus:ring-green-400
-          checked:focus:ring-green-500 dark:checked:focus:ring-green-400
-           mr-2"
-              disabled=""
-              id="radio-success-disabled"
-              name="radio-disabled"
-              radiogroup="radio-disabled"
-              type="radio"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              success
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="radio-warning-disabled"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-orange-500 dark:checked:bg-orange-400
-          hover:checked:bg-orange-600 dark:hover:check:bg-orange-500
-          checked:focus:bg-orange-500 dark:checked:focus:bg-orange-400
-          focus:ring-orange-500 dark:focus:ring-orange-400
-          checked:focus:ring-orange-500 dark:checked:focus:ring-orange-400
-           mr-2"
-              disabled=""
-              id="radio-warning-disabled"
-              name="radio-disabled"
-              radiogroup="radio-disabled"
-              type="radio"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              warning
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="radio-error-disabled"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-red-500 dark:checked:bg-red-400
-          hover:checked:bg-red-600 dark:hover:check:bg-red-500
-          checked:focus:bg-red-500 dark:checked:focus:bg-red-400
-          focus:ring-red-500 dark:focus:ring-red-400
-          checked:focus:ring-red-500 dark:checked:focus:ring-red-400
-           mr-2"
-              disabled=""
-              id="radio-error-disabled"
-              name="radio-disabled"
-              radiogroup="radio-disabled"
-              type="radio"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              error
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="radio-info-disabled"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-cyan-500 dark:checked:bg-cyan-400
-          hover:checked:bg-cyan-600 dark:hover:check:bg-cyan-500
-          checked:focus:bg-cyan-500 dark:checked:focus:bg-cyan-400
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          checked:focus:ring-cyan-500 dark:checked:focus:ring-cyan-400
-           mr-2"
-              disabled=""
-              id="radio-info-disabled"
-              name="radio-disabled"
-              radiogroup="radio-disabled"
-              type="radio"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              info
-            </span>
-          </label>
-          <label
-            class="flex items-center mr-2"
-            for="radio-default-disabled"
-          >
-            <input
-              class="disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-gray-500 dark:checked:bg-gray-400
-          hover:checked:bg-gray-600 dark:hover:check:bg-gray-500
-          checked:focus:bg-gray-500 dark:checked:focus:bg-gray-400
-          focus:ring-gray-500 dark:focus:ring-gray-400
-          checked:focus:ring-gray-500 dark:checked:focus:ring-gray-400
-           mr-2"
-              disabled=""
-              id="radio-default-disabled"
-              name="radio-disabled"
-              radiogroup="radio-disabled"
-              type="radio"
-            />
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              default
-            </span>
-          </label>
-        </div>
-      </div>
-    </div>
-    <div
-      class="bg-white dark:bg-gray-800 shadow-xl p-2 rounded-md mt-2"
-    >
-      <div
-        class="font-semibold -mx-2 -mt-2 rounded-t-md p-2 bg-gradient-to-r 
-              from-cyan-500 to-violet-500 
-              dark:from-cyan-400 dark:to-violet-400
-            text-white dark:text-gray-100"
-      >
-        input
-      </div>
-      <div
-        class=""
-      >
-        <div
-          class="pt-2 "
-        >
-          <label
-            class="flex items-center"
-            for="input-primary"
-          >
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              primary
-            </span>
-          </label>
-          <input
-            class="disabled:opacity-50 disabled:cursor-not-allowed px-2 py-1
-          bg-transparent border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          focus:border-cyan-500 dark:focus:border-cyan-400
-           mr-2"
-            id="input-primary"
-            name="input"
-            placeholder="primary"
-            type="text"
-          />
-          <label
-            class="flex items-center"
-            for="input-secondary"
-          >
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              secondary
-            </span>
-          </label>
-          <input
-            class="disabled:opacity-50 disabled:cursor-not-allowed px-2 py-1
-          bg-transparent border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          focus:ring-violet-500 dark:focus:ring-violet-400
-          focus:border-violet-500 dark:focus:border-violet-400
-           mr-2"
-            id="input-secondary"
-            name="input"
-            placeholder="secondary"
-            type="text"
-          />
-          <label
-            class="flex items-center"
-            for="input-success"
-          >
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              success
-            </span>
-          </label>
-          <input
-            class="disabled:opacity-50 disabled:cursor-not-allowed px-2 py-1
-          bg-transparent border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          focus:ring-green-500 dark:focus:ring-green-400
-          focus:border-green-500 dark:focus:border-green-400
-           mr-2"
-            id="input-success"
-            name="input"
-            placeholder="success"
-            type="text"
-          />
-          <label
-            class="flex items-center"
-            for="input-warning"
-          >
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              warning
-            </span>
-          </label>
-          <input
-            class="disabled:opacity-50 disabled:cursor-not-allowed px-2 py-1
-          bg-transparent border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          focus:ring-orange-500 dark:focus:ring-orange-400
-          focus:border-orange-500 dark:focus:border-orange-400
-           mr-2"
-            id="input-warning"
-            name="input"
-            placeholder="warning"
-            type="text"
-          />
-          <label
-            class="flex items-center"
-            for="input-error"
-          >
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              error
-            </span>
-          </label>
-          <input
-            class="disabled:opacity-50 disabled:cursor-not-allowed px-2 py-1
-          bg-transparent border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          focus:ring-red-500 dark:focus:ring-red-400
-          focus:border-red-500 dark:focus:border-red-400
-           mr-2"
-            id="input-error"
-            name="input"
-            placeholder="error"
-            type="text"
-          />
-          <label
-            class="flex items-center"
-            for="input-info"
-          >
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              info
-            </span>
-          </label>
-          <input
-            class="disabled:opacity-50 disabled:cursor-not-allowed px-2 py-1
-          bg-transparent border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          focus:border-cyan-500 dark:focus:border-cyan-400
-           mr-2"
-            id="input-info"
-            name="input"
-            placeholder="info"
-            type="text"
-          />
-          <label
-            class="flex items-center"
-            for="input-default"
-          >
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              default
-            </span>
-          </label>
-          <input
-            class="disabled:opacity-50 disabled:cursor-not-allowed px-2 py-1
-          bg-transparent border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          focus:ring-gray-500 dark:focus:ring-gray-400
-          focus:border-gray-500 dark:focus:border-gray-400
-           mr-2"
-            id="input-default"
-            name="input"
-            placeholder="default"
-            type="text"
-          />
-        </div>
-        <div
-          class="pt-2"
-        >
-          <label
-            class="flex items-center"
-            for="input-date"
-          >
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              date
-            </span>
-          </label>
-          <input
-            class="disabled:opacity-50 disabled:cursor-not-allowed px-2 py-1
-          bg-transparent border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          focus:border-cyan-500 dark:focus:border-cyan-400
-           mr-2"
-            id="input-date"
-            type="date"
-          />
-          <label
-            class="flex items-center"
-            for="input-number"
-          >
-            <span
-              class="text-gray-700 dark:text-white font-normal"
-            >
-              number
-            </span>
-          </label>
-          <input
-            class="disabled:opacity-50 disabled:cursor-not-allowed px-2 py-1
-          bg-transparent border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          focus:border-cyan-500 dark:focus:border-cyan-400
-           mr-2"
-            id="input-number"
-            type="number"
-          />
-          <label
-            class="flex items-center"
-            for="input-disabled"
-          >
-            <span
-              class="text-gray-700 dark:text-white font-normal"
+              class="label-text ml-2 dark:text-gray-300"
             >
               disabled
             </span>
           </label>
-          <input
-            class="disabled:opacity-50 disabled:cursor-not-allowed px-2 py-1
-          bg-transparent border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          focus:ring-cyan-500 dark:focus:ring-cyan-400
-          focus:border-cyan-500 dark:focus:border-cyan-400
-           mr-2"
-            disabled=""
-            id="input-disabled"
-            name="input"
-            type="text"
-            value="disabled"
-          />
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="checkbox-disabled-checked"
+          >
+            <input
+              checked=""
+              class="checkbox dark:border-gray-600 checkbox-primary"
+              disabled=""
+              id="checkbox-disabled-checked"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              disabled checked
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+      >
+        Radio sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="radio-default"
+          >
+            <input
+              checked=""
+              class="radio dark:border-gray-600"
+              id="radio-default"
+              name="radio"
+              type="radio"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              default
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="radio-primary"
+          >
+            <input
+              class="radio dark:border-gray-600 radio-primary"
+              id="radio-primary"
+              name="radio"
+              type="radio"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              primary
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="radio-secondary"
+          >
+            <input
+              class="radio dark:border-gray-600 radio-secondary"
+              id="radio-secondary"
+              name="radio"
+              type="radio"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              secondary
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="radio-accent"
+          >
+            <input
+              class="radio dark:border-gray-600 radio-accent"
+              id="radio-accent"
+              name="radio"
+              type="radio"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              accent
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="radio-disabled"
+          >
+            <input
+              class="radio dark:border-gray-600 radio-primary"
+              disabled=""
+              id="radio-disabled"
+              name="radio"
+              type="radio"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              disabled
+            </span>
+          </label>
         </div>
       </div>
     </div>

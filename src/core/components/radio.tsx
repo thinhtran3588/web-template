@@ -1,36 +1,37 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import clsx from 'clsx';
-import {forwardRef} from 'react';
-import {useSelector} from 'react-redux';
+import {forwardRef, HTMLAttributes, LabelHTMLAttributes} from 'react';
 import type {InputHTMLAttributes, DetailedHTMLProps} from 'react';
-import type {Color} from '@core/interfaces';
-import {RootState} from '@store';
+import clsx from 'clsx';
 
 export type RadioProps = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> & {
-  color?: Color;
+  title?: string;
+  containerAttributes?: LabelHTMLAttributes<HTMLLabelElement>;
+  titleAttributes?: HTMLAttributes<HTMLSpanElement>;
 };
 
 export const Radio = forwardRef<HTMLInputElement>((props: RadioProps, ref): JSX.Element => {
-  const {className, color = 'default', ...other} = props;
-  const colors = useSelector((state: RootState) => state.settings.colors);
-  const radioColor = color === 'default' ? 'gray' : colors[color];
-
+  const {containerAttributes, titleAttributes, title, id, className, ...other} = props;
+  const {className: labelClassName, htmlFor, ...otherContainerAttributes} = containerAttributes || {};
+  const {className: spanClassName, ...otherTitleAttributes} = titleAttributes || {};
   return (
-    <input
-      type='radio'
-      ref={ref}
+    <label
       className={clsx(
-        `disabled:opacity-50 disabled:cursor-not-allowed
-          bg-transparent h-6 w-6 border border-gray-300 rounded-full checked:border-transparent focus:outline-none
-          checked:bg-${radioColor}-500 dark:checked:bg-${radioColor}-400
-          hover:checked:bg-${radioColor}-600 dark:hover:check:bg-${radioColor}-500
-          checked:focus:bg-${radioColor}-500 dark:checked:focus:bg-${radioColor}-400
-          focus:ring-${radioColor}-500 dark:focus:ring-${radioColor}-400
-          checked:focus:ring-${radioColor}-500 dark:checked:focus:ring-${radioColor}-400
-          `,
-        className,
+        'cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700',
+        labelClassName || '',
       )}
-      {...other}
-    />
+      htmlFor={htmlFor || id}
+      {...otherContainerAttributes}
+    >
+      <input
+        ref={ref}
+        id={id}
+        type='radio'
+        className={clsx('radio dark:border-gray-600', className || '')}
+        {...other}
+      />
+      <span className={clsx('label-text ml-2 dark:text-gray-300', spanClassName || '')} {...otherTitleAttributes}>
+        {title}
+      </span>
+    </label>
   );
-}) as unknown as (props: RadioProps) => JSX.Element;
+}) as (props: RadioProps) => JSX.Element;

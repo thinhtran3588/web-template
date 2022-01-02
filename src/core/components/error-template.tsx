@@ -26,7 +26,7 @@ export const ErrorTemplate = (props: ErrorTemplateProps): JSX.Element => {
             {message || getI18nText(SITE_I18N_TEXT, 'ERROR_SOMETHING_WENT_WRONG', router)}
           </h1>
           <p className='font-extrabold text-8xl text-white animate-bounce mt-10'>{code}</p>
-          <Button className='mt-10' onClick={backToHomepage}>
+          <Button className='mt-10 btn-primary' onClick={backToHomepage}>
             {getI18nText(SITE_I18N_TEXT, 'BACK_TO_HOMEPAGE', router)}
           </Button>
         </div>

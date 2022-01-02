@@ -5,7 +5,7 @@ import SITE_I18N_TEXT from '@locales/site.json';
 import {getI18nText} from '@core/helpers/get-i18n-text';
 import {LocaleSettingsContainer} from './components/locale-settings-container';
 import {ThemeSettingsContainer} from './components/theme-settings-container';
-import {ColorsSettingsContainer} from './components/colors-settings-container';
+import {ThemeColorPackSettingsContainer} from './components/theme-color-pack-settings-container';
 
 export const Settings: NextPage = (): JSX.Element => {
   const router = useRouter();
@@ -14,7 +14,7 @@ export const Settings: NextPage = (): JSX.Element => {
       <Seo title={getI18nText(SITE_I18N_TEXT, 'TAB_SETTINGS', router)} />
       <LocaleSettingsContainer />
       <ThemeSettingsContainer />
-      <ColorsSettingsContainer />
+      <ThemeColorPackSettingsContainer />
     </div>
   );
 };

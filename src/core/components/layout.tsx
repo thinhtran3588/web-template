@@ -5,7 +5,6 @@ import CogIcon from '@heroicons/react/outline/CogIcon';
 import CogIconSolid from '@heroicons/react/solid/CogIcon';
 import type {MenuItem} from '@core/interfaces';
 import {Nav} from './nav';
-import {Seo} from './seo';
 
 const MENU_ITEMS: MenuItem[] = [
   {
@@ -35,7 +34,6 @@ export const Layout = (props: LayoutProps): JSX.Element => {
 
   return (
     <div className='font-roboto min-h-screen max-h-screen bg-gray-200 dark:bg-gray-900 dark:text-gray-300 flex'>
-      <Seo />
       <Nav menuItems={menuItems} />
       <main className='p-2 pb-14 md:pb-2 flex-1 flex'>{children}</main>
     </div>

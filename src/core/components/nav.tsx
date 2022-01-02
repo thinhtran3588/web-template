@@ -4,8 +4,6 @@ import {useRouter} from 'next/router';
 import {Fragment, useState} from 'react';
 import ChevronLeftIcon from '@heroicons/react/solid/ChevronLeftIcon';
 import ChevronRightIcon from '@heroicons/react/solid/ChevronRightIcon';
-import {useSelector} from 'react-redux';
-import type {RootState} from '@store';
 import type {MenuItem} from '@core/interfaces';
 import {getI18nText} from '@core/helpers/get-i18n-text';
 import SITE_I18N_TEXT from '@locales/site.json';
@@ -21,7 +19,6 @@ export const Nav = (props: NavProps): JSX.Element => {
   const {menuItems} = props;
   const router = useRouter();
   const [expandMenu, setExpandVisible] = useState(true);
-  const colors = useSelector((state: RootState) => state.settings.colors);
 
   const toggleExpandMenu = (): void => {
     setExpandVisible(!expandMenu);
@@ -67,8 +64,8 @@ export const Nav = (props: NavProps): JSX.Element => {
             <a
               className={clsx(
                 `flex flex-col font-semibold flex-1
-                  hover:bg-gray-100 dark:hover:bg-gray-500 md:flex-initial`,
-                item.current ? `text-${colors?.primary}-500 dark:text-${colors?.primary}-400` : ``,
+                  hover:bg-gray-100 dark:hover:bg-gray-700 md:flex-initial`,
+                item.current ? `text-primary` : ``,
               )}
               role='link'
               tabIndex={index}
@@ -93,7 +90,7 @@ export const Nav = (props: NavProps): JSX.Element => {
       <div className='hidden md:flex flex-1 items-end'>
         <div
           className={clsx(
-            'hidden md:block font-semibold text-xl h-12',
+            'font-semibold text-xl h-12 transition-opacity duration-500',
             expandMenu ? 'w-0 opacity-100' : 'w-full opacity-100 p-2',
           )}
         >

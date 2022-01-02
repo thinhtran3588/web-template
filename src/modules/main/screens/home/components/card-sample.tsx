@@ -1,7 +1,7 @@
 import {Card} from '@core/components/card';
 
 export const CardSample = (): JSX.Element => (
-  <Card title='Card'>
+  <Card title='Card sample'>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat ex metus, eu fringilla mi feugiat
       vitae. Proin porta metus risus, at rhoncus mi finibus vehicula. Donec accumsan ex eu sagittis malesuada. Curabitur

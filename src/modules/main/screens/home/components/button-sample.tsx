@@ -1,55 +1,31 @@
+import {Button} from '@core/components/button';
+import {ButtonGradient} from '@core/components/button-gradient';
 import {Card} from '@core/components/card';
-import {Button, ButtonProps} from '@core/components/button';
 
 export const ButtonSample = (): JSX.Element => (
-  <Card title='Button' className='mt-2'>
-    {['contained', 'outline'].map((variant) => (
-      <div className='pt-2 flex' key={variant}>
-        {['primary', 'secondary', 'success', 'warning', 'error', 'info', 'default'].map((color) => (
-          <Button
-            className='mr-2'
-            variant={variant as ButtonProps['variant']}
-            color={color as ButtonProps['color']}
-            key={color}
-          >
-            {color}
-          </Button>
-        ))}
-      </div>
-    ))}
-    <div>
-      {['contained', 'outline'].map((variant) => (
-        <div className='pt-2 flex' key={variant}>
-          {['primary', 'secondary', 'success', 'warning', 'error', 'info', 'default'].map((color) => (
-            <Button
-              className='mr-2'
-              variant={variant as ButtonProps['variant']}
-              color={color as ButtonProps['color']}
-              key={color}
-              disabled
-            >
-              {color}
-            </Button>
-          ))}
-        </div>
-      ))}
-    </div>
-    <div>
-      {['contained', 'outline'].map((variant) => (
-        <div className='flex flex-wrap' key={variant}>
-          {['primary', 'secondary', 'success', 'warning', 'error', 'info', 'default'].map((color) => (
-            <Button
-              className='mr-2 mt-2'
-              variant={variant as ButtonProps['variant']}
-              color={color as ButtonProps['color']}
-              key={color}
-              loading
-            >
-              {color}
-            </Button>
-          ))}
-        </div>
-      ))}
-    </div>
+  <Card title='Button sample' className='mt-2'>
+    <ButtonGradient className='m-1'>gradient</ButtonGradient>
+    <Button className='btn-primary m-1'>primary</Button>
+    <Button className='btn-secondary m-1'>secondary</Button>
+    <Button className='btn-accent m-1'>accent</Button>
+    <Button className='m-1'>neutral</Button>
+    <Button className='btn-ghost m-1'>ghost</Button>
+    <Button className='btn-link m-1'>link</Button>
+    <br />
+    <Button className='btn-primary m-1' disabled>
+      disabled
+    </Button>
+    <ButtonGradient className='btn-primary m-1' disabled>
+      disabled
+    </ButtonGradient>
+    <br />
+    <ButtonGradient className='btn-primary loading m-1'>loading</ButtonGradient>
+    <Button className='btn-primary loading m-1'>loading</Button>
+    <Button className='btn-primary loading m-1' disabled>
+      loading disabled
+    </Button>
+    <ButtonGradient className='btn-primary loading m-1' disabled>
+      loading disabled
+    </ButtonGradient>
   </Card>
 );

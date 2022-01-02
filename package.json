@@ -4,24 +4,25 @@
   "private": true,
   "scripts": {
     "analyze": "ANALYZE=true next build",
-    "build": "yarn generate-color-classes && PWA=false next build",
-    "dev": "yarn generate-color-classes && NODE_ENV=development PORT=3001 next dev",
+    "build": "yarn generate-themes && PWA=true next build",
+    "prod": "yarn generate-themes && PWA=false next build && yarn start",
+    "dev": "yarn generate-themes && NODE_ENV=development PORT=3001 next dev",
     "lint": "prettier --check . && eslint . --ext .js,.jsx,.ts,.tsx && tsc --noEmit",
     "lint-fix": "prettier --write . && eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "start": "next start",
     "test": "jest --watch",
     "test:ci": "jest --ci --coverage",
     "validate": "yarn lint && yarn test:ci",
-    "generate-color-classes": "node scripts/generate-color-classes.js"
+    "generate-themes": "node scripts/generate-themes.js"
   },
   "dependencies": {
-    "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
     "@next/bundle-analyzer": "^12.0.1",
     "@rematch/core": "^2.2.0",
     "@rematch/immer": "^2.1.3",
     "@rematch/persist": "^2.1.2",
     "clsx": "^1.1.1",
+    "daisyui": "^1.21.0",
     "immer": "^9.0.7",
     "lodash": "^4.17.21",
     "next": "12.0.7",
@@ -30,7 +31,8 @@
     "react-dom": "17.0.2",
     "react-redux": "^7.2.6",
     "react-scroll": "^1.8.4",
-    "redux-persist": "^6.0.0"
+    "redux-persist": "^6.0.0",
+    "theme-change": "^2.0.2"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.0.1",
@@ -42,6 +44,7 @@
     "@types/node": "16.11.6",
     "@types/react": "17.0.33",
     "@types/react-scroll": "^1.8.3",
+    "@types/tailwindcss": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
     "autoprefixer": "^10.4.1",
