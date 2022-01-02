@@ -3,6 +3,7 @@ import {getI18nText} from '@core/helpers/get-i18n-text';
 import SITE_I18N_TEXT from '@locales/site.json';
 import {useRouter} from 'next/router';
 import {Button} from './button';
+import {ButtonGradient} from './button-gradient';
 
 interface ErrorTemplateProps {
   code?: string;
@@ -26,9 +27,9 @@ export const ErrorTemplate = (props: ErrorTemplateProps): JSX.Element => {
             {message || getI18nText(SITE_I18N_TEXT, 'ERROR_SOMETHING_WENT_WRONG', router)}
           </h1>
           <p className='font-extrabold text-8xl text-white animate-bounce mt-10'>{code}</p>
-          <Button className='mt-10 btn-primary' onClick={backToHomepage}>
+          <ButtonGradient className='mt-10' onClick={backToHomepage}>
             {getI18nText(SITE_I18N_TEXT, 'BACK_TO_HOMEPAGE', router)}
-          </Button>
+          </ButtonGradient>
         </div>
       </div>
     </div>
