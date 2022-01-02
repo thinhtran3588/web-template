@@ -2,7 +2,6 @@
 import {getI18nText} from '@core/helpers/get-i18n-text';
 import SITE_I18N_TEXT from '@locales/site.json';
 import {useRouter} from 'next/router';
-import {Button} from './button';
 import {ButtonGradient} from './button-gradient';
 
 interface ErrorTemplateProps {

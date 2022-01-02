@@ -1,5 +1,4 @@
 import {Card} from '@core/components/card';
-import {Checkbox} from '@core/components/checkbox';
 import {Radio} from '@core/components/radio';
 import type {ChangeEvent} from 'react';
 
@@ -35,6 +34,7 @@ export const BaseSettings = (props: BaseSettingsProps): JSX.Element => {
           checked={currentValue === option.value}
           onChange={onChange}
           className='radio-primary'
+          key={option.value}
         />
       ))}
     </Card>
