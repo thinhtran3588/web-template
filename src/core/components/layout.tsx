@@ -3,6 +3,8 @@ import TemplateIcon from '@heroicons/react/outline/TemplateIcon';
 import TemplateIconSolid from '@heroicons/react/solid/TemplateIcon';
 import CogIcon from '@heroicons/react/outline/CogIcon';
 import CogIconSolid from '@heroicons/react/solid/CogIcon';
+import CollectionIcon from '@heroicons/react/outline/CollectionIcon';
+import CollectionIconSolid from '@heroicons/react/solid/CollectionIcon';
 import type {MenuItem} from '@core/interfaces';
 import {Nav} from './nav';
 
@@ -13,6 +15,20 @@ const MENU_ITEMS: MenuItem[] = [
     current: false,
     icon: <TemplateIcon className='w-6 h-6' />,
     focusedIcon: <TemplateIconSolid className='w-6 h-6' />,
+  },
+  {
+    key: 'TAB_FORM',
+    href: '/form',
+    current: false,
+    icon: <CollectionIcon className='w-6 h-6' />,
+    focusedIcon: <CollectionIconSolid className='w-6 h-6' />,
+  },
+  {
+    key: 'TAB_FORM_2',
+    href: '/form-2',
+    current: false,
+    icon: <CollectionIcon className='w-6 h-6' />,
+    focusedIcon: <CollectionIconSolid className='w-6 h-6' />,
   },
   {
     key: 'TAB_SETTINGS',

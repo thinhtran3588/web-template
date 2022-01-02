@@ -17,56 +17,53 @@ exports[`Home renders successfully 1`] = `
         class="p-2"
       >
         <label
-          class="inline-flex py-2 pl-2 items-center h-10 w-full cursor-pointer 
-            hover:bg-gray-100 dark:hover:bg-gray-700"
+          class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
           for="rd-theme-light"
         >
           <input
-            class="radio radio-primary radio-sm"
+            class="radio dark:border-gray-600 radio-primary"
             id="rd-theme-light"
             name="theme"
             type="radio"
             value="light"
           />
           <span
-            class="ml-2"
+            class="label-text ml-2 dark:text-gray-300"
           >
             Light
           </span>
         </label>
         <label
-          class="inline-flex py-2 pl-2 items-center h-10 w-full cursor-pointer 
-            hover:bg-gray-100 dark:hover:bg-gray-700"
+          class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
           for="rd-theme-dark"
         >
           <input
-            class="radio radio-primary radio-sm"
+            class="radio dark:border-gray-600 radio-primary"
             id="rd-theme-dark"
             name="theme"
             type="radio"
             value="dark"
           />
           <span
-            class="ml-2"
+            class="label-text ml-2 dark:text-gray-300"
           >
             Dark
           </span>
         </label>
         <label
-          class="inline-flex py-2 pl-2 items-center h-10 w-full cursor-pointer 
-            hover:bg-gray-100 dark:hover:bg-gray-700"
+          class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
           for="rd-theme-"
         >
           <input
             checked=""
-            class="radio radio-primary radio-sm"
+            class="radio dark:border-gray-600 radio-primary"
             id="rd-theme-"
             name="theme"
             type="radio"
             value=""
           />
           <span
-            class="ml-2"
+            class="label-text ml-2 dark:text-gray-300"
           >
             System
           </span>
@@ -440,57 +437,81 @@ exports[`Home renders successfully 1`] = `
         class="p-2"
       >
         <button
-          class="btn rounded-full bg-gradient-to-r from-primary to-secondary border-0 hover:from-primary-focus hover:to-secondary-focus m-1"
+          class="btn rounded-full min-w-10 bg-gradient-to-r from-primary to-secondary border-0 hover:from-primary-focus hover:to-secondary-focus m-1"
           type="button"
         >
           gradient
         </button>
         <button
-          class="btn rounded-full btn-primary m-1"
+          class="btn rounded-full min-w-10 btn-primary m-1"
           type="button"
         >
           primary
         </button>
         <button
-          class="btn rounded-full btn-secondary m-1"
+          class="btn rounded-full min-w-10 btn-secondary m-1"
           type="button"
         >
           secondary
         </button>
         <button
-          class="btn rounded-full btn-accent m-1"
+          class="btn rounded-full min-w-10 btn-accent m-1"
           type="button"
         >
           accent
         </button>
         <button
-          class="btn rounded-full m-1"
+          class="btn rounded-full min-w-10 m-1"
           type="button"
         >
           neutral
         </button>
         <button
-          class="btn rounded-full dark:hover:bg-gray-600 btn-ghost m-1"
+          class="btn rounded-full min-w-10 dark:hover:bg-gray-600 btn-ghost m-1"
           type="button"
         >
           ghost
         </button>
         <button
-          class="btn rounded-full btn-link m-1"
+          class="btn rounded-full min-w-10 btn-link m-1"
           type="button"
         >
           link
         </button>
+        <button
+          class="btn rounded-full min-w-10 btn-success m-1"
+          type="button"
+        >
+          success
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-warning m-1"
+          type="button"
+        >
+          warning
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-error m-1"
+          type="button"
+        >
+          error
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-info m-1"
+          type="button"
+        >
+          info
+        </button>
         <br />
         <button
-          class="btn rounded-full dark:text-gray-500 btn-primary m-1"
+          class="btn rounded-full min-w-10 dark:text-gray-500 btn-primary m-1"
           disabled=""
           type="button"
         >
           disabled
         </button>
         <button
-          class="btn rounded-full dark:text-gray-500 btn-primary m-1"
+          class="btn rounded-full min-w-10 dark:text-gray-500 btn-primary m-1"
           disabled=""
           type="button"
         >
@@ -498,26 +519,26 @@ exports[`Home renders successfully 1`] = `
         </button>
         <br />
         <button
-          class="btn rounded-full bg-gradient-to-r from-primary to-secondary border-0 hover:from-primary-focus hover:to-secondary-focus btn-primary loading m-1"
+          class="btn rounded-full min-w-10 bg-gradient-to-r from-primary to-secondary border-0 hover:from-primary-focus hover:to-secondary-focus btn-primary loading m-1"
           type="button"
         >
           loading
         </button>
         <button
-          class="btn rounded-full btn-primary loading m-1"
+          class="btn rounded-full min-w-10 btn-primary loading m-1"
           type="button"
         >
           loading
         </button>
         <button
-          class="btn rounded-full dark:text-gray-500 btn-primary loading m-1"
+          class="btn rounded-full min-w-10 dark:text-gray-500 btn-primary loading m-1"
           disabled=""
           type="button"
         >
           loading disabled
         </button>
         <button
-          class="btn rounded-full dark:text-gray-500 btn-primary loading m-1"
+          class="btn rounded-full min-w-10 dark:text-gray-500 btn-primary loading m-1"
           disabled=""
           type="button"
         >
@@ -735,6 +756,178 @@ exports[`Home renders successfully 1`] = `
               disabled
             </span>
           </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+      >
+        Toggle
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="toggle-default"
+          >
+            <input
+              checked=""
+              class="toggle "
+              id="toggle-default"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              default
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="toggle-primary"
+          >
+            <input
+              checked=""
+              class="toggle  toggle-primary"
+              id="toggle-primary"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              primary
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="toggle-secondary"
+          >
+            <input
+              checked=""
+              class="toggle  toggle-secondary"
+              id="toggle-secondary"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              secondary
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="toggle-accent"
+          >
+            <input
+              checked=""
+              class="toggle  toggle-accent"
+              id="toggle-accent"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              accent
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="toggle-disabled"
+          >
+            <input
+              class="toggle  dark:bg-gray-300 toggle-primary"
+              disabled=""
+              id="toggle-disabled"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              disabled
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="toggle-disabled-checked"
+          >
+            <input
+              checked=""
+              class="toggle  dark:bg-gray-300 toggle-primary"
+              disabled=""
+              id="toggle-disabled-checked"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              disabled checked
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+      >
+        Input sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <input
+            class="input dark:bg-gray-700  input-primary m-1"
+            type="text"
+            value="primary"
+          />
+          <input
+            class="input dark:bg-gray-700  input-secondary m-1"
+            type="text"
+            value="secondary"
+          />
+          <input
+            class="input dark:bg-gray-700  input-accent m-1"
+            type="text"
+            value="accent"
+          />
+          <input
+            class="input dark:bg-gray-700  input-success m-1"
+            type="text"
+            value="success"
+          />
+          <input
+            class="input dark:bg-gray-700  input-warning m-1"
+            type="text"
+            value="warning"
+          />
+          <input
+            class="input dark:bg-gray-700  input-error m-1"
+            type="text"
+            value="error"
+          />
+          <input
+            class="input dark:bg-gray-700  input-info m-1"
+            type="text"
+            value="info"
+          />
+          <input
+            class="input dark:bg-gray-700  dark:text-gray-500 input-primary m-1"
+            disabled=""
+            type="text"
+            value="disabled"
+          />
         </div>
       </div>
     </div>

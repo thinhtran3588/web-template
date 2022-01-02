@@ -13,6 +13,8 @@
     "SITE_DESCRIPTION": "Site description",
     "SITE_NAME": "Web Template",
     "TAB_COMPONENTS": "Components",
+    "TAB_FORM": "Form",
+    "TAB_FORM_2": "Form 2",
     "TAB_HOME": "Home",
     "TAB_SETTINGS": "Settings",
     "VERSION": "Version"
@@ -31,6 +33,8 @@
     "SITE_DESCRIPTION": "Site description",
     "SITE_NAME": "Web Template",
     "TAB_COMPONENTS": "Components",
+    "TAB_FORM": "Form",
+    "TAB_FORM_2": "Form 2",
     "TAB_HOME": "Trang chủ",
     "TAB_SETTINGS": "Cài đặt",
     "VERSION": "Phiên bản"

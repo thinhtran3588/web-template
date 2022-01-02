@@ -11,6 +11,10 @@ export const ButtonSample = (): JSX.Element => (
     <Button className='m-1'>neutral</Button>
     <Button className='btn-ghost m-1'>ghost</Button>
     <Button className='btn-link m-1'>link</Button>
+    <Button className='btn-success m-1'>success</Button>
+    <Button className='btn-warning m-1'>warning</Button>
+    <Button className='btn-error m-1'>error</Button>
+    <Button className='btn-info m-1'>info</Button>
     <br />
     <Button className='btn-primary m-1' disabled>
       disabled

@@ -14,7 +14,7 @@ export const ButtonGradient = forwardRef<HTMLButtonElement>((props: ButtonGradie
       ref={ref}
       type={type}
       className={clsx(
-        `btn rounded-full`,
+        `btn rounded-full min-w-10`,
         className.includes('btn-ghost') ? 'dark:hover:bg-gray-600' : '',
         other.disabled
           ? 'dark:text-gray-500'

@@ -7,6 +7,8 @@ import {CardSample} from './components/card-sample';
 import {ButtonSample} from './components/button-sample';
 import {CheckboxSample} from './components/checkbox-sample';
 import {RadioSample} from './components/radio-sample';
+import {ToggleSample} from './components/toggle-sample';
+import {InputSample} from './components/input-sample';
 
 export const Home: NextPage = (): JSX.Element => (
   <div className='container overflow-auto'>
@@ -30,5 +32,7 @@ export const Home: NextPage = (): JSX.Element => (
     <ButtonSample />
     <CheckboxSample />
     <RadioSample />
+    <ToggleSample />
+    <InputSample />
   </div>
 );
