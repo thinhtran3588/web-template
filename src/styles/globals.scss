@@ -18,16 +18,10 @@ a {
 * {
   box-sizing: border-box;
 }
-
-$primary-color: #2563eb;
-$secondary-color: #7c3aed;
-$primary-color-light: #60a5fa;
-$secondary-color-light: #a78bfa;
-
-.bg-gradient {
-  background: linear-gradient(90deg, $primary-color 0%, $secondary-color 100%);
+/** fix datepicker style*/
+.react-datepicker__triangle::after {
+  left: -140px !important;
 }
-
-.bg-gradient-light {
-  background: linear-gradient(90deg, $primary-color-light 0%, $secondary-color-light 100%);
+.react-datepicker__triangle::before {
+  left: -140px !important;
 }

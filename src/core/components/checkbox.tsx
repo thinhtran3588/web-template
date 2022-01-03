@@ -9,7 +9,7 @@ export type CheckboxProps = DetailedHTMLProps<InputHTMLAttributes<HTMLInputEleme
   titleAttributes?: HTMLAttributes<HTMLSpanElement>;
 };
 
-export const Checkbox = forwardRef<HTMLInputElement>((props: CheckboxProps, ref): JSX.Element => {
+export const Checkbox = forwardRef((props: CheckboxProps, ref): JSX.Element => {
   const {containerAttributes, titleAttributes, title, id, className, ...other} = props;
   const {className: labelClassName, htmlFor, ...otherContainerAttributes} = containerAttributes || {};
   const {className: spanClassName, ...otherTitleAttributes} = titleAttributes || {};

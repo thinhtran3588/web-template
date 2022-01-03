@@ -9,7 +9,7 @@ export type RadioProps = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>
   titleAttributes?: HTMLAttributes<HTMLSpanElement>;
 };
 
-export const Radio = forwardRef<HTMLInputElement>((props: RadioProps, ref): JSX.Element => {
+export const Radio = forwardRef((props: RadioProps, ref): JSX.Element => {
   const {containerAttributes, titleAttributes, title, id, className, ...other} = props;
   const {className: labelClassName, htmlFor, ...otherContainerAttributes} = containerAttributes || {};
   const {className: spanClassName, ...otherTitleAttributes} = titleAttributes || {};

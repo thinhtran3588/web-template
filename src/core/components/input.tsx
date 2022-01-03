@@ -5,14 +5,18 @@ import type {InputHTMLAttributes, DetailedHTMLProps} from 'react';
 
 export type InputProps = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
 
-export const Input = forwardRef<HTMLInputElement>((props: InputProps, ref): JSX.Element => {
+export const Input = forwardRef((props: InputProps, ref): JSX.Element => {
   const {className = '', type = 'text', ...other} = props;
 
   return (
     <input
       ref={ref}
       type={type}
-      className={clsx(`input dark:bg-gray-700 `, other.disabled ? 'dark:text-gray-500' : '', className)}
+      className={clsx(
+        `input input-bordered dark:bg-gray-700 rounded-full`,
+        other.disabled ? 'dark:text-gray-500' : '',
+        className,
+      )}
       {...other}
     />
   );

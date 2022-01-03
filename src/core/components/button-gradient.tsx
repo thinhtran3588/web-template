@@ -6,7 +6,7 @@ import type {ButtonHTMLAttributes, DetailedHTMLProps} from 'react';
 
 export type ButtonGradientProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
 
-export const ButtonGradient = forwardRef<HTMLButtonElement>((props: ButtonGradientProps, ref): JSX.Element => {
+export const ButtonGradient = forwardRef((props: ButtonGradientProps, ref): JSX.Element => {
   const {className = '', type = 'button', children, ...other} = props;
 
   return (

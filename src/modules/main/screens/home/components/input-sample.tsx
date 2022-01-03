@@ -4,6 +4,7 @@ import {Card} from '@core/components/card';
 export const InputSample = (): JSX.Element => (
   <Card title='Input sample' className='mt-2'>
     <div className='form-control'>
+      <Input className='m-1' defaultValue='default' />
       <Input className='input-primary m-1' defaultValue='primary' />
       <Input className='input-secondary m-1' defaultValue='secondary' />
       <Input className='input-accent m-1' defaultValue='accent' />

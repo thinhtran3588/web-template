@@ -377,6 +377,528 @@ exports[`Home renders successfully 1`] = `
       </div>
     </div>
     <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+      >
+        Dropdown sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-primary m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-secondary m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-accent m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-success m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-warning m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-error m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-info m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full input-primary m-1"
+              disabled=""
+              placeholder="(disabled)"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mb-2"
     >
       <div
@@ -406,6 +928,16 @@ exports[`Home renders successfully 1`] = `
             DaisyUI
           </a>
           , most components can be written directly with html tags and css classes except some customized ones. You can check them for full documentation and samples. Below are samples of customized components.
+        </p>
+        <p>
+          For datepicker, use  
+          <a
+            class="link link-primary"
+            href="https://reactdatepicker.com/"
+          >
+            reactdatepicker
+          </a>
+          .
         </p>
       </div>
     </div>
@@ -888,46 +1420,596 @@ exports[`Home renders successfully 1`] = `
           class="form-control"
         >
           <input
-            class="input dark:bg-gray-700  input-primary m-1"
+            class="input input-bordered dark:bg-gray-700 rounded-full m-1"
+            type="text"
+            value="default"
+          />
+          <input
+            class="input input-bordered dark:bg-gray-700 rounded-full input-primary m-1"
             type="text"
             value="primary"
           />
           <input
-            class="input dark:bg-gray-700  input-secondary m-1"
+            class="input input-bordered dark:bg-gray-700 rounded-full input-secondary m-1"
             type="text"
             value="secondary"
           />
           <input
-            class="input dark:bg-gray-700  input-accent m-1"
+            class="input input-bordered dark:bg-gray-700 rounded-full input-accent m-1"
             type="text"
             value="accent"
           />
           <input
-            class="input dark:bg-gray-700  input-success m-1"
+            class="input input-bordered dark:bg-gray-700 rounded-full input-success m-1"
             type="text"
             value="success"
           />
           <input
-            class="input dark:bg-gray-700  input-warning m-1"
+            class="input input-bordered dark:bg-gray-700 rounded-full input-warning m-1"
             type="text"
             value="warning"
           />
           <input
-            class="input dark:bg-gray-700  input-error m-1"
+            class="input input-bordered dark:bg-gray-700 rounded-full input-error m-1"
             type="text"
             value="error"
           />
           <input
-            class="input dark:bg-gray-700  input-info m-1"
+            class="input input-bordered dark:bg-gray-700 rounded-full input-info m-1"
             type="text"
             value="info"
           />
           <input
-            class="input dark:bg-gray-700  dark:text-gray-500 input-primary m-1"
+            class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 input-primary m-1"
             disabled=""
             type="text"
             value="disabled"
           />
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+      >
+        Select sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 m-1"
+            id="select-default"
+            title="default"
+          >
+            <option
+              disabled=""
+              selected=""
+              value=""
+            >
+              Choose your superpower
+            </option>
+            <option
+              value="1"
+            >
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 select-primary m-1"
+            id="select-primary"
+            title="primary"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 select-secondary m-1"
+            id="select-secondary"
+            title="secondary"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 select-accent m-1"
+            id="select-accent"
+            title="accent"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 select-success m-1"
+            id="select-success"
+            title="accent"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 select-warning m-1"
+            id="select-warning"
+            title="accent"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 select-error m-1"
+            id="select-error"
+            title="accent"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 select-info m-1"
+            id="select-info"
+            title="accent"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700  dark:text-gray-500 select-primary m-1"
+            disabled=""
+            id="select-disabled"
+            title="disabled"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+      >
+        TextArea sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 m-1"
+            id="textarea-default"
+            title="default"
+          >
+            default
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-primary m-1"
+            id="textarea-primary"
+            title="primary"
+          >
+            primary
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-secondary m-1"
+            id="textarea-secondary"
+            title="secondary"
+          >
+            secondary
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-accent m-1"
+            id="textarea-accent"
+            title="accent"
+          >
+            accent
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-success m-1"
+            id="textarea-success"
+            title="accent"
+          >
+            success
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-warning m-1"
+            id="textarea-warning"
+            title="accent"
+          >
+            warning
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-error m-1"
+            id="textarea-error"
+            title="accent"
+          >
+            error
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-info m-1"
+            id="textarea-info"
+            title="accent"
+          >
+            info
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700  dark:text-gray-500 textarea-primary m-1"
+            disabled=""
+            id="textarea-disabled"
+            title="disabled"
+          >
+            disabled
+          </textarea>
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+      >
+        Range sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <input
+            class="range dark:bg-gray-600 rounded-full m-1"
+            type="range"
+            value="default"
+          />
+          <input
+            class="range dark:bg-gray-600 rounded-full range-primary m-1"
+            type="range"
+            value="primary"
+          />
+          <input
+            class="range dark:bg-gray-600 rounded-full range-secondary m-1"
+            type="range"
+            value="secondary"
+          />
+          <input
+            class="range dark:bg-gray-600 rounded-full range-accent m-1"
+            type="range"
+            value="accent"
+          />
+          <input
+            class="range dark:bg-gray-600 rounded-full dark:text-gray-500 range-primary m-1"
+            disabled=""
+            type="range"
+            value="disabled"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+      >
+        DatePicker sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                type="text"
+                value="01/01/2022"
+              />
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-primary m-1"
+                type="text"
+                value="01/01/2022"
+              />
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-secondary m-1"
+                type="text"
+                value="2022/01/01"
+              />
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-accent m-1"
+                type="text"
+                value="01/01/2022"
+              />
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-success m-1"
+                type="text"
+                value="01/01/2022"
+              />
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-warning m-1"
+                type="text"
+                value="01/01/2022"
+              />
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-error m-1"
+                type="text"
+                value="01/01/2022"
+              />
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-info m-1"
+                type="text"
+                value="01/01/2022"
+              />
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-disabled m-1"
+                type="text"
+                value="01/01/2022"
+              />
+            </div>
+          </div>
+          <div
+            class=""
+          >
+            Date range
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                type="text"
+                value="01/01/2022"
+              />
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                type="text"
+                value="02/01/2022"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class=""
+        >
+          Time input
+        </div>
+        <div
+          class="react-datepicker-wrapper"
+        >
+          <div
+            class="react-datepicker__input-container"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+              type="text"
+              value="01/01/2022 12:00 AM"
+            />
+          </div>
         </div>
       </div>
     </div>
