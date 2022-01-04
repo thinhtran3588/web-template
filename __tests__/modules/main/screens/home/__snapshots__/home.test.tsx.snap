@@ -9,7 +9,8 @@ exports[`Home renders successfully 1`] = `
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mb-2"
     >
       <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
       >
         Theme
       </div>
@@ -74,7 +75,8 @@ exports[`Home renders successfully 1`] = `
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mb-2"
     >
       <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
       >
         Colors
       </div>
@@ -380,7 +382,8 @@ exports[`Home renders successfully 1`] = `
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
     >
       <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
       >
         Dropdown sample
       </div>
@@ -434,7 +437,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -490,7 +493,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -546,7 +549,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -602,7 +605,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -658,7 +661,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -714,7 +717,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -770,7 +773,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -826,7 +829,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -883,7 +886,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -902,7 +905,8 @@ exports[`Home renders successfully 1`] = `
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mb-2"
     >
       <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
       >
         Components
       </div>
@@ -945,7 +949,8 @@ exports[`Home renders successfully 1`] = `
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md"
     >
       <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-secondary to-accent text-secondary-content"
       >
         Card sample
       </div>
@@ -961,7 +966,8 @@ exports[`Home renders successfully 1`] = `
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
     >
       <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
       >
         Button sample
       </div>
@@ -969,7 +975,17 @@ exports[`Home renders successfully 1`] = `
         class="p-2"
       >
         <button
-          class="btn rounded-full min-w-10 bg-gradient-to-r from-primary to-secondary border-0 hover:from-primary-focus hover:to-secondary-focus m-1"
+          class="btn rounded-full min-w-10 bg-gradient-to-r border-0
+          from-primary hover:from-primary-focus
+          to-secondary hover:to-secondary-focus m-1"
+          type="button"
+        >
+          gradient
+        </button>
+        <button
+          class="btn rounded-full min-w-10 bg-gradient-to-r border-0
+          from-secondary hover:from-secondary-focus
+          to-accent hover:to-accent-focus m-1"
           type="button"
         >
           gradient
@@ -999,7 +1015,7 @@ exports[`Home renders successfully 1`] = `
           neutral
         </button>
         <button
-          class="btn rounded-full min-w-10 dark:hover:bg-gray-600 btn-ghost m-1"
+          class="btn rounded-full min-w-10 btn-ghost m-1"
           type="button"
         >
           ghost
@@ -1043,7 +1059,7 @@ exports[`Home renders successfully 1`] = `
           disabled
         </button>
         <button
-          class="btn rounded-full min-w-10 dark:text-gray-500 btn-primary m-1"
+          class="btn rounded-full min-w-10 dark:text-gray-500 m-1"
           disabled=""
           type="button"
         >
@@ -1051,26 +1067,28 @@ exports[`Home renders successfully 1`] = `
         </button>
         <br />
         <button
-          class="btn rounded-full min-w-10 bg-gradient-to-r from-primary to-secondary border-0 hover:from-primary-focus hover:to-secondary-focus btn-primary loading m-1"
+          class="btn rounded-full min-w-10 bg-gradient-to-r border-0
+          from-primary hover:from-primary-focus
+          to-secondary hover:to-secondary-focus loading m-1"
           type="button"
         >
           loading
         </button>
         <button
-          class="btn rounded-full min-w-10 btn-primary loading m-1"
+          class="btn rounded-full min-w-10 loading m-1"
           type="button"
         >
           loading
         </button>
         <button
-          class="btn rounded-full min-w-10 dark:text-gray-500 btn-primary loading m-1"
+          class="btn rounded-full min-w-10 dark:text-gray-500 loading m-1"
           disabled=""
           type="button"
         >
           loading disabled
         </button>
         <button
-          class="btn rounded-full min-w-10 dark:text-gray-500 btn-primary loading m-1"
+          class="btn rounded-full min-w-10 dark:text-gray-500 loading m-1"
           disabled=""
           type="button"
         >
@@ -1082,7 +1100,8 @@ exports[`Home renders successfully 1`] = `
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
     >
       <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
       >
         Checkbox
       </div>
@@ -1178,7 +1197,7 @@ exports[`Home renders successfully 1`] = `
           >
             <input
               checked=""
-              class="checkbox dark:border-gray-600 checkbox-primary"
+              class="checkbox dark:border-gray-600"
               disabled=""
               id="checkbox-disabled-checked"
               type="checkbox"
@@ -1196,7 +1215,8 @@ exports[`Home renders successfully 1`] = `
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
     >
       <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
       >
         Radio sample
       </div>
@@ -1295,7 +1315,8 @@ exports[`Home renders successfully 1`] = `
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
     >
       <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
       >
         Toggle
       </div>
@@ -1311,9 +1332,9 @@ exports[`Home renders successfully 1`] = `
           >
             <input
               checked=""
-              class="toggle "
+              class="toggle"
               id="toggle-default"
-              type="checkbox"
+              type="toggle"
             />
             <span
               class="label-text ml-2 dark:text-gray-300"
@@ -1327,9 +1348,9 @@ exports[`Home renders successfully 1`] = `
           >
             <input
               checked=""
-              class="toggle  toggle-primary"
+              class="toggle toggle-primary"
               id="toggle-primary"
-              type="checkbox"
+              type="toggle"
             />
             <span
               class="label-text ml-2 dark:text-gray-300"
@@ -1343,9 +1364,9 @@ exports[`Home renders successfully 1`] = `
           >
             <input
               checked=""
-              class="toggle  toggle-secondary"
+              class="toggle toggle-secondary"
               id="toggle-secondary"
-              type="checkbox"
+              type="toggle"
             />
             <span
               class="label-text ml-2 dark:text-gray-300"
@@ -1359,9 +1380,9 @@ exports[`Home renders successfully 1`] = `
           >
             <input
               checked=""
-              class="toggle  toggle-accent"
+              class="toggle toggle-accent"
               id="toggle-accent"
-              type="checkbox"
+              type="toggle"
             />
             <span
               class="label-text ml-2 dark:text-gray-300"
@@ -1374,10 +1395,10 @@ exports[`Home renders successfully 1`] = `
             for="toggle-disabled"
           >
             <input
-              class="toggle  dark:bg-gray-300 toggle-primary"
+              class="toggle dark:bg-gray-300 toggle-primary"
               disabled=""
               id="toggle-disabled"
-              type="checkbox"
+              type="toggle"
             />
             <span
               class="label-text ml-2 dark:text-gray-300"
@@ -1391,10 +1412,10 @@ exports[`Home renders successfully 1`] = `
           >
             <input
               checked=""
-              class="toggle  dark:bg-gray-300 toggle-primary"
+              class="toggle dark:bg-gray-300 toggle-primary"
               disabled=""
               id="toggle-disabled-checked"
-              type="checkbox"
+              type="toggle"
             />
             <span
               class="label-text ml-2 dark:text-gray-300"
@@ -1409,7 +1430,8 @@ exports[`Home renders successfully 1`] = `
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
     >
       <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
       >
         Input sample
       </div>
@@ -1460,7 +1482,7 @@ exports[`Home renders successfully 1`] = `
             value="info"
           />
           <input
-            class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 input-primary m-1"
+            class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 m-1"
             disabled=""
             type="text"
             value="disabled"
@@ -1472,7 +1494,8 @@ exports[`Home renders successfully 1`] = `
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
     >
       <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
       >
         Select sample
       </div>
@@ -1710,7 +1733,8 @@ exports[`Home renders successfully 1`] = `
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
     >
       <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
       >
         TextArea sample
       </div>
@@ -1742,7 +1766,7 @@ exports[`Home renders successfully 1`] = `
             secondary
           </textarea>
           <textarea
-            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-accent m-1"
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-primary m-1"
             id="textarea-accent"
             title="accent"
           >
@@ -1751,28 +1775,28 @@ exports[`Home renders successfully 1`] = `
           <textarea
             class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-success m-1"
             id="textarea-success"
-            title="accent"
+            title="success"
           >
             success
           </textarea>
           <textarea
             class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-warning m-1"
             id="textarea-warning"
-            title="accent"
+            title="warning"
           >
             warning
           </textarea>
           <textarea
             class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-error m-1"
             id="textarea-error"
-            title="accent"
+            title="error"
           >
             error
           </textarea>
           <textarea
             class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-info m-1"
             id="textarea-info"
-            title="accent"
+            title="info"
           >
             info
           </textarea>
@@ -1791,7 +1815,8 @@ exports[`Home renders successfully 1`] = `
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
     >
       <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
       >
         Range sample
       </div>
@@ -1822,7 +1847,7 @@ exports[`Home renders successfully 1`] = `
             value="accent"
           />
           <input
-            class="range dark:bg-gray-600 rounded-full dark:text-gray-500 range-primary m-1"
+            class="range dark:bg-gray-600 rounded-full dark:text-gray-500 m-1"
             disabled=""
             type="range"
             value="disabled"
@@ -1834,7 +1859,8 @@ exports[`Home renders successfully 1`] = `
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
     >
       <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r from-primary to-secondary text-primary-content"
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
       >
         DatePicker sample
       </div>
@@ -1850,11 +1876,31 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <input
-                class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
-                type="text"
-                value="01/01/2022"
-              />
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
           <div
@@ -1863,11 +1909,31 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <input
-                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-primary m-1"
-                type="text"
-                value="01/01/2022"
-              />
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-primary w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
           <div
@@ -1876,11 +1942,31 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <input
-                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-secondary m-1"
-                type="text"
-                value="2022/01/01"
-              />
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-secondary w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
           <div
@@ -1889,11 +1975,31 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <input
-                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-accent m-1"
-                type="text"
-                value="01/01/2022"
-              />
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-accent w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
           <div
@@ -1902,11 +2008,31 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <input
-                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-success m-1"
-                type="text"
-                value="01/01/2022"
-              />
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-success w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
           <div
@@ -1915,11 +2041,31 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <input
-                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-warning m-1"
-                type="text"
-                value="01/01/2022"
-              />
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-warning w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
           <div
@@ -1928,11 +2074,31 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <input
-                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-error m-1"
-                type="text"
-                value="01/01/2022"
-              />
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-error w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
           <div
@@ -1941,11 +2107,31 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <input
-                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-info m-1"
-                type="text"
-                value="01/01/2022"
-              />
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-info w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
           <div
@@ -1954,11 +2140,71 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <input
-                class="input input-bordered dark:bg-gray-700 rounded-full w-full input-disabled m-1"
-                type="text"
-                value="01/01/2022"
-              />
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full m-1"
+                  disabled=""
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div
+            class=""
+          >
+            Custom format
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full m-1"
+                  disabled=""
+                  readonly=""
+                  type="text"
+                  value="2022/01/01"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
           <div
@@ -1972,11 +2218,31 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <input
-                class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
-                type="text"
-                value="01/01/2022"
-              />
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
           <div
@@ -1985,11 +2251,31 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <input
-                class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
-                type="text"
-                value="02/01/2022"
-              />
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="02/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
         </div>
@@ -2004,11 +2290,31 @@ exports[`Home renders successfully 1`] = `
           <div
             class="react-datepicker__input-container"
           >
-            <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
-              type="text"
-              value="01/01/2022 12:00 AM"
-            />
+            <span
+              class="inline-block w-full relative"
+            >
+              <input
+                class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                readonly=""
+                type="text"
+                value="01/01/2022 12:00 AM"
+              />
+              <svg
+                aria-hidden="true"
+                class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
           </div>
         </div>
       </div>

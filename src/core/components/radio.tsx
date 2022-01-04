@@ -7,10 +7,11 @@ export type RadioProps = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>
   title?: string;
   containerAttributes?: LabelHTMLAttributes<HTMLLabelElement>;
   titleAttributes?: HTMLAttributes<HTMLSpanElement>;
+  variant?: 'primary' | 'secondary' | 'accent';
 };
 
 export const Radio = forwardRef((props: RadioProps, ref): JSX.Element => {
-  const {containerAttributes, titleAttributes, title, id, className, ...other} = props;
+  const {variant, containerAttributes, titleAttributes, title, id, className, ...other} = props;
   const {className: labelClassName, htmlFor, ...otherContainerAttributes} = containerAttributes || {};
   const {className: spanClassName, ...otherTitleAttributes} = titleAttributes || {};
   return (
@@ -26,7 +27,7 @@ export const Radio = forwardRef((props: RadioProps, ref): JSX.Element => {
         ref={ref}
         id={id}
         type='radio'
-        className={clsx('radio dark:border-gray-600', className || '')}
+        className={clsx('radio dark:border-gray-600', variant ? `radio-${variant}` : '', className)}
         {...other}
       />
       <span className={clsx('label-text ml-2 dark:text-gray-300', spanClassName || '')} {...otherTitleAttributes}>
@@ -35,3 +36,8 @@ export const Radio = forwardRef((props: RadioProps, ref): JSX.Element => {
     </label>
   );
 }) as (props: RadioProps) => JSX.Element;
+
+/**
+ * css classes required by Tailwindcss
+ * radio-primary radio-secondary radio-accent
+ */

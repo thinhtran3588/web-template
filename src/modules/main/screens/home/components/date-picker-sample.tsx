@@ -12,32 +12,53 @@ export const DatePickerSample = (): JSX.Element => {
         <DatePicker
           selected={startDate}
           onChange={(date) => setStartDate(date as Date)}
-          className='input-primary m-1'
+          className='m-1'
+          variant='primary'
         />
         <DatePicker
           selected={startDate}
           onChange={(date) => setStartDate(date as Date)}
-          className='input-secondary m-1'
-          dateFormat='yyyy/MM/dd'
-        />
-        <DatePicker selected={startDate} onChange={(date) => setStartDate(date as Date)} className='input-accent m-1' />
-        <DatePicker
-          selected={startDate}
-          onChange={(date) => setStartDate(date as Date)}
-          className='input-success m-1'
+          className='m-1'
+          variant='secondary'
         />
         <DatePicker
           selected={startDate}
           onChange={(date) => setStartDate(date as Date)}
-          className='input-warning m-1'
+          className='m-1'
+          variant='accent'
         />
-        <DatePicker selected={startDate} onChange={(date) => setStartDate(date as Date)} className='input-error m-1' />
-        <DatePicker selected={startDate} onChange={(date) => setStartDate(date as Date)} className='input-info m-1' />
         <DatePicker
           selected={startDate}
           onChange={(date) => setStartDate(date as Date)}
-          className='input-disabled m-1'
+          className='m-1'
+          variant='success'
+        />
+        <DatePicker
+          selected={startDate}
+          onChange={(date) => setStartDate(date as Date)}
+          className='m-1'
+          variant='warning'
+        />
+        <DatePicker
+          selected={startDate}
+          onChange={(date) => setStartDate(date as Date)}
+          className='m-1'
+          variant='error'
+        />
+        <DatePicker
+          selected={startDate}
+          onChange={(date) => setStartDate(date as Date)}
+          className='m-1'
+          variant='info'
+        />
+        <DatePicker selected={startDate} onChange={(date) => setStartDate(date as Date)} className='m-1' disabled />
+        <div className=''>Custom format</div>
+        <DatePicker
+          selected={startDate}
+          onChange={(date) => setStartDate(date as Date)}
+          className='m-1'
           disabled
+          dateFormat='yyyy/MM/dd'
         />
         <div className=''>Date range</div>
         <DatePicker

@@ -2,6 +2,7 @@
 import clsx from 'clsx';
 import {useState} from 'react';
 import ChevronDownIcon from '@heroicons/react/solid/ChevronDownIcon';
+import type {ColorVariant} from '@core/interfaces';
 import {Input} from './input';
 
 export interface DropDownItem {
@@ -18,10 +19,12 @@ export type DropdownProps = {
   containerClassName?: string;
   defaultOpen?: boolean;
   disabled?: boolean;
+  nativeOnMobile?: string;
+  variant?: ColorVariant;
 };
 
 export const Dropdown = (props: DropdownProps): JSX.Element => {
-  const {options, value, setValue, className, containerClassName, placeholder, defaultOpen, disabled} = props;
+  const {options, value, setValue, className, containerClassName, placeholder, defaultOpen, disabled, variant} = props;
   const [open, setOpen] = useState(defaultOpen);
   const displayText = options.find((item) => item.value === value)?.text;
 
@@ -39,6 +42,7 @@ export const Dropdown = (props: DropdownProps): JSX.Element => {
         value={displayText}
         disabled={disabled}
         onClick={() => setOpen(!open)}
+        variant={variant}
       />
       <ul
         className={clsx(
@@ -55,7 +59,7 @@ export const Dropdown = (props: DropdownProps): JSX.Element => {
           </li>
         ))}
       </ul>
-      <ChevronDownIcon className='absolute w-6 h-6 right-2 top-4 dark:text-gray-300' />
+      <ChevronDownIcon className='absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none' />
     </div>
   );
 };

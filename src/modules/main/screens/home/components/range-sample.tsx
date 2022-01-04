@@ -5,10 +5,10 @@ export const RangeSample = (): JSX.Element => (
   <Card title='Range sample' className='mt-2'>
     <div className='form-control'>
       <Range className='m-1' defaultValue='default' />
-      <Range className='range-primary m-1' defaultValue='primary' />
-      <Range className='range-secondary m-1' defaultValue='secondary' />
-      <Range className='range-accent m-1' defaultValue='accent' />
-      <Range className='range-primary m-1' disabled defaultValue='disabled' />
+      <Range className='m-1' defaultValue='primary' variant='primary' />
+      <Range className='m-1' defaultValue='secondary' variant='secondary' />
+      <Range className='m-1' defaultValue='accent' variant='accent' />
+      <Range className='m-1' disabled defaultValue='disabled' />
     </div>
   </Card>
 );

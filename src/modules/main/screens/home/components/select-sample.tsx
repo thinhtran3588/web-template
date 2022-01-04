@@ -12,49 +12,49 @@ export const SelectSample = (): JSX.Element => (
         <option value='2'>time travel</option>
         <option value='3'>invisibility</option>
       </Select>
-      <Select className='select-primary m-1' title='primary' id='select-primary' defaultValue=''>
+      <Select className='m-1' title='primary' id='select-primary' defaultValue='' variant='primary'>
         <option disabled>Choose your superpower</option>
         <option>telekinesis</option>
         <option value='2'>time travel</option>
         <option value='3'>invisibility</option>
       </Select>
-      <Select className='select-secondary m-1' title='secondary' id='select-secondary' defaultValue=''>
+      <Select className='m-1' title='secondary' id='select-secondary' defaultValue='' variant='secondary'>
         <option disabled>Choose your superpower</option>
         <option>telekinesis</option>
         <option value='2'>time travel</option>
         <option value='3'>invisibility</option>
       </Select>
-      <Select className='select-accent m-1' title='accent' id='select-accent' defaultValue=''>
+      <Select className='m-1' title='accent' id='select-accent' defaultValue='' variant='accent'>
         <option disabled>Choose your superpower</option>
         <option>telekinesis</option>
         <option value='2'>time travel</option>
         <option value='3'>invisibility</option>
       </Select>
-      <Select className='select-success m-1' title='accent' id='select-success' defaultValue=''>
+      <Select className='m-1' title='accent' id='select-success' defaultValue='' variant='success'>
         <option disabled>Choose your superpower</option>
         <option>telekinesis</option>
         <option value='2'>time travel</option>
         <option value='3'>invisibility</option>
       </Select>
-      <Select className='select-warning m-1' title='accent' id='select-warning' defaultValue=''>
+      <Select className='m-1' title='accent' id='select-warning' defaultValue='' variant='warning'>
         <option disabled>Choose your superpower</option>
         <option>telekinesis</option>
         <option value='2'>time travel</option>
         <option value='3'>invisibility</option>
       </Select>
-      <Select className='select-error m-1' title='accent' id='select-error' defaultValue=''>
+      <Select className='m-1' title='accent' id='select-error' defaultValue='' variant='error'>
         <option disabled>Choose your superpower</option>
         <option>telekinesis</option>
         <option value='2'>time travel</option>
         <option value='3'>invisibility</option>
       </Select>
-      <Select className='select-info m-1' title='accent' id='select-info' defaultValue=''>
+      <Select className='m-1' title='accent' id='select-info' defaultValue='' variant='info'>
         <option disabled>Choose your superpower</option>
         <option>telekinesis</option>
         <option value='2'>time travel</option>
         <option value='3'>invisibility</option>
       </Select>
-      <Select className='select-primary m-1' title='disabled' id='select-disabled' disabled defaultValue=''>
+      <Select className='m-1' title='disabled' id='select-disabled' disabled defaultValue='' variant='primary'>
         <option disabled>Choose your superpower</option>
         <option>telekinesis</option>
         <option value='2'>time travel</option>
