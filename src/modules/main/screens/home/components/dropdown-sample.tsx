@@ -1,9 +1,10 @@
-import {Dropdown, DropDownItem} from '@core/components/dropdown';
+import {Dropdown} from '@core/components/dropdown';
 import {Card} from '@core/components/card';
 import {useState} from 'react';
+import type {Option} from '@core/interfaces';
 
 export const DropdownSample = (): JSX.Element => {
-  const options: DropDownItem[] = [
+  const options: Option[] = [
     {value: '1', text: 'Option 1'},
     {value: '2', text: 'Option 2'},
     {value: '3', text: 'Option 3'},

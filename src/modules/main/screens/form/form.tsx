@@ -1,69 +1,159 @@
+import {useFormik} from 'formik';
+import * as Yup from 'yup';
 import type {NextPage} from 'next';
 import {Card} from '@core/components/card';
-import {Checkbox} from '@core/components/checkbox';
-import {Radio} from '@core/components/radio';
 import {ButtonGradient} from '@core/components/button-gradient';
-import {Toggle} from '@core/components/toggle';
-import {Input} from '@core/components/input';
-import {Select} from '@core/components/select';
-import {TextArea} from '@core/components/text-area';
+import {FieldText} from '@core/components/field-text';
+import {FieldBoolean} from '@core/components/field-boolean';
+import {Option} from '@core/interfaces';
+import {FieldSelect} from '@core/components/field-select';
+import {FieldTextArea} from '@core/components/field-textarea';
+import {FieldRange} from '@core/components/field-range';
 
-export const Form: NextPage = (): JSX.Element => (
-  <div className='container overflow-auto'>
-    <Card title='Form' className='mb-2 w-full lg:w-1/2'>
-      <div className='form-control'>
-        <label className='label' htmlFor='input-primary'>
-          <span>Text input</span>
-        </label>
-        <Input id='input-primary' type='text' placeholder='primary' className='input input-primary input-bordered' />
-      </div>
-      <div className='form-control'>
-        <span className='label'>
-          <span>Checkbox</span>
-        </span>
-        <Checkbox className='checkbox-primary' title='Option 1' defaultChecked id='checkbox-option-1' />
-        <Checkbox className='checkbox-primary' title='Option 2' id='checkbox-option-2' />
-        <Checkbox className='checkbox-primary' title='Option 3' id='checkbox-option-3' />
-      </div>
-      <div className='form-control'>
-        <span className='label'>
-          <span>Radio</span>
-        </span>
-        <Radio className='radio-primary' title='Option 1' defaultChecked id='radio-option-1' name='radio' />
-        <Radio className='radio-primary' title='Option 2' id='radio-option-2' name='radio' />
-        <Radio className='radio-primary' title='Option 3' id='radio-option-3' name='radio' />
-      </div>
-      <div className='form-control'>
-        <label className='label' htmlFor='range'>
-          <span>Range</span>
-        </label>
-        <Input id='range' type='range' min='20' max='100' className='range range-primary' />
-      </div>
-      <div className='form-control'>
-        <label className='label' htmlFor='select'>
-          <span>Select</span>
-        </label>
-        <Select id='select' className='select-primary'>
-          <option disabled selected>
-            Choose your superpower
-          </option>
-          <option>telekinesis</option>
-          <option>time travel</option>
-          <option>invisibility</option>
-        </Select>
-      </div>
-      <div className='form-control'>
-        <label className='label' htmlFor='textarea'>
-          <span>Textarea</span>
-        </label>
-        <TextArea id='textarea' className='h-24 textarea-primary' placeholder='Bio' />
-      </div>
-      <div className='form-control mt-4'>
-        <Toggle className='checkbox-primary' title='Toggle' defaultChecked id='toggle' />
-      </div>
-      <div className='mt-2 justify-center flex'>
-        <ButtonGradient>Submit</ButtonGradient>
-      </div>
-    </Card>
-  </div>
-);
+const options: Option[] = [
+  {
+    value: '1',
+    text: 'Option 1',
+  },
+  {
+    value: '2',
+    text: 'Option 2',
+  },
+  {
+    value: '3',
+    text: 'Option 3',
+  },
+];
+
+export const Form: NextPage = (): JSX.Element => {
+  const formik = useFormik({
+    initialValues: {
+      text: '',
+      number: 0,
+      bool: false,
+      select: '',
+      textarea: '',
+      range: 15,
+    },
+    validationSchema: Yup.object({
+      text: Yup.string()
+        .min(2, 'Must be 2 characters or more')
+        .max(15, 'Must be 15 characters or less')
+        .required('Required'),
+      number: Yup.number()
+        .integer()
+        .min(2, 'Must be larger than or equal to 2')
+        .max(15, 'Must be smaller than or equal to 15')
+        .required('Required'),
+      bool: Yup.boolean(),
+      select: Yup.string().required('Required'),
+      textarea: Yup.string()
+        .min(2, 'Must be 5 characters or more')
+        .max(15, 'Must be 25 characters or less')
+        .required('Required'),
+      range: Yup.number()
+        .integer()
+        .min(10, 'Must be larger than or equal to 10')
+        .max(20, 'Must be smaller than or equal to 20')
+        .required('Required'),
+    }),
+    onSubmit: (values) => {
+      // eslint-disable-next-line no-alert
+      alert(JSON.stringify(values, undefined, 2));
+    },
+  });
+
+  return (
+    <div className='container overflow-auto'>
+      <Card title='Form' className='w-full lg:w-1/2'>
+        <form onSubmit={formik.handleSubmit}>
+          <FieldText formik={formik} name='text' id='text' label='Text Value' variant='primary' />
+          <FieldText formik={formik} name='number' id='number' label='Number Value' variant='primary' type='number' />
+          <FieldBoolean formik={formik} name='bool' id='bool' label='Boolean Value' variant='primary' />
+          <FieldBoolean formik={formik} name='bool' id='bool' label='Boolean Value' variant='primary' type='checkbox' />
+          <FieldBoolean
+            formik={formik}
+            name='bool'
+            id='bool'
+            label='Boolean Value'
+            variant='primary'
+            type='radio'
+            falseLabel='False'
+            trueLabel='True'
+          />
+          <FieldBoolean
+            formik={formik}
+            name='bool'
+            id='bool'
+            label='Boolean Value'
+            variant='primary'
+            showLabelInSameLine
+          />
+          <FieldBoolean
+            formik={formik}
+            name='bool'
+            id='bool'
+            label='Boolean Value'
+            variant='primary'
+            type='checkbox'
+            showLabelInSameLine
+          />
+          <FieldSelect
+            formik={formik}
+            name='select'
+            id='select'
+            label='Select value - dropdown (select on mobile)'
+            variant='primary'
+            type='dropdown'
+            options={options}
+            placeholder='Choose'
+            nativeSelectOnMobile
+          />
+          <FieldSelect
+            formik={formik}
+            name='select'
+            id='select'
+            label='Select value - dropdown'
+            variant='primary'
+            type='dropdown'
+            options={options}
+            placeholder='Choose'
+          />
+          <FieldSelect
+            formik={formik}
+            name='select'
+            id='select'
+            label='Select value - select'
+            variant='primary'
+            type='select'
+            options={options}
+            placeholder='Choose'
+          />
+          <FieldSelect
+            formik={formik}
+            name='select'
+            id='select'
+            label='Select value - checkbox'
+            variant='primary'
+            type='checkbox'
+            options={options}
+          />
+          <FieldSelect
+            formik={formik}
+            name='select'
+            id='select'
+            label='Select value - checkbox'
+            variant='primary'
+            type='checkbox'
+            options={options}
+          />
+          <FieldTextArea formik={formik} name='textarea' id='textarea' label='Textarea Value' variant='primary' />
+          <FieldRange formik={formik} name='range' id='range' label='Range Value' variant='primary' min={10} max={20} />
+          <div className='mt-2 justify-center flex'>
+            <ButtonGradient type='submit'>Submit</ButtonGradient>
+          </div>
+        </form>
+      </Card>
+    </div>
+  );
+};

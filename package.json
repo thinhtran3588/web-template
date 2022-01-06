@@ -6,7 +6,7 @@
     "analyze": "ANALYZE=true next build",
     "build": "PWA=true next build",
     "build-docker": "rm -f -r .next && docker-compose build",
-    "prod": "PWA=false next build && yarn start",
+    "prod": "PWA=false next build && PORT=3002 yarn start",
     "dev": "NODE_ENV=development PORT=3001 next dev",
     "lint": "prettier --check . && eslint . --ext .js,.jsx,.ts,.tsx && tsc --noEmit",
     "lint-fix": "prettier --write . && eslint . --ext .js,.jsx,.ts,.tsx --fix",
@@ -24,6 +24,7 @@
     "@rematch/persist": "^2.1.2",
     "clsx": "^1.1.1",
     "daisyui": "^1.21.0",
+    "formik": "^2.2.9",
     "immer": "^9.0.7",
     "lodash": "^4.17.21",
     "next": "12.0.7",
@@ -34,7 +35,8 @@
     "react-redux": "^7.2.6",
     "react-scroll": "^1.8.4",
     "redux-persist": "^6.0.0",
-    "theme-change": "^2.0.2"
+    "theme-change": "^2.0.2",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.0.1",

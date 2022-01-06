@@ -2,13 +2,12 @@
 import {forwardRef, HTMLAttributes, LabelHTMLAttributes} from 'react';
 import type {InputHTMLAttributes, DetailedHTMLProps} from 'react';
 import clsx from 'clsx';
-import {ColorVariant} from '@core/interfaces';
 
 export type ToggleProps = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> & {
   title?: string;
   containerAttributes?: LabelHTMLAttributes<HTMLLabelElement>;
   titleAttributes?: HTMLAttributes<HTMLSpanElement>;
-  variant?: ColorVariant;
+  variant?: 'primary' | 'secondary' | 'accent';
 };
 
 export const Toggle = forwardRef<HTMLInputElement>((props: ToggleProps, ref): JSX.Element => {
@@ -27,7 +26,7 @@ export const Toggle = forwardRef<HTMLInputElement>((props: ToggleProps, ref): JS
       <input
         ref={ref}
         id={id}
-        type='toggle'
+        type='checkbox'
         className={clsx(
           'toggle',
           other.disabled ? 'dark:bg-gray-300' : '',

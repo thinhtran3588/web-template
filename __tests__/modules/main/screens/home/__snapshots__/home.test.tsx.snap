@@ -437,7 +437,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -493,7 +493,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -549,7 +549,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -605,7 +605,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -661,7 +661,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -717,7 +717,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -773,7 +773,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -829,7 +829,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -886,7 +886,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -1334,7 +1334,7 @@ exports[`Home renders successfully 1`] = `
               checked=""
               class="toggle"
               id="toggle-default"
-              type="toggle"
+              type="checkbox"
             />
             <span
               class="label-text ml-2 dark:text-gray-300"
@@ -1350,7 +1350,7 @@ exports[`Home renders successfully 1`] = `
               checked=""
               class="toggle toggle-primary"
               id="toggle-primary"
-              type="toggle"
+              type="checkbox"
             />
             <span
               class="label-text ml-2 dark:text-gray-300"
@@ -1366,7 +1366,7 @@ exports[`Home renders successfully 1`] = `
               checked=""
               class="toggle toggle-secondary"
               id="toggle-secondary"
-              type="toggle"
+              type="checkbox"
             />
             <span
               class="label-text ml-2 dark:text-gray-300"
@@ -1382,7 +1382,7 @@ exports[`Home renders successfully 1`] = `
               checked=""
               class="toggle toggle-accent"
               id="toggle-accent"
-              type="toggle"
+              type="checkbox"
             />
             <span
               class="label-text ml-2 dark:text-gray-300"
@@ -1398,7 +1398,7 @@ exports[`Home renders successfully 1`] = `
               class="toggle dark:bg-gray-300 toggle-primary"
               disabled=""
               id="toggle-disabled"
-              type="toggle"
+              type="checkbox"
             />
             <span
               class="label-text ml-2 dark:text-gray-300"
@@ -1415,7 +1415,7 @@ exports[`Home renders successfully 1`] = `
               class="toggle dark:bg-gray-300 toggle-primary"
               disabled=""
               id="toggle-disabled-checked"
-              type="toggle"
+              type="checkbox"
             />
             <span
               class="label-text ml-2 dark:text-gray-300"
