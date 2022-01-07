@@ -87,7 +87,7 @@ exports[`Home renders successfully 1`] = `
           class="flex flex-wrap "
         >
           <button
-            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex ring-2 ring-primary ring-offset-2 ring-offset-gray-800"
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex ring-2 ring-primary ring-offset-2 dark:ring-offset-gray-800"
             type="button"
           >
             <span
