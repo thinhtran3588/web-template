@@ -1,26 +1,13 @@
-const CONSTANTS = require('./src/core/constants.json');
+const themes = require('./tailwind.daisy-ui-themes.json');
 
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
+  mode: 'jit',
+  content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
         roboto: ['Roboto'],
-      },
-      colors: {
-        primary: CONSTANTS.COLOR.PRIMARY,
-        secondary: CONSTANTS.COLOR.SECONDARY,
-        success: CONSTANTS.COLOR.SUCCESS,
-        warning: CONSTANTS.COLOR.WARNING,
-        error: CONSTANTS.COLOR.ERROR,
-        info: CONSTANTS.COLOR.INFO,
-        'primary-light': CONSTANTS.COLOR.PRIMARY_LIGHT,
-        'secondary-light': CONSTANTS.COLOR.SECONDARY_LIGHT,
-        'success-light': CONSTANTS.COLOR.SUCCESS_LIGHT,
-        'warning-light': CONSTANTS.COLOR.WARNING_LIGHT,
-        'error-light': CONSTANTS.COLOR.ERROR_LIGHT,
-        'info-light': CONSTANTS.COLOR.INFO_LIGHT,
       },
       minHeight: {
         2: '2rem',
@@ -38,16 +25,33 @@ module.exports = {
         10: '10rem',
         12: '12rem',
       },
-      transitionProperty: {
-        width: 'width',
+      minWidth: {
+        2: '2rem',
+        4: '4rem',
+        6: '6rem',
+        8: '8rem',
+        10: '10rem',
+        12: '12rem',
+      },
+      maxWidth: {
+        2: '2rem',
+        4: '4rem',
+        6: '6rem',
+        8: '8rem',
+        10: '10rem',
+        12: '12rem',
       },
     },
   },
-  variants: {
-    extend: {
-      display: ['dark'],
-      opacity: ['disabled'],
-    },
+  variants: {},
+  // eslint-disable-next-line global-require
+  plugins: [require('daisyui')],
+  daisyui: {
+    styled: true,
+    themes: [themes],
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
   },
-  plugins: [],
 };

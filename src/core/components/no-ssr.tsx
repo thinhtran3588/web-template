@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-useless-fragment */
 import {useEffect, useState} from 'react';
 
 export type NoSsrProps = {

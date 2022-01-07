@@ -3,10 +3,2321 @@
 exports[`Home renders successfully 1`] = `
 <div>
   <div
-    class="flex flex-col w-full"
+    class="container overflow-auto"
   >
-    <div>
-      Home
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mb-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        Theme
+      </div>
+      <div
+        class="p-2"
+      >
+        <label
+          class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+          for="rd-theme-light"
+        >
+          <input
+            class="radio dark:border-gray-600 radio-primary"
+            id="rd-theme-light"
+            name="theme"
+            type="radio"
+            value="light"
+          />
+          <span
+            class="label-text ml-2 dark:text-gray-300"
+          >
+            Light
+          </span>
+        </label>
+        <label
+          class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+          for="rd-theme-dark"
+        >
+          <input
+            class="radio dark:border-gray-600 radio-primary"
+            id="rd-theme-dark"
+            name="theme"
+            type="radio"
+            value="dark"
+          />
+          <span
+            class="label-text ml-2 dark:text-gray-300"
+          >
+            Dark
+          </span>
+        </label>
+        <label
+          class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+          for="rd-theme-"
+        >
+          <input
+            checked=""
+            class="radio dark:border-gray-600 radio-primary"
+            id="rd-theme-"
+            name="theme"
+            type="radio"
+            value=""
+          />
+          <span
+            class="label-text ml-2 dark:text-gray-300"
+          >
+            System
+          </span>
+        </label>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mb-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        Colors
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="flex flex-wrap "
+        >
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex ring-2 ring-primary ring-offset-2 ring-offset-gray-800"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(99, 102, 241);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(217, 70, 239);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(132, 204, 22);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(139, 92, 246);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(236, 72, 153);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(34, 197, 94);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(168, 85, 247);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(244, 63, 94);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(16, 185, 129);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(217, 70, 239);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(239, 68, 68);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(20, 184, 166);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(236, 72, 153);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(249, 115, 22);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(6, 182, 212);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(244, 63, 94);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(245, 158, 11);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(14, 165, 233);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(239, 68, 68);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(234, 179, 8);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(59, 130, 246);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(249, 115, 22);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(132, 204, 22);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(99, 102, 241);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(245, 158, 11);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(34, 197, 94);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(139, 92, 246);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(234, 179, 8);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(16, 185, 129);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(168, 85, 247);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(132, 204, 22);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(20, 184, 166);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(217, 70, 239);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(34, 197, 94);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(6, 182, 212);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(236, 72, 153);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(16, 185, 129);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(14, 165, 233);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(244, 63, 94);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(20, 184, 166);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(59, 130, 246);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(239, 68, 68);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(6, 182, 212);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(99, 102, 241);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(249, 115, 22);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(14, 165, 233);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(139, 92, 246);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(245, 158, 11);"
+            />
+          </button>
+          <button
+            class=" bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 px-1 py-2 m-1 rounded-xl flex"
+            type="button"
+          >
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(59, 130, 246);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(168, 85, 247);"
+            />
+            <span
+              class="inline-block w-6 h-6 bg-black mx-1"
+              style="background-color: rgb(234, 179, 8);"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        Dropdown sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-primary m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-secondary m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-accent m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-success m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-warning m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-error m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-info m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full input-primary m-1"
+              disabled=""
+              placeholder="(disabled)"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mb-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        Components
+      </div>
+      <div
+        class="p-2"
+      >
+        <p>
+          Since we're using
+           
+          <a
+            class="link link-primary"
+            href="https://tailwindcss.com/"
+          >
+            Tailwindcss
+          </a>
+           
+          and
+           
+          <a
+            class="link link-primary"
+            href="https://daisyui.com/"
+          >
+            DaisyUI
+          </a>
+          , most components can be written directly with html tags and css classes except some customized ones. You can check them for full documentation and samples. Below are samples of customized components.
+        </p>
+        <p>
+          For datepicker, use  
+          <a
+            class="link link-primary"
+            href="https://reactdatepicker.com/"
+          >
+            reactdatepicker
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-secondary to-accent text-secondary-content"
+      >
+        Card sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat ex metus, eu fringilla mi feugiat vitae. Proin porta metus risus, at rhoncus mi finibus vehicula. Donec accumsan ex eu sagittis malesuada. Curabitur vitae mi tempor, gravida leo non, luctus nulla. Sed tristique, massa at ultrices porta, urna metus malesuada lacus, sit amet mattis arcu magna non lacus. Phasellus rutrum, tortor at hendrerit vestibulum, ipsum justo pretium ipsum, quis tristique sem metus at tellus. Proin id tortor magna. Vivamus orci sem, vulputate et tincidunt in, placerat at ligula. Sed ultricies elit eu ipsum posuere aliquet. Curabitur turpis dolor, auctor condimentum semper ac, dignissim eget nunc. Morbi consequat ornare odio, a mattis velit scelerisque nec. Maecenas pharetra finibus fermentum. Proin quis aliquet nisl. Vestibulum id molestie elit. Etiam interdum turpis at odio commodo, vitae luctus ante luctus. Nulla bibendum lacus vel nisl venenatis accumsan.
+        </p>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        Button sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <button
+          class="btn rounded-full min-w-10 bg-gradient-to-r border-0
+          from-primary hover:from-primary-focus
+          to-secondary hover:to-secondary-focus m-1"
+          type="button"
+        >
+          gradient
+        </button>
+        <button
+          class="btn rounded-full min-w-10 bg-gradient-to-r border-0
+          from-secondary hover:from-secondary-focus
+          to-accent hover:to-accent-focus m-1"
+          type="button"
+        >
+          gradient
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-primary m-1"
+          type="button"
+        >
+          primary
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-secondary m-1"
+          type="button"
+        >
+          secondary
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-accent m-1"
+          type="button"
+        >
+          accent
+        </button>
+        <button
+          class="btn rounded-full min-w-10 m-1"
+          type="button"
+        >
+          neutral
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-ghost m-1"
+          type="button"
+        >
+          ghost
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-link m-1"
+          type="button"
+        >
+          link
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-success m-1"
+          type="button"
+        >
+          success
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-warning m-1"
+          type="button"
+        >
+          warning
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-error m-1"
+          type="button"
+        >
+          error
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-info m-1"
+          type="button"
+        >
+          info
+        </button>
+        <br />
+        <button
+          class="btn rounded-full min-w-10 dark:text-gray-500 btn-primary m-1"
+          disabled=""
+          type="button"
+        >
+          disabled
+        </button>
+        <button
+          class="btn rounded-full min-w-10 dark:text-gray-500 m-1"
+          disabled=""
+          type="button"
+        >
+          disabled
+        </button>
+        <br />
+        <button
+          class="btn rounded-full min-w-10 bg-gradient-to-r border-0
+          from-primary hover:from-primary-focus
+          to-secondary hover:to-secondary-focus loading m-1"
+          type="button"
+        >
+          loading
+        </button>
+        <button
+          class="btn rounded-full min-w-10 loading m-1"
+          type="button"
+        >
+          loading
+        </button>
+        <button
+          class="btn rounded-full min-w-10 dark:text-gray-500 loading m-1"
+          disabled=""
+          type="button"
+        >
+          loading disabled
+        </button>
+        <button
+          class="btn rounded-full min-w-10 dark:text-gray-500 loading m-1"
+          disabled=""
+          type="button"
+        >
+          loading disabled
+        </button>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        Checkbox
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="checkbox-default"
+          >
+            <input
+              checked=""
+              class="checkbox dark:border-gray-600"
+              id="checkbox-default"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              default
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="checkbox-primary"
+          >
+            <input
+              checked=""
+              class="checkbox dark:border-gray-600 checkbox-primary"
+              id="checkbox-primary"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              primary
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="checkbox-secondary"
+          >
+            <input
+              checked=""
+              class="checkbox dark:border-gray-600 checkbox-secondary"
+              id="checkbox-secondary"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              secondary
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="checkbox-accent"
+          >
+            <input
+              checked=""
+              class="checkbox dark:border-gray-600 checkbox-accent"
+              id="checkbox-accent"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              accent
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="checkbox-disabled"
+          >
+            <input
+              class="checkbox dark:border-gray-600 checkbox-primary"
+              disabled=""
+              id="checkbox-disabled"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              disabled
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="checkbox-disabled-checked"
+          >
+            <input
+              checked=""
+              class="checkbox dark:border-gray-600"
+              disabled=""
+              id="checkbox-disabled-checked"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              disabled checked
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        Radio sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="radio-default"
+          >
+            <input
+              checked=""
+              class="radio dark:border-gray-600"
+              id="radio-default"
+              name="radio"
+              type="radio"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              default
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="radio-primary"
+          >
+            <input
+              class="radio dark:border-gray-600 radio-primary"
+              id="radio-primary"
+              name="radio"
+              type="radio"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              primary
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="radio-secondary"
+          >
+            <input
+              class="radio dark:border-gray-600 radio-secondary"
+              id="radio-secondary"
+              name="radio"
+              type="radio"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              secondary
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="radio-accent"
+          >
+            <input
+              class="radio dark:border-gray-600 radio-accent"
+              id="radio-accent"
+              name="radio"
+              type="radio"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              accent
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="radio-disabled"
+          >
+            <input
+              class="radio dark:border-gray-600 radio-primary"
+              disabled=""
+              id="radio-disabled"
+              name="radio"
+              type="radio"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              disabled
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        Toggle
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="toggle-default"
+          >
+            <input
+              checked=""
+              class="toggle"
+              id="toggle-default"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              default
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="toggle-primary"
+          >
+            <input
+              checked=""
+              class="toggle toggle-primary"
+              id="toggle-primary"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              primary
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="toggle-secondary"
+          >
+            <input
+              checked=""
+              class="toggle toggle-secondary"
+              id="toggle-secondary"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              secondary
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="toggle-accent"
+          >
+            <input
+              checked=""
+              class="toggle toggle-accent"
+              id="toggle-accent"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              accent
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="toggle-disabled"
+          >
+            <input
+              class="toggle dark:bg-gray-300 toggle-primary"
+              disabled=""
+              id="toggle-disabled"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              disabled
+            </span>
+          </label>
+          <label
+            class="cursor-pointer flex items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+            for="toggle-disabled-checked"
+          >
+            <input
+              checked=""
+              class="toggle dark:bg-gray-300 toggle-primary"
+              disabled=""
+              id="toggle-disabled-checked"
+              type="checkbox"
+            />
+            <span
+              class="label-text ml-2 dark:text-gray-300"
+            >
+              disabled checked
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        Input sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <input
+            class="input input-bordered dark:bg-gray-700 rounded-full m-1"
+            type="text"
+            value="default"
+          />
+          <input
+            class="input input-bordered dark:bg-gray-700 rounded-full input-primary m-1"
+            type="text"
+            value="primary"
+          />
+          <input
+            class="input input-bordered dark:bg-gray-700 rounded-full input-secondary m-1"
+            type="text"
+            value="secondary"
+          />
+          <input
+            class="input input-bordered dark:bg-gray-700 rounded-full input-accent m-1"
+            type="text"
+            value="accent"
+          />
+          <input
+            class="input input-bordered dark:bg-gray-700 rounded-full input-success m-1"
+            type="text"
+            value="success"
+          />
+          <input
+            class="input input-bordered dark:bg-gray-700 rounded-full input-warning m-1"
+            type="text"
+            value="warning"
+          />
+          <input
+            class="input input-bordered dark:bg-gray-700 rounded-full input-error m-1"
+            type="text"
+            value="error"
+          />
+          <input
+            class="input input-bordered dark:bg-gray-700 rounded-full input-info m-1"
+            type="text"
+            value="info"
+          />
+          <input
+            class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 m-1"
+            disabled=""
+            type="text"
+            value="disabled"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        Select sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 m-1"
+            id="select-default"
+            title="default"
+          >
+            <option
+              disabled=""
+              selected=""
+              value=""
+            >
+              Choose your superpower
+            </option>
+            <option
+              value="1"
+            >
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 select-primary m-1"
+            id="select-primary"
+            title="primary"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 select-secondary m-1"
+            id="select-secondary"
+            title="secondary"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 select-accent m-1"
+            id="select-accent"
+            title="accent"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 select-success m-1"
+            id="select-success"
+            title="accent"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 select-warning m-1"
+            id="select-warning"
+            title="accent"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 select-error m-1"
+            id="select-error"
+            title="accent"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700 select-info m-1"
+            id="select-info"
+            title="accent"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+          <select
+            class="select select-bordered rounded-full dark:bg-gray-700  dark:text-gray-500 select-primary m-1"
+            disabled=""
+            id="select-disabled"
+            title="disabled"
+          >
+            <option
+              disabled=""
+            >
+              Choose your superpower
+            </option>
+            <option>
+              telekinesis
+            </option>
+            <option
+              value="2"
+            >
+              time travel
+            </option>
+            <option
+              value="3"
+            >
+              invisibility
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        TextArea sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 m-1"
+            id="textarea-default"
+            title="default"
+          >
+            default
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-primary m-1"
+            id="textarea-primary"
+            title="primary"
+          >
+            primary
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-secondary m-1"
+            id="textarea-secondary"
+            title="secondary"
+          >
+            secondary
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-primary m-1"
+            id="textarea-accent"
+            title="accent"
+          >
+            accent
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-success m-1"
+            id="textarea-success"
+            title="success"
+          >
+            success
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-warning m-1"
+            id="textarea-warning"
+            title="warning"
+          >
+            warning
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-error m-1"
+            id="textarea-error"
+            title="error"
+          >
+            error
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-info m-1"
+            id="textarea-info"
+            title="info"
+          >
+            info
+          </textarea>
+          <textarea
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700  dark:text-gray-500 textarea-primary m-1"
+            disabled=""
+            id="textarea-disabled"
+            title="disabled"
+          >
+            disabled
+          </textarea>
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        Range sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <input
+            class="range dark:bg-gray-600 rounded-full m-1"
+            type="range"
+            value="default"
+          />
+          <input
+            class="range dark:bg-gray-600 rounded-full range-primary m-1"
+            type="range"
+            value="primary"
+          />
+          <input
+            class="range dark:bg-gray-600 rounded-full range-secondary m-1"
+            type="range"
+            value="secondary"
+          />
+          <input
+            class="range dark:bg-gray-600 rounded-full range-accent m-1"
+            type="range"
+            value="accent"
+          />
+          <input
+            class="range dark:bg-gray-600 rounded-full dark:text-gray-500 m-1"
+            disabled=""
+            type="range"
+            value="disabled"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        DatePicker sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-primary w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-secondary w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-accent w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-success w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-warning w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-error w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-info w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full m-1"
+                  disabled=""
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div
+            class=""
+          >
+            Custom format
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full m-1"
+                  disabled=""
+                  readonly=""
+                  type="text"
+                  value="2022/01/01"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div
+            class=""
+          >
+            Date range
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="01/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <span
+                class="inline-block w-full relative"
+              >
+                <input
+                  class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                  readonly=""
+                  type="text"
+                  value="02/01/2022"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class=""
+        >
+          Time input
+        </div>
+        <div
+          class="react-datepicker-wrapper"
+        >
+          <div
+            class="react-datepicker__input-container"
+          >
+            <span
+              class="inline-block w-full relative"
+            >
+              <input
+                class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                readonly=""
+                type="text"
+                value="01/01/2022 12:00 AM"
+              />
+              <svg
+                aria-hidden="true"
+                class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

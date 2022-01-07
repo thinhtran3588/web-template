@@ -10,8 +10,9 @@ export class Document extends NextDocument {
     return {...initialProps};
   };
 
+  // eslint-disable-next-line class-methods-use-this
   render = (): JSX.Element => (
-    <Html className='dark'>
+    <Html className='dark' data-theme=''>
       <Head>
         <meta name='application-name' content={SITE_NAME} />
         <meta name='apple-mobile-web-app-capable' content='yes' />
@@ -30,7 +31,7 @@ export class Document extends NextDocument {
         <link rel='icon' type='image/png' sizes='16x16' href='/icons/favicon-16x16.png' />
         <link rel='manifest' href='/manifest.json' />
         <link rel='mask-icon' href='/icons/safari-pinned-tab.svg' color='#5bbad5' />
-        <link rel='shortcut icon' href='/icons/favicon.ico' />
+        <link rel='icon' href='/icons/favicon.ico' />
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,600,700&display=swap' />
 
         {/* <link rel='apple-touch-startup-image' href='/images/apple_splash_2048.png' sizes='2048x2732' />

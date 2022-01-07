@@ -5,11 +5,11 @@ import {Provider, useSelector} from 'react-redux';
 import {useEffect} from 'react';
 import {useRouter} from 'next/router';
 import type {AppProps} from 'next/app';
-import {getI18nText} from '@core/helpers/get-i18n-text';
-import SITE_I18N_TEXT from '@locales/site.json';
 import {Layout} from '@core/components/layout';
 import {RootState, store} from '@store';
 import type {NextComponentType, NextPageContext} from 'next';
+import {ErrorBoundary} from '@core/components/error-boundary';
+import {Seo} from '@core/components/seo';
 
 interface BaseAppProps {
   Component: NextComponentType<NextPageContext, any, {}> & {
@@ -21,7 +21,17 @@ interface BaseAppProps {
 const BaseApp = ({Component, pageProps}: BaseAppProps): JSX.Element => {
   const locale = useSelector((state: RootState) => state.settings.locale);
   const theme = useSelector((state: RootState) => state.settings.theme);
+  const themeColorPack = useSelector((state: RootState) => state.settings.themeColorPack);
   const router = useRouter();
+
+  const renderComponent = (): JSX.Element =>
+    Component.hideLayout ? (
+      <Component {...pageProps} />
+    ) : (
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    );
 
   useEffect(() => {
     if (locale !== router.locale) {
@@ -37,29 +47,17 @@ const BaseApp = ({Component, pageProps}: BaseAppProps): JSX.Element => {
     }
   }, [theme]);
 
-  if (Component.hideLayout) {
-    return (
-      <>
-        <Head>
-          <meta name='viewport' content='width=device-width, initial-scale=1' />
-          <title>{getI18nText(SITE_I18N_TEXT, 'SITE_NAME', router)}</title>
-          <meta name='description' content={getI18nText(SITE_I18N_TEXT, 'SITE_DESCRIPTION', router)} />
-        </Head>
-        <Component {...pageProps} />
-      </>
-    );
-  }
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', themeColorPack);
+  }, [themeColorPack]);
 
   return (
     <>
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <title>{getI18nText(SITE_I18N_TEXT, 'SITE_NAME', router)}</title>
-        <meta name='description' content={getI18nText(SITE_I18N_TEXT, 'SITE_DESCRIPTION', router)} />
       </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Seo />
+      <ErrorBoundary>{renderComponent()}</ErrorBoundary>
     </>
   );
 };

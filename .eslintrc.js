@@ -33,7 +33,7 @@ module.exports = {
     'import/no-unresolved': [
       'error',
       {
-        ignore: ['@test', '@core', '@store', '@locales', '@main', '@api'],
+        ignore: ['@test', '@core', '@store', '@locales', '@main', '@settings', '@api'],
       },
     ], // ignore module import
     'max-len': ['error', 120], // change max length for a line to 120
@@ -61,6 +61,15 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
     'no-inline-styles/no-inline-styles': 'error',
+    'react/function-component-definition': ['error', {namedComponents: 'arrow-function'}],
+    'react/prop-types': 'off',
+    'jsx-a11y/label-has-associated-control': [
+      2,
+      {
+        controlComponents: ['TextInput', 'Radio', 'Checkbox'],
+        depth: 3,
+      },
+    ],
   },
   settings: {
     'import/resolver': {
