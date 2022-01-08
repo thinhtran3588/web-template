@@ -379,529 +379,6 @@ exports[`Home renders successfully 1`] = `
       </div>
     </div>
     <div
-      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
-    >
-      <div
-        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
-              from-primary to-secondary text-primary-content"
-      >
-        Dropdown sample
-      </div>
-      <div
-        class="p-2"
-      >
-        <div
-          class="form-control"
-        >
-          <div
-            class="dropdown relative"
-          >
-            <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
-              placeholder="Please select value"
-              readonly=""
-              type="text"
-              value=""
-            />
-            <ul
-              class="w-full p-2 shadow-xl menu dropdown-content
-          bg-base-100 dark:bg-gray-700 rounded-box hidden"
-            >
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 1
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 2
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 3
-                </a>
-              </li>
-            </ul>
-            <svg
-              aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                clip-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                fill-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <div
-            class="dropdown relative"
-          >
-            <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-primary m-1"
-              placeholder="Please select value"
-              readonly=""
-              type="text"
-              value=""
-            />
-            <ul
-              class="w-full p-2 shadow-xl menu dropdown-content
-          bg-base-100 dark:bg-gray-700 rounded-box hidden"
-            >
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 1
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 2
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 3
-                </a>
-              </li>
-            </ul>
-            <svg
-              aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                clip-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                fill-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <div
-            class="dropdown relative"
-          >
-            <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-secondary m-1"
-              placeholder="Please select value"
-              readonly=""
-              type="text"
-              value=""
-            />
-            <ul
-              class="w-full p-2 shadow-xl menu dropdown-content
-          bg-base-100 dark:bg-gray-700 rounded-box hidden"
-            >
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 1
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 2
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 3
-                </a>
-              </li>
-            </ul>
-            <svg
-              aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                clip-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                fill-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <div
-            class="dropdown relative"
-          >
-            <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-accent m-1"
-              placeholder="Please select value"
-              readonly=""
-              type="text"
-              value=""
-            />
-            <ul
-              class="w-full p-2 shadow-xl menu dropdown-content
-          bg-base-100 dark:bg-gray-700 rounded-box hidden"
-            >
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 1
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 2
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 3
-                </a>
-              </li>
-            </ul>
-            <svg
-              aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                clip-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                fill-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <div
-            class="dropdown relative"
-          >
-            <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-success m-1"
-              placeholder="Please select value"
-              readonly=""
-              type="text"
-              value=""
-            />
-            <ul
-              class="w-full p-2 shadow-xl menu dropdown-content
-          bg-base-100 dark:bg-gray-700 rounded-box hidden"
-            >
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 1
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 2
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 3
-                </a>
-              </li>
-            </ul>
-            <svg
-              aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                clip-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                fill-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <div
-            class="dropdown relative"
-          >
-            <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-warning m-1"
-              placeholder="Please select value"
-              readonly=""
-              type="text"
-              value=""
-            />
-            <ul
-              class="w-full p-2 shadow-xl menu dropdown-content
-          bg-base-100 dark:bg-gray-700 rounded-box hidden"
-            >
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 1
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 2
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 3
-                </a>
-              </li>
-            </ul>
-            <svg
-              aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                clip-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                fill-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <div
-            class="dropdown relative"
-          >
-            <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-error m-1"
-              placeholder="Please select value"
-              readonly=""
-              type="text"
-              value=""
-            />
-            <ul
-              class="w-full p-2 shadow-xl menu dropdown-content
-          bg-base-100 dark:bg-gray-700 rounded-box hidden"
-            >
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 1
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 2
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 3
-                </a>
-              </li>
-            </ul>
-            <svg
-              aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                clip-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                fill-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <div
-            class="dropdown relative"
-          >
-            <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-info m-1"
-              placeholder="Please select value"
-              readonly=""
-              type="text"
-              value=""
-            />
-            <ul
-              class="w-full p-2 shadow-xl menu dropdown-content
-          bg-base-100 dark:bg-gray-700 rounded-box hidden"
-            >
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 1
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 2
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 3
-                </a>
-              </li>
-            </ul>
-            <svg
-              aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                clip-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                fill-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <div
-            class="dropdown relative"
-          >
-            <input
-              class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full input-primary m-1"
-              disabled=""
-              placeholder="(disabled)"
-              readonly=""
-              type="text"
-              value=""
-            />
-            <ul
-              class="w-full p-2 shadow-xl menu dropdown-content
-          bg-base-100 dark:bg-gray-700 rounded-box hidden"
-            >
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 1
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 2
-                </a>
-              </li>
-              <li
-                class="dark:hover:bg-gray-500"
-              >
-                <a
-                  aria-hidden="true"
-                >
-                  Option 3
-                </a>
-              </li>
-            </ul>
-            <svg
-              aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                clip-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                fill-rule="evenodd"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
       class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mb-2"
     >
       <div
@@ -1487,6 +964,529 @@ exports[`Home renders successfully 1`] = `
             type="text"
             value="disabled"
           />
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        Dropdown sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <div
+          class="form-control"
+        >
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-primary m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-secondary m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-accent m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-success m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-warning m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-error m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-info m-1"
+              placeholder="Please select value"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="dropdown relative"
+          >
+            <input
+              class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full input-primary m-1"
+              disabled=""
+              placeholder="(disabled)"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <ul
+              class="w-full p-2 shadow-xl menu dropdown-content
+          bg-base-100 dark:bg-gray-700 rounded-box hidden"
+            >
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 1
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 2
+                </a>
+              </li>
+              <li
+                class="dark:hover:bg-gray-500"
+              >
+                <a
+                  aria-hidden="true"
+                >
+                  Option 3
+                </a>
+              </li>
+            </ul>
+            <svg
+              aria-hidden="true"
+              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -2315,6 +2315,74 @@ exports[`Home renders successfully 1`] = `
                 />
               </svg>
             </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="transition-colors duration-500 bg-white dark:bg-gray-800 shadow-xl rounded-md mt-2"
+    >
+      <div
+        class="font-semibold rounded-t-md p-2 bg-gradient-to-r
+              from-primary to-secondary text-primary-content"
+      >
+        Modal Sample
+      </div>
+      <div
+        class="p-2"
+      >
+        <button
+          class="btn rounded-full min-w-10 bg-gradient-to-r border-0
+          from-primary hover:from-primary-focus
+          to-secondary hover:to-secondary-focus"
+          type="button"
+        >
+          Open modal
+        </button>
+        <div
+          class="modal backdrop-blur bg-opacity-30"
+        >
+          <div
+            aria-hidden="true"
+            class="absolute h-full w-full"
+          />
+          <div
+            class="modal-box rounded-xl bg-white dark:bg-gray-800 p-2"
+          >
+            <div
+              class="font-semibold rounded-t-md -mt-2 -mx-2 mb-1 p-2 bg-primary bg-primary text-primary-content"
+            >
+              Modal
+            </div>
+            <p>
+              Enim dolorem dolorum omnis atque necessitatibus. Consequatur aut adipisci qui iusto illo eaque. Consequatur repudiandae et. Nulla ea quasi eligendi. Saepe velit autem minima.
+            </p>
+            <div
+              class="mt-2 flex flex-col sm:flex-row sm:justify-end"
+            >
+              <span
+                class="p-1"
+              >
+                <button
+                  class="btn rounded-full min-w-10 bg-gradient-to-r border-0
+          from-primary hover:from-primary-focus
+          to-secondary hover:to-secondary-focus w-full sm:w-auto"
+                  type="button"
+                >
+                  OK
+                </button>
+              </span>
+              <span
+                class="p-1"
+              >
+                <button
+                  class="btn rounded-full min-w-10 w-full sm:w-auto"
+                  type="button"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
           </div>
         </div>
       </div>

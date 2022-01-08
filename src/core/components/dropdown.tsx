@@ -70,7 +70,7 @@ export const Dropdown = (props: DropdownProps): JSX.Element => {
           </li>
         ))}
       </ul>
-      <ChevronDownIcon className='absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none' />
+      <ChevronDownIcon className='absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none' />
     </div>
   );
 };

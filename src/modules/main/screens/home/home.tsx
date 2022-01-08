@@ -14,12 +14,12 @@ import {TextAreaSample} from './components/text-area-sample';
 import {RangeSample} from './components/range-sample';
 import {DatePickerSample} from './components/date-picker-sample';
 import {DropdownSample} from './components/dropdown-sample';
+import {ModalSample} from './components/modal-sample';
 
 export const Home: NextPage = (): JSX.Element => (
   <div className='container overflow-auto'>
     <ThemeSettingsContainer />
     <ThemeColorPackSettingsContainer />
-    <DropdownSample />
     <Card title='Components' className='mb-2'>
       <p>
         Since we&apos;re using{' '}
@@ -47,9 +47,11 @@ export const Home: NextPage = (): JSX.Element => (
     <RadioSample />
     <ToggleSample />
     <InputSample />
+    <DropdownSample />
     <SelectSample />
     <TextAreaSample />
     <RangeSample />
     <DatePickerSample />
+    <ModalSample />
   </div>
 );
