@@ -983,10 +983,10 @@ exports[`Home renders successfully 1`] = `
           class="form-control"
         >
           <div
-            class="dropdown relative"
+            class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+              class="input input-bordered dark:bg-gray-700 rounded-full w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1026,7 +1026,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -1039,10 +1039,10 @@ exports[`Home renders successfully 1`] = `
             </svg>
           </div>
           <div
-            class="dropdown relative"
+            class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-primary m-1"
+              class="input input-bordered dark:bg-gray-700 rounded-full input-primary w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1082,7 +1082,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -1095,10 +1095,10 @@ exports[`Home renders successfully 1`] = `
             </svg>
           </div>
           <div
-            class="dropdown relative"
+            class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-secondary m-1"
+              class="input input-bordered dark:bg-gray-700 rounded-full input-secondary w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1138,7 +1138,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -1151,10 +1151,10 @@ exports[`Home renders successfully 1`] = `
             </svg>
           </div>
           <div
-            class="dropdown relative"
+            class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-accent m-1"
+              class="input input-bordered dark:bg-gray-700 rounded-full input-accent w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1194,7 +1194,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -1207,10 +1207,10 @@ exports[`Home renders successfully 1`] = `
             </svg>
           </div>
           <div
-            class="dropdown relative"
+            class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-success m-1"
+              class="input input-bordered dark:bg-gray-700 rounded-full input-success w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1250,7 +1250,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -1263,10 +1263,10 @@ exports[`Home renders successfully 1`] = `
             </svg>
           </div>
           <div
-            class="dropdown relative"
+            class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-warning m-1"
+              class="input input-bordered dark:bg-gray-700 rounded-full input-warning w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1306,7 +1306,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -1319,10 +1319,10 @@ exports[`Home renders successfully 1`] = `
             </svg>
           </div>
           <div
-            class="dropdown relative"
+            class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-error m-1"
+              class="input input-bordered dark:bg-gray-700 rounded-full input-error w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1362,7 +1362,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -1375,10 +1375,10 @@ exports[`Home renders successfully 1`] = `
             </svg>
           </div>
           <div
-            class="dropdown relative"
+            class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full input-info m-1"
+              class="input input-bordered dark:bg-gray-700 rounded-full input-info w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1418,7 +1418,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -1431,10 +1431,10 @@ exports[`Home renders successfully 1`] = `
             </svg>
           </div>
           <div
-            class="dropdown relative"
+            class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full input-primary m-1"
+              class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 input-primary w-full"
               disabled=""
               placeholder="(disabled)"
               readonly=""
@@ -1475,7 +1475,7 @@ exports[`Home renders successfully 1`] = `
             </ul>
             <svg
               aria-hidden="true"
-              class="absolute w-6 h-6 right-2 top-4 dark:text-gray-300 pointer-events-none"
+              class="absolute w-6 h-6 right-2 top-3 dark:text-gray-300 pointer-events-none"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -1876,18 +1876,18 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <span
-                class="inline-block w-full relative"
+              <div
+                class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                  class="input input-bordered dark:bg-gray-700 rounded-full w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
                 />
                 <svg
                   aria-hidden="true"
-                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  class="absolute h-6 w-6 right-2 top-3 pointer-events-none"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -1900,7 +1900,7 @@ exports[`Home renders successfully 1`] = `
                     stroke-width="2"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
           </div>
           <div
@@ -1909,18 +1909,18 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <span
-                class="inline-block w-full relative"
+              <div
+                class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full input-primary w-full m-1"
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-primary w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
                 />
                 <svg
                   aria-hidden="true"
-                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  class="absolute h-6 w-6 right-2 top-3 pointer-events-none"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -1933,7 +1933,7 @@ exports[`Home renders successfully 1`] = `
                     stroke-width="2"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
           </div>
           <div
@@ -1942,18 +1942,18 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <span
-                class="inline-block w-full relative"
+              <div
+                class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full input-secondary w-full m-1"
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-secondary w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
                 />
                 <svg
                   aria-hidden="true"
-                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  class="absolute h-6 w-6 right-2 top-3 pointer-events-none"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -1966,7 +1966,7 @@ exports[`Home renders successfully 1`] = `
                     stroke-width="2"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
           </div>
           <div
@@ -1975,18 +1975,18 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <span
-                class="inline-block w-full relative"
+              <div
+                class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full input-accent w-full m-1"
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-accent w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
                 />
                 <svg
                   aria-hidden="true"
-                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  class="absolute h-6 w-6 right-2 top-3 pointer-events-none"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -1999,7 +1999,7 @@ exports[`Home renders successfully 1`] = `
                     stroke-width="2"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
           </div>
           <div
@@ -2008,18 +2008,18 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <span
-                class="inline-block w-full relative"
+              <div
+                class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full input-success w-full m-1"
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-success w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
                 />
                 <svg
                   aria-hidden="true"
-                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  class="absolute h-6 w-6 right-2 top-3 pointer-events-none"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2032,7 +2032,7 @@ exports[`Home renders successfully 1`] = `
                     stroke-width="2"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
           </div>
           <div
@@ -2041,18 +2041,18 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <span
-                class="inline-block w-full relative"
+              <div
+                class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full input-warning w-full m-1"
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-warning w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
                 />
                 <svg
                   aria-hidden="true"
-                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  class="absolute h-6 w-6 right-2 top-3 pointer-events-none"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2065,7 +2065,7 @@ exports[`Home renders successfully 1`] = `
                     stroke-width="2"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
           </div>
           <div
@@ -2074,18 +2074,18 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <span
-                class="inline-block w-full relative"
+              <div
+                class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full input-error w-full m-1"
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-error w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
                 />
                 <svg
                   aria-hidden="true"
-                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  class="absolute h-6 w-6 right-2 top-3 pointer-events-none"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2098,7 +2098,7 @@ exports[`Home renders successfully 1`] = `
                     stroke-width="2"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
           </div>
           <div
@@ -2107,18 +2107,18 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <span
-                class="inline-block w-full relative"
+              <div
+                class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full input-info w-full m-1"
+                  class="input input-bordered dark:bg-gray-700 rounded-full input-info w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
                 />
                 <svg
                   aria-hidden="true"
-                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  class="absolute h-6 w-6 right-2 top-3 pointer-events-none"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2131,7 +2131,7 @@ exports[`Home renders successfully 1`] = `
                     stroke-width="2"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
           </div>
           <div
@@ -2140,11 +2140,11 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <span
-                class="inline-block w-full relative"
+              <div
+                class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full m-1"
+                  class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full"
                   disabled=""
                   readonly=""
                   type="text"
@@ -2152,7 +2152,7 @@ exports[`Home renders successfully 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  class="absolute h-6 w-6 right-2 top-3 pointer-events-none"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2165,7 +2165,7 @@ exports[`Home renders successfully 1`] = `
                     stroke-width="2"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
           </div>
           <div
@@ -2179,11 +2179,11 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <span
-                class="inline-block w-full relative"
+              <div
+                class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full m-1"
+                  class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full"
                   disabled=""
                   readonly=""
                   type="text"
@@ -2191,7 +2191,7 @@ exports[`Home renders successfully 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  class="absolute h-6 w-6 right-2 top-3 pointer-events-none"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2204,7 +2204,7 @@ exports[`Home renders successfully 1`] = `
                     stroke-width="2"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
           </div>
           <div
@@ -2218,18 +2218,18 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <span
-                class="inline-block w-full relative"
+              <div
+                class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                  class="input input-bordered dark:bg-gray-700 rounded-full w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
                 />
                 <svg
                   aria-hidden="true"
-                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  class="absolute h-6 w-6 right-2 top-3 pointer-events-none"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2242,7 +2242,7 @@ exports[`Home renders successfully 1`] = `
                     stroke-width="2"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
           </div>
           <div
@@ -2251,18 +2251,18 @@ exports[`Home renders successfully 1`] = `
             <div
               class="react-datepicker__input-container"
             >
-              <span
-                class="inline-block w-full relative"
+              <div
+                class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                  class="input input-bordered dark:bg-gray-700 rounded-full w-full"
                   readonly=""
                   type="text"
                   value="02/01/2022"
                 />
                 <svg
                   aria-hidden="true"
-                  class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                  class="absolute h-6 w-6 right-2 top-3 pointer-events-none"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2275,7 +2275,7 @@ exports[`Home renders successfully 1`] = `
                     stroke-width="2"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
           </div>
         </div>
@@ -2290,18 +2290,18 @@ exports[`Home renders successfully 1`] = `
           <div
             class="react-datepicker__input-container"
           >
-            <span
-              class="inline-block w-full relative"
+            <div
+              class="inline-block w-full relative m-1"
             >
               <input
-                class="input input-bordered dark:bg-gray-700 rounded-full w-full m-1"
+                class="input input-bordered dark:bg-gray-700 rounded-full w-full"
                 readonly=""
                 type="text"
                 value="01/01/2022 12:00 AM"
               />
               <svg
                 aria-hidden="true"
-                class="absolute h-6 w-6 right-2 top-4 pointer-events-none"
+                class="absolute h-6 w-6 right-2 top-3 pointer-events-none"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -2314,7 +2314,7 @@ exports[`Home renders successfully 1`] = `
                   stroke-width="2"
                 />
               </svg>
-            </span>
+            </div>
           </div>
         </div>
       </div>
@@ -2350,7 +2350,7 @@ exports[`Home renders successfully 1`] = `
             class="modal-box rounded-xl bg-white dark:bg-gray-800 p-2"
           >
             <div
-              class="font-semibold rounded-t-md -mt-2 -mx-2 mb-1 p-2 bg-primary bg-primary text-primary-content"
+              class="font-semibold rounded-t-xl -mt-2 -mx-2 mb-1 p-2 bg-success text-success-content"
             >
               Modal
             </div>

@@ -9,6 +9,7 @@ import {Option} from '@core/interfaces';
 import {FieldSelect} from '@core/components/field-select';
 import {FieldTextArea} from '@core/components/field-textarea';
 import {FieldRange} from '@core/components/field-range';
+import {FieldDate} from '@core/components/field-date';
 
 const options: Option[] = [
   {
@@ -34,6 +35,7 @@ export const Form: NextPage = (): JSX.Element => {
       select: '',
       textarea: '',
       range: 15,
+      date: new Date(),
     },
     validationSchema: Yup.object({
       text: Yup.string()
@@ -56,6 +58,7 @@ export const Form: NextPage = (): JSX.Element => {
         .min(10, 'Must be larger than or equal to 10')
         .max(20, 'Must be smaller than or equal to 20')
         .required('Required'),
+      date: Yup.date(),
     }),
     onSubmit: (values) => {
       // eslint-disable-next-line no-alert
@@ -149,6 +152,7 @@ export const Form: NextPage = (): JSX.Element => {
           />
           <FieldTextArea formik={formik} name='textarea' id='textarea' label='Textarea Value' variant='primary' />
           <FieldRange formik={formik} name='range' id='range' label='Range Value' variant='primary' min={10} max={20} />
+          <FieldDate formik={formik} name='date' id='date' label='Date Value' variant='primary' />
           <div className='mt-2 justify-center flex'>
             <ButtonGradient type='submit'>Submit</ButtonGradient>
           </div>

@@ -14,63 +14,71 @@ export const DropdownSample = (): JSX.Element => {
     <Card title='Dropdown sample' className='mt-2'>
       <div className='form-control'>
         <Dropdown
-          className='m-1'
+          containerClassName='m-1'
           options={options}
           value={value}
           setValue={setValue}
           placeholder='Please select value'
         />
         <Dropdown
-          className='input-primary m-1'
+          containerClassName='m-1'
+          variant='primary'
           options={options}
           value={value}
           setValue={setValue}
           placeholder='Please select value'
         />
         <Dropdown
-          className='input-secondary m-1'
+          containerClassName='m-1'
+          variant='secondary'
           options={options}
           value={value}
           setValue={setValue}
           placeholder='Please select value'
         />
         <Dropdown
-          className='input-accent m-1'
+          containerClassName='m-1'
+          variant='accent'
           options={options}
           value={value}
           setValue={setValue}
           placeholder='Please select value'
         />
         <Dropdown
-          className='input-success m-1'
+          containerClassName='m-1'
+          variant='success'
           options={options}
           value={value}
           setValue={setValue}
           placeholder='Please select value'
         />
         <Dropdown
-          className='input-warning m-1'
+          containerClassName='m-1'
+          variant='warning'
           options={options}
           value={value}
           setValue={setValue}
           placeholder='Please select value'
         />
         <Dropdown
-          className='input-error m-1'
+          containerClassName='m-1'
+          variant='error'
           options={options}
           value={value}
           setValue={setValue}
           placeholder='Please select value'
         />
         <Dropdown
-          className='input-info m-1'
+          containerClassName='m-1'
+          variant='info'
           options={options}
           value={value}
           setValue={setValue}
           placeholder='Please select value'
         />
         <Dropdown
-          className='input-primary m-1'
+          containerClassName='m-1'
+          variant='primary'
           disabled
           options={options}
           value={value}
