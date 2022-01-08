@@ -37,20 +37,56 @@ export const ButtonSample = (): JSX.Element => (
       info
     </Button>
     <br />
+    <Button variant='primary' outline className='m-1'>
+      primary
+    </Button>
+    <Button variant='secondary' outline className='m-1'>
+      secondary
+    </Button>
+    <Button variant='accent' outline className='m-1'>
+      accent
+    </Button>
+    <Button className='m-1' outline>
+      neutral
+    </Button>
+    <Button variant='success' outline className='m-1'>
+      success
+    </Button>
+    <Button variant='warning' outline className='m-1'>
+      warning
+    </Button>
+    <Button variant='error' outline className='m-1'>
+      error
+    </Button>
+    <Button variant='info' outline className='m-1'>
+      info
+    </Button>
+    <br />
     <Button variant='primary' className='m-1' disabled>
       disabled
     </Button>
     <ButtonGradient className='m-1' disabled>
       disabled
     </ButtonGradient>
+    <Button variant='primary' outline className='m-1' disabled>
+      disabled
+    </Button>
     <br />
     <ButtonGradient className='loading m-1'>loading</ButtonGradient>
-    <Button className='loading m-1'>loading</Button>
+    <Button className='loading m-1' variant='primary'>
+      loading
+    </Button>
+    <Button variant='primary' outline className='loading m-1'>
+      primary
+    </Button>
     <Button className='loading m-1' disabled>
       loading disabled
     </Button>
     <ButtonGradient className='loading m-1' disabled>
       loading disabled
     </ButtonGradient>
+    <Button variant='primary' outline className='loading m-1' disabled>
+      primary disabled
+    </Button>
   </Card>
 );

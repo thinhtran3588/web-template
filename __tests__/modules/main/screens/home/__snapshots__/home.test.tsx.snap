@@ -486,19 +486,19 @@ exports[`Home renders successfully 1`] = `
           accent
         </button>
         <button
-          class="btn rounded-full min-w-10 m-1"
+          class="btn rounded-full min-w-10 dark:bg-gray-700 dark:text-primary-content dark:border-transparent dark:hover:bg-gray-600 m-1"
           type="button"
         >
           neutral
         </button>
         <button
-          class="btn rounded-full min-w-10 btn-ghost m-1"
+          class="btn rounded-full min-w-10 dark:hover:bg-gray-600 dark:text-white dark:border-gray-800 btn-ghost m-1"
           type="button"
         >
           ghost
         </button>
         <button
-          class="btn rounded-full min-w-10 btn-link m-1"
+          class="btn rounded-full min-w-10 dark:text-primary dark:border-transparent btn-link m-1"
           type="button"
         >
           link
@@ -529,7 +529,56 @@ exports[`Home renders successfully 1`] = `
         </button>
         <br />
         <button
-          class="btn rounded-full min-w-10 dark:text-gray-500 btn-primary m-1"
+          class="btn rounded-full min-w-10 btn-primary btn-outline m-1"
+          type="button"
+        >
+          primary
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-secondary btn-outline m-1"
+          type="button"
+        >
+          secondary
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-accent btn-outline m-1"
+          type="button"
+        >
+          accent
+        </button>
+        <button
+          class="btn rounded-full min-w-10 dark:bg-gray-700 dark:text-primary-content dark:border-transparent dark:hover:bg-gray-600 btn-outline m-1"
+          type="button"
+        >
+          neutral
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-success btn-outline m-1"
+          type="button"
+        >
+          success
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-warning btn-outline m-1"
+          type="button"
+        >
+          warning
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-error btn-outline m-1"
+          type="button"
+        >
+          error
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-info btn-outline m-1"
+          type="button"
+        >
+          info
+        </button>
+        <br />
+        <button
+          class="btn rounded-full min-w-10 btn-primary dark:text-gray-500 border-transparent m-1"
           disabled=""
           type="button"
         >
@@ -537,6 +586,13 @@ exports[`Home renders successfully 1`] = `
         </button>
         <button
           class="btn rounded-full min-w-10 dark:text-gray-500 m-1"
+          disabled=""
+          type="button"
+        >
+          disabled
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-primary btn-outline dark:text-gray-500 border-transparent m-1"
           disabled=""
           type="button"
         >
@@ -552,13 +608,19 @@ exports[`Home renders successfully 1`] = `
           loading
         </button>
         <button
-          class="btn rounded-full min-w-10 loading m-1"
+          class="btn rounded-full min-w-10 btn-primary loading m-1"
           type="button"
         >
           loading
         </button>
         <button
-          class="btn rounded-full min-w-10 dark:text-gray-500 loading m-1"
+          class="btn rounded-full min-w-10 btn-primary btn-outline loading m-1"
+          type="button"
+        >
+          primary
+        </button>
+        <button
+          class="btn rounded-full min-w-10 dark:bg-gray-700 dark:text-primary-content dark:border-transparent dark:hover:bg-gray-600 dark:text-gray-500 border-transparent loading m-1"
           disabled=""
           type="button"
         >
@@ -570,6 +632,13 @@ exports[`Home renders successfully 1`] = `
           type="button"
         >
           loading disabled
+        </button>
+        <button
+          class="btn rounded-full min-w-10 btn-primary btn-outline dark:text-gray-500 border-transparent loading m-1"
+          disabled=""
+          type="button"
+        >
+          primary disabled
         </button>
       </div>
     </div>
@@ -2376,7 +2445,7 @@ exports[`Home renders successfully 1`] = `
                 class="p-1"
               >
                 <button
-                  class="btn rounded-full min-w-10 w-full sm:w-auto"
+                  class="btn rounded-full min-w-10 dark:bg-gray-700 dark:text-primary-content dark:border-transparent dark:hover:bg-gray-600 w-full sm:w-auto"
                   type="button"
                 >
                   Close
