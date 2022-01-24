@@ -7,6 +7,7 @@ import {Input} from './input';
 export type FieldDateProps = React.ComponentProps<typeof Input> & {
   label: string;
   name: string;
+  disabled?: boolean;
   showLabel?: boolean;
   showError?: boolean;
   formik: unknown;
@@ -24,6 +25,7 @@ export const FieldDate = (props: FieldDateProps): JSX.Element => {
     showError = true,
     showLabel = true,
     variant,
+    disabled,
     ...other
   } = props;
   const formik = inputFormik as ReturnType<typeof useFormik>;
@@ -47,6 +49,7 @@ export const FieldDate = (props: FieldDateProps): JSX.Element => {
         onBlur={formik.handleBlur}
         selected={formik.values[name] as Date}
         variant={inputVariant}
+        disabled={disabled}
       />
       {showError && formik.touched[name] && formik.errors[name] && (
         <span className='text-error mt-1'>{formik.errors[name]}</span>

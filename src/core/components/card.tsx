@@ -2,14 +2,12 @@ import clsx from 'clsx';
 import type {ColorVariant} from '@core/interfaces';
 
 export interface CardProps {
+  title?: string;
+  children?: React.ReactNode;
   className?: string;
   headerClassName?: string;
   contentClassName?: string;
-  footerClassName?: string;
-  children?: React.ReactNode;
   CustomHeader?: React.ReactNode;
-  CustomFooter?: React.ReactNode;
-  title?: string;
   headerVariantFrom?: ColorVariant;
   headerVariantTo?: ColorVariant;
 }
@@ -21,7 +19,6 @@ export const Card = (props: CardProps): JSX.Element => {
     headerClassName,
     contentClassName,
     CustomHeader,
-    CustomFooter,
     headerVariantFrom = 'primary',
     headerVariantTo = 'secondary',
     children,
@@ -41,7 +38,6 @@ export const Card = (props: CardProps): JSX.Element => {
       )}
       {CustomHeader}
       <div className={clsx('p-2', contentClassName)}>{children}</div>
-      {CustomFooter}
     </div>
   );
 };

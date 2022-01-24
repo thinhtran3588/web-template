@@ -16,8 +16,8 @@ export const Modal = (props: ModalProps): JSX.Element => {
   return (
     <div className={clsx('modal backdrop-blur bg-opacity-30', open ? 'modal-open' : '', backgroundClassName)}>
       <div className='absolute h-full w-full' onClick={() => setOpen(false)} aria-hidden />
-      <div className='modal-box rounded-xl bg-white dark:bg-gray-800 p-2'>
-        <div className={clsx(`font-semibold rounded-t-xl -mt-2 -mx-2 mb-1 p-2 bg-${variant} text-${variant}-content`)}>
+      <div className='modal-box rounded-xl bg-white dark:bg-gray-800 dark:text-gray-300 p-2'>
+        <div className={clsx(`font-semibold rounded-t-xl -mt-2 -mx-2 mb-1 p-2 bg-${variant} text-primary-content`)}>
           {title}
         </div>
         {children}
@@ -31,6 +31,7 @@ export const Modal = (props: ModalProps): JSX.Element => {
 
 /**
  * css classes required by Tailwindcss
- * bg-primary bg-secondary bg-accent
- * bg-success bg-warning bg-error bg-info
+ * bg-primary bg-secondary bg-accent bg-success bg-warning bg-error bg-info
+ * text-primary-content text-secondary-content text-accent-content
+ * text-success-content text-warning-content text-error-content text-info-content
  */

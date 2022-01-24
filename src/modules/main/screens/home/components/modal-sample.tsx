@@ -14,12 +14,12 @@ export const ModalSample = (): JSX.Element => {
         setOpen={setOpen}
         title='Modal'
         buttons={[
-          <ButtonGradient className='w-full sm:w-auto' onClick={() => setOpen(false)}>
-            OK
-          </ButtonGradient>,
-          <Button className='w-full sm:w-auto' onClick={() => setOpen(false)}>
+          <Button outline key='close-button' className='w-full sm:w-auto' onClick={() => setOpen(false)}>
             Close
           </Button>,
+          <ButtonGradient key='ok-button' className='w-full sm:w-auto' onClick={() => setOpen(false)}>
+            OK
+          </ButtonGradient>,
         ]}
         variant='success'
       >

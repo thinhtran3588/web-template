@@ -16,7 +16,7 @@ export const Input = forwardRef((props: InputProps, ref): JSX.Element => {
       ref={ref}
       type={type}
       className={clsx(
-        `input input-bordered dark:bg-gray-700 rounded-full`,
+        `input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full`,
         other.disabled ? 'dark:text-gray-500' : '',
         variant ? `input-${variant}` : '',
         className,
@@ -29,5 +29,5 @@ export const Input = forwardRef((props: InputProps, ref): JSX.Element => {
 /**
  * css classes required by Tailwindcss
  * input-primary input-secondary input-accent
- * input-success input-warning from-error from-info
+ * input-success input-warning input-error input-info
  */

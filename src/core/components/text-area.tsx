@@ -16,7 +16,7 @@ export const TextArea = forwardRef((props: TextAreaProps, ref): JSX.Element => {
     <textarea
       ref={ref}
       className={clsx(
-        `textarea textarea-bordered rounded-3xl dark:bg-gray-700`,
+        `textarea textarea-bordered rounded-3xl dark:bg-gray-700 dark:text-gray-300`,
         other.disabled ? ' dark:text-gray-500' : '',
         variant ? `textarea-${variant}` : '',
         className,

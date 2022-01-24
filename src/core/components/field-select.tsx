@@ -2,15 +2,15 @@
 import clsx from 'clsx';
 import {useFormik} from 'formik';
 import type {ColorVariant, Option} from '@core/interfaces';
-import {isMobile} from '@core/helpers/is-mobile';
+import {Checkbox} from './checkbox';
 import {Dropdown} from './dropdown';
 import {Select} from './select';
-import {Checkbox} from './checkbox';
 
 export type FieldSelectProps = {
   label: string;
   name: string;
   options: Option[];
+  disabled?: boolean;
   showLabel?: boolean;
   showError?: boolean;
   variant?: 'primary' | 'secondary' | 'accent';
@@ -24,6 +24,29 @@ export type FieldSelectProps = {
   placeholder?: string;
 };
 
+export const isMobile = (): boolean => {
+  let hasTouchScreen = false;
+  if (typeof navigator !== 'undefined' && 'maxTouchPoints' in navigator) {
+    hasTouchScreen = navigator.maxTouchPoints > 0;
+  } else if (typeof navigator !== 'undefined' && 'msMaxTouchPoints' in navigator) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    hasTouchScreen = (navigator as any).msMaxTouchPoints > 0;
+  } else if (typeof window !== 'undefined') {
+    const mQ = Boolean(window.matchMedia) && matchMedia('(pointer:coarse)');
+    if (mQ && mQ.media === '(pointer:coarse)') {
+      hasTouchScreen = !!mQ.matches;
+    } else if ('orientation' in window) {
+      hasTouchScreen = true; // deprecated, but good fallback
+    } else {
+      // Only as a last resort, fall back to user agent sniffing
+      hasTouchScreen =
+        /\b(BlackBerry|webOS|iPhone|IEMobile)\b/i.test(navigator.userAgent) ||
+        /\b(Android|Windows Phone|iPad|iPod)\b/i.test(navigator.userAgent);
+    }
+  }
+  return hasTouchScreen;
+};
+
 export const FieldSelect = (props: FieldSelectProps): JSX.Element => {
   const {
     formik: inputFormik,
@@ -35,10 +58,11 @@ export const FieldSelect = (props: FieldSelectProps): JSX.Element => {
     showLabel = true,
     variant,
     className,
-    type,
+    type = 'dropdown',
     nativeSelectOnMobile = false,
     placeholder,
     options,
+    disabled,
     ...other
   } = props;
   const formik = inputFormik as ReturnType<typeof useFormik>;
@@ -58,6 +82,7 @@ export const FieldSelect = (props: FieldSelectProps): JSX.Element => {
       variant={validationVariant}
       placeholder={placeholder}
       options={options}
+      disabled={disabled}
     />
   );
 
@@ -70,6 +95,7 @@ export const FieldSelect = (props: FieldSelectProps): JSX.Element => {
       value={formik.values[name] || ''}
       variant={validationVariant}
       placeholder={placeholder}
+      disabled={disabled}
     >
       {placeholder && (
         <option value='' disabled>
@@ -100,6 +126,7 @@ export const FieldSelect = (props: FieldSelectProps): JSX.Element => {
           name={name}
           value={option.value}
           key={option.value}
+          disabled={disabled}
         />
       ))}
     </>

@@ -12,6 +12,7 @@
     "moduleResolution": "node",
     "noEmit": true,
     "paths": {
+      "@app/*": ["./src/*"],
       "@core/*": ["src/core/*"],
       "@locales/*": ["src/locales/*"],
       "@main/*": ["src/modules/main/*"],

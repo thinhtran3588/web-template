@@ -988,47 +988,47 @@ exports[`Home renders successfully 1`] = `
           class="form-control"
         >
           <input
-            class="input input-bordered dark:bg-gray-700 rounded-full m-1"
+            class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full m-1"
             type="text"
             value="default"
           />
           <input
-            class="input input-bordered dark:bg-gray-700 rounded-full input-primary m-1"
+            class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-primary m-1"
             type="text"
             value="primary"
           />
           <input
-            class="input input-bordered dark:bg-gray-700 rounded-full input-secondary m-1"
+            class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-secondary m-1"
             type="text"
             value="secondary"
           />
           <input
-            class="input input-bordered dark:bg-gray-700 rounded-full input-accent m-1"
+            class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-accent m-1"
             type="text"
             value="accent"
           />
           <input
-            class="input input-bordered dark:bg-gray-700 rounded-full input-success m-1"
+            class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-success m-1"
             type="text"
             value="success"
           />
           <input
-            class="input input-bordered dark:bg-gray-700 rounded-full input-warning m-1"
+            class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-warning m-1"
             type="text"
             value="warning"
           />
           <input
-            class="input input-bordered dark:bg-gray-700 rounded-full input-error m-1"
+            class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-error m-1"
             type="text"
             value="error"
           />
           <input
-            class="input input-bordered dark:bg-gray-700 rounded-full input-info m-1"
+            class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-info m-1"
             type="text"
             value="info"
           />
           <input
-            class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 m-1"
+            class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full dark:text-gray-500 m-1"
             disabled=""
             type="text"
             value="disabled"
@@ -1055,7 +1055,7 @@ exports[`Home renders successfully 1`] = `
             class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full w-full"
+              class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1111,7 +1111,7 @@ exports[`Home renders successfully 1`] = `
             class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full input-primary w-full"
+              class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-primary w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1167,7 +1167,7 @@ exports[`Home renders successfully 1`] = `
             class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full input-secondary w-full"
+              class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-secondary w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1223,7 +1223,7 @@ exports[`Home renders successfully 1`] = `
             class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full input-accent w-full"
+              class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-accent w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1279,7 +1279,7 @@ exports[`Home renders successfully 1`] = `
             class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full input-success w-full"
+              class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-success w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1335,7 +1335,7 @@ exports[`Home renders successfully 1`] = `
             class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full input-warning w-full"
+              class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-warning w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1391,7 +1391,7 @@ exports[`Home renders successfully 1`] = `
             class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full input-error w-full"
+              class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-error w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1447,7 +1447,7 @@ exports[`Home renders successfully 1`] = `
             class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full input-info w-full"
+              class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-info w-full"
               placeholder="Please select value"
               readonly=""
               type="text"
@@ -1503,7 +1503,7 @@ exports[`Home renders successfully 1`] = `
             class="dropdown relative m-1"
           >
             <input
-              class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 input-primary w-full"
+              class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full dark:text-gray-500 input-primary w-full"
               disabled=""
               placeholder="(disabled)"
               readonly=""
@@ -1612,7 +1612,9 @@ exports[`Home renders successfully 1`] = `
             >
               Choose your superpower
             </option>
-            <option>
+            <option
+              value="1"
+            >
               telekinesis
             </option>
             <option
@@ -1636,7 +1638,9 @@ exports[`Home renders successfully 1`] = `
             >
               Choose your superpower
             </option>
-            <option>
+            <option
+              value="1"
+            >
               telekinesis
             </option>
             <option
@@ -1660,7 +1664,9 @@ exports[`Home renders successfully 1`] = `
             >
               Choose your superpower
             </option>
-            <option>
+            <option
+              value="1"
+            >
               telekinesis
             </option>
             <option
@@ -1684,7 +1690,9 @@ exports[`Home renders successfully 1`] = `
             >
               Choose your superpower
             </option>
-            <option>
+            <option
+              value="1"
+            >
               telekinesis
             </option>
             <option
@@ -1708,7 +1716,9 @@ exports[`Home renders successfully 1`] = `
             >
               Choose your superpower
             </option>
-            <option>
+            <option
+              value="1"
+            >
               telekinesis
             </option>
             <option
@@ -1732,7 +1742,9 @@ exports[`Home renders successfully 1`] = `
             >
               Choose your superpower
             </option>
-            <option>
+            <option
+              value="1"
+            >
               telekinesis
             </option>
             <option
@@ -1756,7 +1768,9 @@ exports[`Home renders successfully 1`] = `
             >
               Choose your superpower
             </option>
-            <option>
+            <option
+              value="1"
+            >
               telekinesis
             </option>
             <option
@@ -1781,7 +1795,9 @@ exports[`Home renders successfully 1`] = `
             >
               Choose your superpower
             </option>
-            <option>
+            <option
+              value="1"
+            >
               telekinesis
             </option>
             <option
@@ -1814,63 +1830,63 @@ exports[`Home renders successfully 1`] = `
           class="form-control"
         >
           <textarea
-            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 m-1"
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 dark:text-gray-300 m-1"
             id="textarea-default"
             title="default"
           >
             default
           </textarea>
           <textarea
-            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-primary m-1"
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 dark:text-gray-300 textarea-primary m-1"
             id="textarea-primary"
             title="primary"
           >
             primary
           </textarea>
           <textarea
-            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-secondary m-1"
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 dark:text-gray-300 textarea-secondary m-1"
             id="textarea-secondary"
             title="secondary"
           >
             secondary
           </textarea>
           <textarea
-            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-primary m-1"
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 dark:text-gray-300 textarea-primary m-1"
             id="textarea-accent"
             title="accent"
           >
             accent
           </textarea>
           <textarea
-            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-success m-1"
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 dark:text-gray-300 textarea-success m-1"
             id="textarea-success"
             title="success"
           >
             success
           </textarea>
           <textarea
-            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-warning m-1"
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 dark:text-gray-300 textarea-warning m-1"
             id="textarea-warning"
             title="warning"
           >
             warning
           </textarea>
           <textarea
-            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-error m-1"
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 dark:text-gray-300 textarea-error m-1"
             id="textarea-error"
             title="error"
           >
             error
           </textarea>
           <textarea
-            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 textarea-info m-1"
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 dark:text-gray-300 textarea-info m-1"
             id="textarea-info"
             title="info"
           >
             info
           </textarea>
           <textarea
-            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700  dark:text-gray-500 textarea-primary m-1"
+            class="textarea textarea-bordered rounded-3xl dark:bg-gray-700 dark:text-gray-300  dark:text-gray-500 textarea-primary m-1"
             disabled=""
             id="textarea-disabled"
             title="disabled"
@@ -1949,7 +1965,7 @@ exports[`Home renders successfully 1`] = `
                 class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full w-full"
+                  class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
@@ -1982,7 +1998,7 @@ exports[`Home renders successfully 1`] = `
                 class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full input-primary w-full"
+                  class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-primary w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
@@ -2015,7 +2031,7 @@ exports[`Home renders successfully 1`] = `
                 class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full input-secondary w-full"
+                  class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-secondary w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
@@ -2048,7 +2064,7 @@ exports[`Home renders successfully 1`] = `
                 class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full input-accent w-full"
+                  class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-accent w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
@@ -2081,7 +2097,7 @@ exports[`Home renders successfully 1`] = `
                 class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full input-success w-full"
+                  class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-success w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
@@ -2114,7 +2130,7 @@ exports[`Home renders successfully 1`] = `
                 class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full input-warning w-full"
+                  class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-warning w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
@@ -2147,7 +2163,7 @@ exports[`Home renders successfully 1`] = `
                 class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full input-error w-full"
+                  class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-error w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
@@ -2180,7 +2196,7 @@ exports[`Home renders successfully 1`] = `
                 class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full input-info w-full"
+                  class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full input-info w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
@@ -2213,7 +2229,7 @@ exports[`Home renders successfully 1`] = `
                 class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full"
+                  class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full dark:text-gray-500 w-full"
                   disabled=""
                   readonly=""
                   type="text"
@@ -2252,7 +2268,7 @@ exports[`Home renders successfully 1`] = `
                 class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full dark:text-gray-500 w-full"
+                  class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full dark:text-gray-500 w-full"
                   disabled=""
                   readonly=""
                   type="text"
@@ -2291,7 +2307,7 @@ exports[`Home renders successfully 1`] = `
                 class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full w-full"
+                  class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full w-full"
                   readonly=""
                   type="text"
                   value="01/01/2022"
@@ -2324,7 +2340,7 @@ exports[`Home renders successfully 1`] = `
                 class="inline-block w-full relative m-1"
               >
                 <input
-                  class="input input-bordered dark:bg-gray-700 rounded-full w-full"
+                  class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full w-full"
                   readonly=""
                   type="text"
                   value="02/01/2022"
@@ -2363,7 +2379,7 @@ exports[`Home renders successfully 1`] = `
               class="inline-block w-full relative m-1"
             >
               <input
-                class="input input-bordered dark:bg-gray-700 rounded-full w-full"
+                class="input input-bordered dark:bg-gray-700 dark:text-gray-300 rounded-full w-full"
                 readonly=""
                 type="text"
                 value="01/01/2022 12:00 AM"
@@ -2416,10 +2432,10 @@ exports[`Home renders successfully 1`] = `
             class="absolute h-full w-full"
           />
           <div
-            class="modal-box rounded-xl bg-white dark:bg-gray-800 p-2"
+            class="modal-box rounded-xl bg-white dark:bg-gray-800 dark:text-gray-300 p-2"
           >
             <div
-              class="font-semibold rounded-t-xl -mt-2 -mx-2 mb-1 p-2 bg-success text-success-content"
+              class="font-semibold rounded-t-xl -mt-2 -mx-2 mb-1 p-2 bg-success text-primary-content"
             >
               Modal
             </div>
@@ -2433,22 +2449,22 @@ exports[`Home renders successfully 1`] = `
                 class="p-1"
               >
                 <button
-                  class="btn rounded-full min-w-10 bg-gradient-to-r border-0
-          from-primary hover:from-primary-focus
-          to-secondary hover:to-secondary-focus w-full sm:w-auto"
+                  class="btn rounded-full min-w-10 dark:bg-gray-700 dark:text-primary-content dark:border-transparent dark:hover:bg-gray-600 btn-outline w-full sm:w-auto"
                   type="button"
                 >
-                  OK
+                  Close
                 </button>
               </span>
               <span
                 class="p-1"
               >
                 <button
-                  class="btn rounded-full min-w-10 dark:bg-gray-700 dark:text-primary-content dark:border-transparent dark:hover:bg-gray-600 w-full sm:w-auto"
+                  class="btn rounded-full min-w-10 bg-gradient-to-r border-0
+          from-primary hover:from-primary-focus
+          to-secondary hover:to-secondary-focus w-full sm:w-auto"
                   type="button"
                 >
-                  Close
+                  OK
                 </button>
               </span>
             </div>

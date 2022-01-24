@@ -6,7 +6,7 @@ import {Toggle} from './toggle';
 import {Checkbox} from './checkbox';
 import {Radio} from './radio';
 
-export type FieldBooleanProps = React.ComponentProps<typeof Input> & {
+export type FieldBooleanProps = Omit<React.ComponentProps<typeof Input>, 'type'> & {
   label: string;
   name: string;
   showLabel?: boolean;
@@ -74,7 +74,7 @@ export const FieldBoolean = (props: FieldBooleanProps): JSX.Element => {
         id={id}
         checked={Boolean(!formik.values[name])}
         onChange={() => formik.setFieldValue(name, false)}
-        title={falseLabel}
+        title={falseLabel || 'False'}
         disabled={disabled}
         variant={variant}
         name={name}
@@ -83,7 +83,7 @@ export const FieldBoolean = (props: FieldBooleanProps): JSX.Element => {
         id={id}
         checked={Boolean(formik.values[name])}
         onChange={() => formik.setFieldValue(name, false)}
-        title={trueLabel}
+        title={trueLabel || 'True'}
         disabled={disabled}
         variant={variant}
         name={name}
